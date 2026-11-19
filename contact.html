@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="McGregor Systems LLC">
+    <meta name="description" content="Contact McGregor Systems LLC about a business website, custom application, integration, software maintenance, or subcontracting need.">
+    <meta name="theme-color" content="#142731">
+
+    <title>Contact | McGregor Systems LLC</title>
+
+    <link rel="icon" type="image/png" href="assets/images/branding/favicon.png">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="assets/css/pages/contact.css">
+</head>
+<body>
+    <!-- Shared navigation is provided by assets/js/shared/site-header.js. -->
+    <div id="site-header">
+        <header class="nav"><div class="shell"><a class="brand" href="index.html">McGregor Systems LLC</a></div></header>
+    </div>
+
+    <main id="main-content" class="contact-page">
+        <section class="contact-page-hero" aria-labelledby="contact-heading">
+            <div class="shell">
+                <div class="caps subtle">Project inquiry / Contact</div>
+                <div class="contact-page-hero-grid">
+                    <h1 id="contact-heading">Tell us what you <em>need to build.</em></h1>
+                    <p>
+                        You do not need a complete specification. Describe the problem,
+                        what you already use, or the result you want. We can discuss
+                        the technical details afterward.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-page-section" aria-label="Project inquiry and contact information">
+            <div class="shell contact-page-grid">
+                <div class="contact-page-details">
+                    <div class="caps subtle">01 / How to reach us</div>
+                    <h2>Start with a short description.</h2>
+                    <p>
+                        Tell us about new software, an existing system, a business
+                        website, or work that needs ongoing support.
+                    </p>
+
+                    <div class="contact-method">
+                        <h3>Email</h3>
+                        <a href="mailto:mcgregorsystemsllc@gmail.com">mcgregorsystemsllc@gmail.com</a>
+                    </div>
+
+                    <div class="contact-method">
+                        <h3>Location</h3>
+                        <p>Albany, New York · Remote project work available</p>
+                    </div>
+
+                    <div class="contact-method">
+                        <h3>Government and subcontracting</h3>
+                        <p>
+                            McGregor Systems LLC is a New York State-certified
+                            Service-Disabled Veteran-Owned Business. You can use
+                            this form for procurement and subcontracting inquiries.
+                        </p>
+                    </div>
+
+                    <div class="contact-page-note">
+                        <strong>Not sure which service fits?</strong>
+                        <p>That's fine. Describe the work and select “Not sure yet” in the form.</p>
+                    </div>
+                </div>
+
+                <!-- Keep this action: it is the Formspree endpoint from the archived site. -->
+                <form
+                    id="project-inquiry"
+                    class="contact-form"
+                    action="https://formspree.io/f/xzdgwkre"
+                    method="POST"
+                >
+                    <div class="contact-form-heading">
+                        <div class="caps subtle">02 / Project details</div>
+                        <h2>Send an inquiry</h2>
+                        <p>Fields marked required must be completed before sending.</p>
+                    </div>
+
+                    <input type="hidden" name="_subject" value="New Project Inquiry - McGregor Systems LLC">
+                    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" hidden aria-hidden="true">
+
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="contact-first-name">First name <span aria-hidden="true">*</span></label>
+                            <input id="contact-first-name" name="first_name" type="text" autocomplete="given-name" required>
+                        </div>
+                        <div class="field">
+                            <label for="contact-last-name">Last name <span aria-hidden="true">*</span></label>
+                            <input id="contact-last-name" name="last_name" type="text" autocomplete="family-name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="contact-email">Email <span aria-hidden="true">*</span></label>
+                            <input id="contact-email" name="email" type="email" autocomplete="email" required>
+                        </div>
+                        <div class="field">
+                            <label for="contact-phone">Phone (optional)</label>
+                            <input id="contact-phone" name="phone" type="tel" autocomplete="tel">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="contact-service">What can we help with?</label>
+                        <select id="contact-service" name="service">
+                            <option value="">Not sure yet</option>
+                            <option value="Business website">Business website</option>
+                            <option value="Custom software">Custom software</option>
+                            <option value="Website and custom software">Website and custom software</option>
+                            <option value="Integration or automation">Integration or automation</option>
+                            <option value="Maintenance or repair">Maintenance or repair</option>
+                            <option value="Government or subcontracting">Government or subcontracting</option>
+                            <option value="Other">Something else</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="contact-project-details">Project details <span aria-hidden="true">*</span></label>
+                        <textarea
+                            id="contact-project-details"
+                            name="project_details"
+                            rows="8"
+                            placeholder="What are you trying to build, repair, or improve?"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <div class="form-foot">
+                        <button class="btn btn-dark" type="submit">
+                            Send inquiry <span aria-hidden="true">↗</span>
+                        </button>
+                        <small>Your information is submitted through Formspree.</small>
+                    </div>
+
+                    <p
+                        id="contact-form-status"
+                        class="form-feedback"
+                        role="status"
+                        aria-live="polite"
+                        hidden
+                    ></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="contact-page-next" aria-labelledby="contact-next-heading">
+            <div class="shell">
+                <div class="caps">Still defining the scope?</div>
+                <h2 id="contact-next-heading">Start with the project planner.</h2>
+                <p>The planner can help identify the type of work you need and its starting price.</p>
+                <a class="btn btn-white" href="index.html#scope">Open the project planner <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shared footer is provided by assets/js/shared/site-footer.js. -->
+    <div id="site-footer">
+        <footer class="footer"><div class="shell"><p>McGregor Systems LLC · Albany, New York</p></div></footer>
+    </div>
+
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

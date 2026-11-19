@@ -1,0 +1,92 @@
+
+/* Global browser defaults and reusable text utilities.
+   Page layouts and feature-specific styles belong in separate files. */
+
+/* Consistent box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Document behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Form controls inherit the site's typeface. */
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Prevent oversized media from exceeding their container. */
+img,
+svg {
+    max-width: 100%;
+}
+
+/* Default link appearance */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+/* Reusable text classes */
+.subtle {
+    color: var(--muted);
+}
+
+.caps {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+.pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+/* Keyboard focus */
+:where(a, button, input, textarea, select):focus-visible {
+    outline: 2px solid var(--focus-outline);
+    outline-offset: 3px;
+}
+
+/* Keep anchor targets visible below the sticky header. */
+[id] {
+    scroll-margin-top: 90px;
+}
+
+/* Respect reduced-motion preferences. */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}

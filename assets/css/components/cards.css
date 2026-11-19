@@ -1,0 +1,202 @@
+
+/* Shared service and selected-work cards.
+   Visual variants describe appearance, not project identity or order. */
+
+/* Work cards */
+.work-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background: var(--paper);
+    border: 1px solid var(--line);
+}
+
+.work-visual {
+    position: relative;
+    height: 193px;
+    padding: 22px;
+    overflow: hidden;
+    background: var(--visual-sage);
+}
+
+/* Explicit visual variants */
+.work-visual--sage {
+    background: var(--visual-sage);
+}
+
+.work-visual--dark {
+    background: var(--visual-dark);
+}
+
+.work-visual--warm {
+    background: var(--visual-warm);
+}
+
+.work-visual--dark .visual-label {
+    color: #bdd7d2;
+}
+
+/* Illustration labels */
+.visual-label {
+    position: absolute;
+    top: 13px;
+    left: 16px;
+    color: #4b6668;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+/* Work card content */
+.work-copy {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+    padding: 25px 23px 28px;
+}
+
+.work-type {
+    color: var(--accent);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+.work-copy h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -.035em;
+}
+
+.work-copy p {
+    margin: 0 0 23px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+.work-copy .btn-link {
+    margin-top: auto;
+    font-size: 11px;
+}
+
+.work-note {
+    margin: 22px 0 0;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+/* Reusable conceptual document illustration.
+   This is a placeholder visual, not a client document. */
+.document-preview {
+    width: min(100%, 310px);
+    min-height: 370px;
+    padding: 30px 23px;
+    background: var(--paper);
+    border: 1px solid rgba(32, 49, 59, .12);
+    box-shadow:
+        14px 17px 0 rgba(20, 39, 49, .09),
+        0 18px 35px rgba(20, 39, 49, .13);
+    transform: rotate(-3deg);
+}
+
+.document-preview__heading {
+    display: block;
+    margin-bottom: 28px;
+    color: var(--ink);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -.035em;
+}
+
+.document-preview__row {
+    height: 28px;
+    margin: 13px 0;
+    background: #e6eee8;
+    border-left: 3px solid #80b5a5;
+}
+
+.document-preview__row--medium {
+    width: 86%;
+}
+
+.document-preview__row--short {
+    width: 70%;
+}
+
+/* Service cards */
+.core-service {
+    background: var(--paper);
+    border: 1px solid var(--line);
+}
+
+.core-copy {
+    padding: 31px 32px 34px;
+}
+
+.core-brow {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    color: var(--accent);
+    font-size: 10px;
+    font-weight: 750;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.core-copy h3 {
+    margin: 13px 0;
+    font-size: 29px;
+    letter-spacing: -.045em;
+}
+
+.core-copy p {
+    min-height: 65px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.core-copy ul {
+    margin: 17px 0 23px;
+    padding-left: 18px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 2;
+}
+
+.core-copy li::marker {
+    color: var(--accent);
+}
+
+.core-startprice {
+    margin-top: -3px;
+    margin-bottom: 13px;
+    color: var(--accent);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+/* Responsive cards */
+@media (max-width: 720px) {
+    .work-visual {
+        height: 210px;
+    }
+}
+
+@media (max-width: 430px) {
+    .core-copy {
+        padding: 26px 22px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .document-preview {
+        transform: none;
+    }
+}

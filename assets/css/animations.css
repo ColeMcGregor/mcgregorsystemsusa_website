@@ -1,0 +1,77 @@
+/* Rotating gradient frames used by the V2 hero and service previews.
+   Animating the gradient angle moves the colors, not the image or frame. */
+
+/* A registered angle allows smooth conic-gradient animation in modern browsers. */
+@property --orbit-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes border-color-orbit {
+  to {
+    --orbit-angle: 360deg;
+  }
+}
+
+/* Large, overlapping hero frames. Their position is set in home.css. */
+.border-orbit {
+  position: absolute;
+  padding: 3px;
+  border-radius: 13px;
+  isolation: isolate;
+  box-shadow: 0 24px 45px rgba(24, 45, 49, 0.13);
+  background: conic-gradient(
+    from var(--orbit-angle),
+    #267a71,
+    #b9e0bb,
+    #e6f3df,
+    #3b8b83,
+    #daf2d6,
+    #8ecdc1,
+    #267a71
+  );
+  animation: border-color-orbit 22s linear infinite;
+}
+
+/* Smaller frames around the website and application service illustrations. */
+.small-orbit {
+  position: relative;
+  width: 100%;
+  max-width: 385px;
+  padding: 3px;
+  border-radius: 9px;
+  box-shadow: 0 23px 30px rgba(22, 60, 58, 0.125);
+  background: conic-gradient(
+    from var(--orbit-angle),
+    #3f907f,
+    #f6f9e5,
+    #aedccc,
+    #478879,
+    #ecf3dc,
+    #3f907f
+  );
+  animation: border-color-orbit 27s linear infinite;
+}
+
+.small-orbit.alt {
+  background: conic-gradient(
+    from var(--orbit-angle),
+    #8ad5bd,
+    #2f7e83,
+    #d9f1d6,
+    #5ba799,
+    #bedee2,
+    #8ad5bd
+  );
+  animation-direction: reverse;
+  animation-duration: 30s;
+}
+
+/* Preserve the border's appearance without motion when requested. */
+@media (prefers-reduced-motion: reduce) {
+  .border-orbit,
+  .small-orbit {
+    animation: none;
+  }
+}

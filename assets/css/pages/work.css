@@ -1,0 +1,208 @@
+
+/* Selected Work page layout.
+   Project names and anchor IDs are content; presentation uses reusable classes. */
+
+/* Page introduction */
+.work-page .work-page-intro {
+    padding: 88px 0 76px;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+}
+
+.work-page-intro h1 {
+    max-width: 780px;
+    margin: 12px 0 0;
+    font-size: clamp(42px, 5.7vw, 70px);
+    line-height: 1.07;
+    letter-spacing: -.055em;
+}
+
+.work-page-intro .intro-description {
+    max-width: 790px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Case-study sections: the variants can be assigned to any case study. */
+.work-page .case-study--light {
+    background: var(--cream);
+}
+
+.work-page .case-study--tinted {
+    background: var(--surface-tinted);
+    border-top: 1px solid var(--line);
+}
+
+.work-page .case-study--featured .work-card {
+    display: grid;
+    grid-template-columns: minmax(270px, .82fr) minmax(0, 1.18fr);
+    align-items: stretch;
+}
+
+.work-page .case-study--featured .work-visual {
+    height: auto;
+    min-height: 440px;
+    padding: 29px;
+}
+
+.work-page .case-study--featured .work-copy {
+    padding: clamp(27px, 4vw, 50px);
+}
+
+.work-page .case-study--standard .work-card {
+    max-width: 980px;
+    border-left: 4px solid var(--accent);
+}
+
+.work-page .case-study--standard .work-copy {
+    padding: clamp(27px, 4vw, 45px);
+}
+
+/* Work-page text: overrides the compact card-copy sizing used on the homepage. */
+.work-page .work-copy {
+    gap: 0;
+}
+
+.work-page .work-type {
+    margin-bottom: 12px;
+}
+
+.work-page .case-study__heading {
+    margin: 24px 0 10px;
+    font-size: clamp(20px, 2vw, 25px);
+    letter-spacing: -.03em;
+}
+
+.work-page .case-study__heading--first {
+    margin-top: 0;
+}
+
+.work-page .work-copy p,
+.work-page .work-copy li {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.work-page .work-copy p {
+    margin: 0 0 16px;
+}
+
+.work-page .work-copy ul {
+    margin: 2px 0 5px;
+    padding-left: 23px;
+}
+
+.work-page .work-copy li {
+    margin-bottom: 8px;
+    padding-left: 3px;
+}
+
+.work-page .work-copy li::marker {
+    color: var(--accent);
+}
+
+/* Optional extra information within each case study.
+   Native details elements work without JavaScript. */
+.work-page .case-study__details {
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+}
+
+.work-page .case-study__details summary {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.work-page .case-study__details summary:hover {
+    color: var(--dark);
+}
+
+.work-page .case-study__details-body {
+    padding-top: 15px;
+}
+
+.work-page .case-study__details-body p {
+    margin: 0 0 13px;
+}
+
+/* Document illustration layout; the reusable mockup itself is in cards.css. */
+.work-page .case-study--featured .visual-label {
+    position: static;
+    display: block;
+    color: #365c55;
+    font-size: 10px;
+}
+
+.work-page .case-study--featured .document-preview {
+    margin: 33px auto 0;
+}
+
+/* Closing invitation */
+.work-page .work-page-cta {
+    padding: 75px 0;
+    background: var(--dark);
+    color: var(--text-on-dark);
+}
+
+.work-page-cta .caps {
+    color: var(--lime);
+}
+
+.work-page-cta h2 {
+    color: var(--text-on-dark);
+}
+
+.work-page-cta .section-head p {
+    color: var(--text-on-dark-muted);
+}
+
+.work-page-cta .btn-dark {
+    background: var(--paper);
+    color: var(--dark);
+}
+
+.work-page-cta .btn-dark:hover {
+    background: var(--accentLight);
+}
+
+/* Responsive adjustments */
+@media (max-width: 850px) {
+    .work-page .case-study--featured .work-card {
+        grid-template-columns: 1fr;
+    }
+
+    .work-page .case-study--featured .work-visual {
+        min-height: 365px;
+    }
+
+    .work-page .case-study--featured .document-preview {
+        min-height: 280px;
+        margin-top: 19px;
+    }
+}
+
+@media (max-width: 720px) {
+    .work-page .work-page-intro {
+        padding: 65px 0;
+    }
+
+    .work-page .case-study--featured .work-visual {
+        padding: 24px;
+    }
+
+    .work-page .case-study--featured .document-preview {
+        transform: rotate(-1deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .work-page .case-study--featured .document-preview {
+        transform: none;
+    }
+}

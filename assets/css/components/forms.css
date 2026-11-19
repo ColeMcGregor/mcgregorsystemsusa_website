@@ -1,0 +1,112 @@
+
+/* Shared contact form and field styling.
+   Formspree submission behavior belongs in contact-form.js. */
+
+/* Form surface */
+.contact-form {
+    padding: 29px;
+    background: #f9faf5;
+    color: var(--ink);
+    border-radius: 3px;
+}
+
+.contact-form h3 {
+    margin: 0 0 8px;
+    font-size: 21px;
+    letter-spacing: -.035em;
+}
+
+/* Form descriptions must remain readable inside dark page sections. */
+.contact-form > p:not(.form-feedback),
+.contact .contact-form > p:not(.form-feedback) {
+    margin: 0 0 18px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* Paired fields */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+/* Individual fields */
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 14px;
+}
+
+.field label {
+    color: var(--ink);
+    font-size: 10px;
+    font-weight: 750;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+
+/* Inputs, selectors, and text areas */
+.field input,
+.field textarea,
+.field select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #b8cbc3;
+    border-radius: 2px;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 12px;
+    outline-color: var(--focus-outline);
+}
+
+.field textarea {
+    min-height: 83px;
+    resize: vertical;
+}
+
+/* Form action row */
+.form-foot {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 17px;
+}
+
+.form-foot small {
+    color: var(--muted);
+    font-size: 10px;
+}
+
+/* Formspree feedback.
+   The JavaScript sets data-state to success or error. */
+.contact-form > .form-feedback[hidden] {
+    display: none;
+}
+
+.contact-form > .form-feedback:not([hidden]) {
+    display: block;
+    max-width: none;
+    margin: 18px 0 0;
+    padding: 12px 14px;
+    border: 1px solid #a0c7b0;
+    border-radius: 2px;
+    background: var(--accentLight);
+    color: #28594b;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.contact-form > .form-feedback[data-state="error"]:not([hidden]) {
+    border-color: #e4b3a4;
+    background: #fff1eb;
+    color: #8d3f2d;
+}
+
+/* Responsive field layout */
+@media (max-width: 720px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}

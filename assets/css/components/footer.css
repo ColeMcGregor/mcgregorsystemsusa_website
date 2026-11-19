@@ -1,0 +1,116 @@
+
+/* Shared site footer.
+   Named column classes control responsive layout, not column position. */
+
+.footer {
+    padding: 56px 0 23px;
+    background: var(--footer-background);
+    color: var(--footer-text);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1.1fr;
+    gap: 35px;
+}
+
+.footer-column {
+    min-width: 0;
+}
+
+/* Footer headings */
+.footer h4 {
+    margin: 0 0 19px;
+    color: var(--text-on-dark);
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+/* Footer descriptions */
+.footer p {
+    max-width: 260px;
+    color: var(--footer-muted);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* Footer navigation */
+.footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer li {
+    margin-bottom: 12px;
+    color: var(--footer-text);
+    font-size: 12px;
+}
+
+.footer a {
+    overflow-wrap: anywhere;
+}
+
+.footer a:hover {
+    color: var(--lime);
+}
+
+/* Brand inside the dark footer */
+.footer .brand-name {
+    color: var(--text-on-dark);
+}
+
+.footer .brand-sub {
+    color: var(--footer-text);
+}
+
+/* Certification image */
+.footer-certification-logo {
+    display: block;
+    width: 94px;
+    height: auto;
+}
+
+/* Copyright and secondary information */
+.footbottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 52px;
+    padding-top: 19px;
+    border-top: 1px solid var(--footer-border);
+    color: var(--footer-muted);
+    font-size: 10px;
+}
+
+/* Tablet layout */
+@media (max-width: 980px) {
+    .footer-grid {
+        grid-template-columns: 1.4fr 1fr 1fr;
+    }
+
+    .footer-column--certification {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 720px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-column--brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-column--certification {
+        grid-column: auto;
+    }
+
+    .footbottom {
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+}

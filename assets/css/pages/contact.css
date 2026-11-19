@@ -1,0 +1,243 @@
+
+/* Contact page layout. Shared form fields and buttons are in site.css.
+   Keep page-only rules here so the homepage form remains independent. */
+
+/* 1. Contact introduction */
+.contact-page-hero {
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    padding: 85px 0 79px;
+}
+
+.contact-page-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(260px, .6fr);
+    align-items: end;
+    gap: 54px;
+    margin-top: 13px;
+}
+
+.contact-page-hero h1 {
+    max-width: 770px;
+    margin: 0;
+    font-size: clamp(45px, 6.3vw, 77px);
+    line-height: 1.05;
+    letter-spacing: -.06em;
+}
+
+.contact-page-hero h1 em {
+    font-family: var(--serif);
+    color: var(--accent);
+    font-weight: 400;
+}
+
+.contact-page-hero p {
+    max-width: 350px;
+    margin: 0 0 8px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+/* 2. Contact details and form */
+.contact-page-section {
+    padding: 93px 0 108px;
+    background: var(--cream);
+}
+
+.contact-page-grid {
+    display: grid;
+    grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+    align-items: start;
+    gap: clamp(35px, 5vw, 80px);
+}
+
+.contact-page-details h2 {
+    max-width: 440px;
+    margin: 13px 0 20px;
+    font-size: clamp(32px, 3.5vw, 46px);
+    letter-spacing: -.045em;
+    line-height: 1.12;
+}
+
+.contact-page-details > p {
+    max-width: 410px;
+    margin: 0 0 35px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+.contact-method {
+    border-top: 1px solid var(--line);
+    padding: 22px 0 23px;
+}
+
+.contact-method h3 {
+    margin: 0 0 8px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+.contact-method p,
+.contact-method a {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.contact-method a {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.contact-page-note {
+    margin-top: 20px;
+    padding: 22px;
+    background: var(--accentLight);
+    border-left: 3px solid var(--accent);
+}
+
+.contact-page-note strong {
+    display: block;
+    font-size: 14px;
+}
+
+.contact-page-note p {
+    margin: 8px 0 0;
+    color: #42635f;
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+/* 3. Form: reuse forms.css, then adapt spacing for this full page */
+.contact-page .contact-form {
+    background: var(--paper);
+    padding: clamp(24px, 3.3vw, 43px);
+    border: 1px solid var(--line);
+    box-shadow: 0 17px 44px rgba(20, 39, 49, .06);
+}
+
+.contact-form-heading {
+    margin-bottom: 31px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--line);
+}
+
+.contact-page .contact-form-heading h2 {
+    margin: 9px 0 8px;
+    font-size: clamp(28px, 3vw, 38px);
+    line-height: 1.12;
+    letter-spacing: -.04em;
+}
+
+.contact-page .contact-form-heading p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.contact-page .field {
+    margin-bottom: 19px;
+}
+
+.contact-page .field label {
+    font-size: 11px;
+}
+
+.contact-page .field input,
+.contact-page .field select,
+.contact-page .field textarea {
+    font-size: 14px;
+    padding: 13px 14px;
+    min-height: 46px;
+}
+
+.contact-page .field textarea {
+    min-height: 178px;
+}
+
+.contact-page .form-foot {
+    align-items: center;
+    margin-top: 8px;
+}
+
+.contact-page .form-foot small {
+    max-width: 220px;
+    line-height: 1.6;
+    font-size: 11px;
+}
+
+/* Messages are shown only after a submission attempt. */
+.contact-page .form-feedback:not([hidden]) {
+    display: block;
+    margin: 22px 0 0;
+    padding: 13px 15px;
+    background: #e6f2e9;
+    color: #285b48;
+    border: 1px solid #a7cab5;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.contact-page .form-feedback[data-state="error"]:not([hidden]) {
+    background: #fff1eb;
+    color: #8d3f2d;
+    border-color: #e4b3a4;
+}
+
+/* 4. Secondary action */
+.contact-page-next {
+    padding: 76px 0;
+    background: var(--dark);
+    color: var(--paper);
+}
+
+.contact-page-next .caps {
+    color: var(--lime);
+}
+
+.contact-page-next h2 {
+    font-size: clamp(29px, 3.8vw, 47px);
+    letter-spacing: -.045em;
+    line-height: 1.1;
+    margin: 13px 0 14px;
+}
+
+.contact-page-next p {
+    max-width: 600px;
+    color: #bfd1cc;
+    line-height: 1.8;
+    margin: 0 0 25px;
+}
+
+/* 5. Responsive layout */
+@media (max-width: 850px) {
+    .contact-page-hero-grid,
+    .contact-page-grid {
+        grid-template-columns: 1fr;
+        gap: 33px;
+    }
+
+    .contact-page-hero p {
+        max-width: 630px;
+    }
+}
+
+@media (max-width: 720px) {
+    .contact-page-hero {
+        padding: 63px 0;
+    }
+
+    .contact-page-section {
+        padding: 62px 0 77px;
+    }
+
+    .contact-page-next {
+        padding: 65px 0;
+    }
+}

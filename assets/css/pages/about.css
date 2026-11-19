@@ -1,0 +1,316 @@
+
+/* About page layout.
+   Content is stored in HTML.
+   Shared colors, typography, and buttons are defined in site.css. */
+
+/* Introduction */
+.about-intro {
+    padding: 86px 0 90px;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+}
+
+.about-intro-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(290px, .8fr);
+    align-items: center;
+    gap: clamp(32px, 6vw, 86px);
+}
+
+.about-intro-copy h1 {
+    max-width: 790px;
+    margin: 17px 0 24px;
+    font-size: clamp(44px, 5.8vw, 74px);
+    line-height: 1.06;
+    letter-spacing: -.058em;
+}
+
+.about-intro-copy h1 em {
+    display: inline;
+    color: var(--accent);
+    font-family: var(--serif);
+    font-weight: 400;
+}
+
+.about-intro-copy > p {
+    max-width: 610px;
+    margin: 0 0 17px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+.about-intro-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+    margin-top: 29px;
+}
+
+/* Engineering principle panel */
+.about-intro-panel {
+    min-width: 0;
+    padding: clamp(28px, 3.5vw, 44px);
+    background: var(--dark);
+    color: var(--text-on-dark);
+    border: 1px solid var(--darker);
+}
+
+.about-intro-panel .caps {
+    color: var(--lime);
+}
+
+.about-intro-panel h2 {
+    margin: 22px 0 18px;
+    font-size: clamp(26px, 2.8vw, 37px);
+    line-height: 1.17;
+    letter-spacing: -.04em;
+}
+
+.about-intro-panel p {
+    margin: 0;
+    color: var(--text-on-dark-muted);
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+.about-intro-panel-footer {
+    margin-top: 31px;
+    padding-top: 17px;
+    border-top: 1px solid var(--footer-border);
+    color: var(--lime);
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+/* Founder and company background */
+.about-background {
+    background: var(--cream);
+}
+
+.about-background-grid {
+    display: grid;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    gap: clamp(36px, 7vw, 95px);
+}
+
+.about-background-heading h2 {
+    max-width: 500px;
+    margin: 13px 0 0;
+    font-size: clamp(31px, 3.7vw, 49px);
+    line-height: 1.13;
+    letter-spacing: -.045em;
+}
+
+.about-background-content > p {
+    margin: 0 0 20px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.about-background-note {
+    margin-top: 29px;
+    padding: 25px 28px;
+    background: var(--surface-tinted);
+    border-left: 4px solid var(--accent);
+}
+
+.about-background-note strong {
+    display: block;
+    color: var(--ink);
+    font-size: 15px;
+}
+
+.about-background-note p {
+    margin: 9px 0 13px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.about-background-note .btn-link {
+    font-size: 12px;
+}
+
+/* Engineering capabilities */
+.about-capabilities {
+    background: var(--surface-tinted);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.about-capability-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.about-capability-card {
+    min-width: 0;
+    padding: clamp(26px, 3vw, 36px);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--accent);
+}
+
+.about-capability-card h3 {
+    margin: 0 0 14px;
+    color: var(--ink);
+    font-size: clamp(21px, 2.2vw, 28px);
+    line-height: 1.22;
+    letter-spacing: -.035em;
+}
+
+.about-capability-card p {
+    max-width: 500px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* Professional, independent, and academic work */
+.about-experience {
+    background: var(--paper);
+}
+
+.about-experience-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: clamp(35px, 6vw, 90px);
+}
+
+.about-experience-copy h2 {
+    max-width: 580px;
+    margin: 13px 0 23px;
+    font-size: clamp(31px, 3.7vw, 48px);
+    line-height: 1.13;
+    letter-spacing: -.045em;
+}
+
+.about-experience-copy p {
+    max-width: 590px;
+    margin: 0 0 17px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.about-experience-copy .btn {
+    margin-top: 14px;
+}
+
+.about-experience-panel {
+    min-width: 0;
+    padding: clamp(26px, 3.5vw, 42px);
+    background: var(--cream);
+    border: 1px solid var(--line);
+}
+
+.about-experience-item {
+    padding: 20px 0;
+    border-top: 1px solid var(--line);
+}
+
+.about-experience-item h3 {
+    margin: 0 0 9px;
+    color: var(--ink);
+    font-size: 19px;
+    line-height: 1.25;
+    letter-spacing: -.025em;
+}
+
+.about-experience-item p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* Closing inquiry section */
+.about-contact {
+    padding: 76px 0;
+    background: var(--dark);
+    color: var(--text-on-dark);
+}
+
+.about-contact-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+}
+
+.about-contact .caps {
+    color: var(--lime);
+}
+
+.about-contact h2 {
+    max-width: 710px;
+    margin: 13px 0 16px;
+    font-size: clamp(30px, 3.8vw, 48px);
+    line-height: 1.13;
+    letter-spacing: -.045em;
+}
+
+.about-contact p {
+    max-width: 630px;
+    margin: 0;
+    color: var(--text-on-dark-muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.about-contact .btn {
+    flex: 0 0 auto;
+}
+
+/* Tablet */
+@media (max-width: 980px) {
+    .about-intro-grid,
+    .about-background-grid,
+    .about-experience-grid {
+        gap: 34px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+    .about-intro {
+        padding: 65px 0;
+    }
+
+    .about-intro-grid,
+    .about-background-grid,
+    .about-experience-grid,
+    .about-capability-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-contact {
+        padding: 65px 0;
+    }
+
+    .about-contact-grid {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-background-note {
+        margin-top: 23px;
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 430px) {
+    .about-intro-actions .btn {
+        width: 100%;
+    }
+
+    .about-intro-panel,
+    .about-experience-panel {
+        padding: 26px 23px;
+    }
+}

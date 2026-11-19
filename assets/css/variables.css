@@ -1,0 +1,51 @@
+
+/* McGregor Systems LLC — V2 design tokens.
+   Shared colors, typography, and layout values.
+   Change these values to update the design across the site. */
+
+:root {
+    /* Primary text */
+    --ink: #20313b;
+    --muted: #596c73;
+
+    /* Dark surfaces */
+    --dark: #142731;
+    --darker: #0e2029;
+
+    /* Light surfaces */
+    --cream: #f7f7f2;
+    --paper: #fffefa;
+    --surface-tinted: #edf3ee;
+
+    /* Borders */
+    --line: #d9e1dd;
+
+    /* Brand accents */
+    --accent: #20736e;
+    --accentLight: #d8ece4;
+    --lime: #b4e3c8;
+
+    /* Project illustration variants */
+    --visual-sage: #dde7e0;
+    --visual-dark: #18333c;
+    --visual-warm: #e7e6db;
+
+    /* Shared dark-section text */
+    --text-on-dark: #fffefa;
+    --text-on-dark-muted: #bdd0cd;
+
+    /* Footer */
+    --footer-background: #0a1a22;
+    --footer-text: #c9d9d6;
+    --footer-muted: #93adae;
+    --footer-border: #28414a;
+
+    /* Typography */
+    --serif: Georgia, "Times New Roman", serif;
+
+    /* Layout */
+    --content-width: 1160px;
+
+    /* Accessibility */
+    --focus-outline: #237c76;
+}

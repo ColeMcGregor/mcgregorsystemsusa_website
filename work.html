@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="McGregor Systems LLC">
+    <meta name="description" content="Selected contract experience and software projects demonstrating reporting, application development, and systems engineering work.">
+    <meta name="theme-color" content="#142731">
+
+    <title>Selected Work | McGregor Systems LLC</title>
+
+    <link rel="icon" type="image/png" href="assets/images/branding/favicon.png">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="assets/css/pages/work.css">
+</head>
+<body>
+    <div id="site-header">
+        <header class="nav">
+            <div class="shell">
+                <a class="brand" href="index.html">McGregor Systems LLC</a>
+            </div>
+        </header>
+    </div>
+
+    <main id="main-content" class="work-page">
+        <section class="section work-page-intro" aria-labelledby="work-heading">
+            <div class="shell">
+                <div class="caps subtle">Selected work / Experience and projects</div>
+                <div class="section-head">
+                    <div>
+                        <h1 id="work-heading">Examples of the systems behind the work.</h1>
+                    </div>
+                    <p>Commercial contract work is identified separately from independent and academic development.</p>
+                </div>
+                <p class="intro-description">
+                    The examples below describe relevant engineering responsibilities and implementation decisions.
+                    They do not imply that every project was a McGregor Systems LLC client engagement.
+                </p>
+            </div>
+        </section>
+
+        <!-- Case-study IDs are for direct links, not CSS styling. -->
+        <section class="section case-study case-study--featured case-study--light" id="ras-systems" aria-labelledby="ras-heading">
+            <div class="shell">
+                <div class="section-head">
+                    <div>
+                        <div class="caps subtle">01 / Commercial contract experience</div>
+                        <h2 id="ras-heading">RAS Systems — reporting and workflow maintenance</h2>
+                    </div>
+                    <p>Existing business application · Reporting · Systems integration</p>
+                </div>
+
+                <article class="work-card">
+                    <!-- Concept artwork is reusable and is not client-supplied evidence. -->
+                    <div class="work-visual work-visual--sage" role="img" aria-label="Concept illustration of a report document">
+                        <div class="visual-label" aria-hidden="true">Reporting workflow · Concept illustration</div>
+                        <div class="document-preview" aria-hidden="true">
+                            <strong class="document-preview__heading">Document processing</strong>
+                            <div class="document-preview__row"></div>
+                            <div class="document-preview__row document-preview__row--medium"></div>
+                            <div class="document-preview__row"></div>
+                            <div class="document-preview__row document-preview__row--short"></div>
+                        </div>
+                    </div>
+
+                    <div class="work-copy">
+                        <div class="work-type">Contract software engineering</div>
+
+                        <h3 class="case-study__heading case-study__heading--first">Problem and context</h3>
+                        <p>
+                            Existing internal tools and reporting workflows involved multiple connected services.
+                            Permission rules, reporting logic, and document layouts required corrective work and closer review.
+                        </p>
+
+                        <h3 class="case-study__heading">Engineering contributions</h3>
+                        <ul>
+                            <li>Added administrator-only work-order switching for cross-technician visibility.</li>
+                            <li>Investigated permissions, application state, and data-binding behavior.</li>
+                            <li>Worked on multi-page PDF output, including text continuation and layout rules.</li>
+                            <li>Improved image placement for mixed portrait and landscape content.</li>
+                            <li>Reviewed and simplified reporting templates and styles.</li>
+                            <li>Documented system behavior and advised on integration and data-flow risks.</li>
+                        </ul>
+
+                        <h3 class="case-study__heading">Systems involved</h3>
+                        <p>Bubble, JavaScript, JSReport, HTML/CSS, AWS, SharePoint, and Salesforce.</p>
+
+                        <details class="case-study__details">
+                            <summary>Additional technical context</summary>
+                            <div class="case-study__details-body">
+                                <p>
+                                    Access-sensitive features required a distinction between administrator
+                                    actions and ordinary user behavior. Reporting changes also needed to
+                                    account for text length and image orientation in generated documents.
+                                </p>
+                                <p>
+                                    This work involved investigating an existing application's behavior
+                                    before making focused changes. No confidential records, performance
+                                    claims, or customer endorsements are included here.
+                                </p>
+                            </div>
+                        </details>
+                        <!-- Replace the conceptual illustration only with approved project media. -->
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section case-study case-study--standard case-study--tinted" id="eldvatten" aria-labelledby="eldvatten-heading">
+            <div class="shell">
+                <div class="section-head">
+                    <div>
+                        <div class="caps subtle">02 / Independent software project</div>
+                        <h2 id="eldvatten-heading">EldVatten community web application</h2>
+                    </div>
+                    <p>Community administration · Access controls · Web application architecture</p>
+                </div>
+
+                <article class="work-card">
+                    <div class="work-copy">
+                        <div class="work-type">Independent development — not a client engagement</div>
+
+                        <h3 class="case-study__heading case-study__heading--first">Application scope</h3>
+                        <p>A private community operations application covering member profiles, events, discussions, messaging, notifications, and administrative functions.</p>
+
+                        <h3 class="case-study__heading">Engineering focus</h3>
+                        <p>Backend-enforced permissions, relational data design, maintainable Django modules, operational workflows, and automated tests.</p>
+                        <p>Core technologies: Python, Django, PostgreSQL, HTML, CSS, JavaScript, and Docker.</p>
+
+                        <details class="case-study__details">
+                            <summary>Additional technical context</summary>
+                            <div class="case-study__details-body">
+                                <p>
+                                    The application organizes community records and workflows using
+                                    relational data. Roles, membership status, and administrative
+                                    responsibilities affect who may read or change that information.
+                                </p>
+                                <p>
+                                    The architecture favors backend permission checks, established
+                                    Django features, focused JavaScript, and maintainable modules.
+                                    Development remains in progress; the project scope is not a claim
+                                    that every planned feature has been deployed.
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section case-study case-study--standard case-study--light" id="healthcare-scheduler" aria-labelledby="healthcare-heading">
+            <div class="shell">
+                <div class="section-head">
+                    <div>
+                        <div class="caps subtle">03 / Academic capstone project</div>
+                        <h2 id="healthcare-heading">Healthcare scheduling platform</h2>
+                    </div>
+                    <p>Services architecture · Integration · Scheduling workflows</p>
+                </div>
+
+                <article class="work-card">
+                    <div class="work-copy">
+                        <div class="work-type">Academic team project — not a client engagement</div>
+
+                        <h3 class="case-study__heading case-study__heading--first">Project overview</h3>
+                        <p>A scheduling system developed as an academic software project, with service boundaries and integration components designed around scheduling functions.</p>
+
+                        <h3 class="case-study__heading">Engineering focus</h3>
+                        <p>Service-oriented architecture, system decomposition, API behavior, and coordinating development work across project responsibilities.</p>
+                        <p>Technologies included Python backend services and Docker-based development infrastructure.</p>
+
+                        <h3 class="case-study__heading">Role</h3>
+                        <p>Product Owner on an academic team project.</p>
+
+                        <details class="case-study__details">
+                            <summary>Additional technical context</summary>
+                            <div class="case-study__details-body">
+                                <p>
+                                    The project examined how scheduling responsibilities could be
+                                    divided across services and how those services would communicate.
+                                    This required attention to component boundaries, API behavior,
+                                    and team coordination.
+                                </p>
+                                <p>
+                                    The project is presented as academic software design and development,
+                                    not a production healthcare system or commercial client engagement.
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section work-page-cta" aria-labelledby="work-contact-heading">
+            <div class="shell">
+                <div class="section-head">
+                    <div>
+                        <div class="caps">Work with us</div>
+                        <h2 id="work-contact-heading">Have a similar technical problem?</h2>
+                    </div>
+                    <p>We can discuss an existing application, reporting workflow, or new software requirement.</p>
+                </div>
+                <a class="btn btn-dark" href="contact.html">Discuss your project <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer">
+        <footer class="footer">
+            <div class="shell"><p>McGregor Systems LLC · Albany, New York</p></div>
+        </footer>
+    </div>
+
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
