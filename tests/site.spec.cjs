@@ -292,7 +292,7 @@ test.describe('Every page: structure, links, resources, and accessibility', () =
 test.describe('Shared navigation and footer', () => {
     test('brand logo links home from a different page', async ({ page }) => {
         await page.goto('/government.html');
-        await page.getByRole('link', { name: 'McGregor Systems LLC home' }).click();
+        await page.locator('#navbar a.brand').click();
         await expect(page).toHaveURL(/\/index\.html$/);
         await expect(page.locator('#home')).toBeVisible();
     });

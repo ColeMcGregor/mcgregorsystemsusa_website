@@ -23,11 +23,18 @@ module.exports = defineConfig({
         actionTimeout: 10_000
     },
     projects: [
-        { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
-        ...(fullBrowserMatrix ? [
-            { name: 'firefox', use: { ...devices['Desktop Firefox'] } },
-            { name: 'webkit', use: { ...devices['Desktop Safari'] } }
-        ] : [])
+        {
+            name: 'chromium',
+            use: { ...devices['Desktop Chrome'] }
+        },
+        {
+            name: 'firefox',
+            use: { ...devices['Desktop Firefox'] }
+        },
+        {
+            name: 'webkit',
+            use: { ...devices['Desktop Safari'] }
+        }
     ],
     webServer: process.env.SITE_URL ? undefined : {
         command: 'npx http-server . -a 127.0.0.1 -p 4173 -c-1 --silent',

@@ -1,4 +1,3 @@
-
 /* McGregor Systems LLC — V2 design tokens.
    Shared colors, typography, and layout values.
    Change these values to update the design across the site. */
@@ -6,7 +5,7 @@
 :root {
     /* Primary text */
     --ink: #20313b;
-    --muted: #596c73;
+    --muted: #50656b;
 
     /* Dark surfaces */
     --dark: #142731;

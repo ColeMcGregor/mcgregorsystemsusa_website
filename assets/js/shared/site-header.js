@@ -22,7 +22,7 @@ export function renderSiteHeader(siteRoot) {
 
     const resolve = (path) => new URL(path, siteRoot).href;
     const currentPath = window.location.pathname;
-    const companyLogo = resolve("assets/images/branding/LogoMcGregorSystemsSmall.png");
+    const companyLogo = resolve("assets/images/branding/LogoMcGregorSystems.png");
 
     const links = navigationItems.map(({ label, path, page }) => {
         const isCurrentPage = page &&

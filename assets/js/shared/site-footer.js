@@ -26,7 +26,7 @@ export function renderSiteFooter(siteRoot) {
     }
 
     const resolve = (path) => new URL(path, siteRoot).href;
-    const companyLogo = resolve("assets/images/branding/LogoMcGregorSystemsSmall.png");
+    const companyLogo = resolve("assets/images/branding/LogoMcGregorSystems.png");
     const certificationLogo = resolve("assets/images/branding/NYS-Certified-Logo.png");
 
     const makeLinks = (items) => items.map(({ label, path }) =>

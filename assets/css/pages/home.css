@@ -63,7 +63,7 @@
 }
 
 .proof span {
-    font-size: 11px; color: #687a7c;
+    font-size: 11px; color: var(--muted);
 }
 
 /* Full-width engineering statement. */
@@ -198,7 +198,7 @@
 }
 
 .process-step p {
-    font-size: 12px; line-height: 1.8; color: #64787b; margin: 0;
+    font-size: 12px; line-height: 1.8; color: var(--muted); margin: 0;
 }
 
 /* Government and subcontracting section. */
@@ -506,7 +506,7 @@
 }
 
 .showcase-window-chrome.light {
-    background: #f0f5f0; color: #647a7b; border-bottom: 1px solid #e3eae3;
+    background: #f0f5f0; color: #50666a; border-bottom: 1px solid #e3eae3;
 }
 
 .showcase-dots {
@@ -555,7 +555,7 @@
 }
 
 .app-statrow i {
-    display: block; color: #7d9292; font-size: 8px; font-style: normal; font-weight: 500;
+    display: block; color: #50656b; font-size: 8px; font-style: normal; font-weight: 500;
     margin-bottom: 4px;
 }
 
@@ -606,7 +606,7 @@
 }
 
 .site-mini-hero small {
-    color: #4a8279; font-size: 7px; font-weight: 800; letter-spacing: .13em;
+    color: #346e63; font-size: 7px; font-weight: 800; letter-spacing: .13em;
 }
 
 .site-mini-hero h3 {
@@ -615,7 +615,7 @@
 }
 
 .site-mini-hero p {
-    font-size: 9px; color: #697e80; margin: 0 0 12px; line-height: 1.45;
+    font-size: 9px; color: #52696b; margin: 0 0 12px; line-height: 1.45;
 }
 
 .site-cta {
@@ -661,7 +661,7 @@
 }
 
 .showcase-note small {
-    color: #839c95; font-size: 9px; margin-left: 6px;
+    color: #526c68; font-size: 9px; margin-left: 6px;
 }
 
 .serif-phrase {
@@ -714,7 +714,7 @@
 }
 
 .web-demo-top span {
-    font-size: 7px; color: #68817f;
+    font-size: 7px; color: #4e6865;
 }
 
 .web-demo-main {
@@ -722,7 +722,7 @@
 }
 
 .micro-label {
-    font-size: 7px; color: #559084; letter-spacing: .13em; font-weight: 800;
+    font-size: 7px; color: #34695e; letter-spacing: .13em; font-weight: 800;
 }
 
 .web-demo-main h3 {
@@ -781,7 +781,7 @@
 }
 
 .sys-title small {
-    font-size: 7px; color: #789591;
+    font-size: 7px; color: #4b6963;
 }
 
 .sys-stats {
@@ -794,7 +794,7 @@
 }
 
 .sys-stats small {
-    display: block; font-size: 8px; color: #809995; font-weight: 400;
+    display: block; font-size: 8px; color: #536e69; font-weight: 400;
 }
 
 .sys-row {
@@ -811,7 +811,7 @@
 }
 
 .sys-row b {
-    color: #2e867a; font-size: 8px;
+    color: #226b61; font-size: 8px;
 }
 
 .service-decision {

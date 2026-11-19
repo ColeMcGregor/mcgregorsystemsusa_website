@@ -153,7 +153,7 @@
 }
 
 /* Mobile navigation */
-@media (max-width: 720px) {
+@media (max-width: 900px) {
     .topline .shell {
         justify-content: center;
     }

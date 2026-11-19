@@ -41,7 +41,7 @@ export function initializeMobileNavigation(navigation) {
     });
 
     // Ensure the mobile state does not persist when switching to desktop layout.
-    const desktopLayout = window.matchMedia("(min-width: 721px)");
+    const desktopLayout = window.matchMedia("(min-width: 901px)");
     desktopLayout.addEventListener("change", (event) => {
         if (event.matches) setOpen(false);
     });
