@@ -1,0 +1,6 @@
+# McGregor Systems LLC — crawler access
+# Public site content is available to compliant crawlers.
+User-agent: *
+Allow: /
+
+Sitemap: https://mcgregorsystemsusa.com/sitemap.xml
