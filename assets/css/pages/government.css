@@ -1,8 +1,8 @@
 
 /* Government and subcontracting page.
-   Page classes describe presentation roles, not individual clients or contracts. */
+   Shared colors, typography, and buttons are defined in site.css. */
 
-/* Introduction and certification panel */
+/* Introduction and certification */
 .government-intro {
     padding: 86px 0 88px;
     background: var(--paper);
@@ -45,6 +45,7 @@
     margin-top: 29px;
 }
 
+/* Business certification panel */
 .government-certification {
     min-width: 0;
     padding: clamp(28px, 3.5vw, 44px);
@@ -57,15 +58,16 @@
     color: var(--lime);
 }
 
+
 .government-certification-logo {
     display: block;
-    width: 120px;
+    width: 100%;
+    max-width: 320px;
     height: auto;
-    max-height: 135px;
+    margin: 28px auto 30px;
     object-fit: contain;
-    object-position: left center;
-    margin: 26px 0 20px;
 }
+
 
 .government-certification h2 {
     margin: 0 0 15px;
@@ -188,15 +190,15 @@
     line-height: 1.5;
 }
 
-/* Experience and business information */
+/* Engineering experience and qualifications */
 .government-background {
     background: var(--paper);
 }
 
 .government-background-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
-    align-items: start;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
     gap: clamp(34px, 6vw, 88px);
 }
 
@@ -216,29 +218,92 @@
     line-height: 1.85;
 }
 
-.government-background-note {
-    padding: clamp(25px, 3vw, 36px);
+/* Business qualifications card */
+.government-qualifications {
+    min-width: 0;
+    padding: clamp(26px, 3.5vw, 40px);
     background: var(--cream);
     border: 1px solid var(--line);
-    border-left: 4px solid var(--accent);
 }
 
-.government-background-note h3 {
-    margin: 0 0 15px;
-    font-size: 22px;
-    line-height: 1.25;
-    letter-spacing: -.03em;
+.government-qualifications h3 {
+    margin: 12px 0 28px;
+    color: var(--ink);
+    font-size: clamp(24px, 2.5vw, 32px);
+    line-height: 1.2;
+    letter-spacing: -.035em;
 }
 
-.government-background-note p {
-    margin: 0 0 15px;
+.government-qualification-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 22px;
+    row-gap: 25px;
+    margin: 0;
+}
+
+.government-qualification-item {
+    min-width: 0;
+}
+
+.government-qualification-item dt {
+    margin: 0 0 7px;
     color: var(--muted);
-    font-size: 13px;
-    line-height: 1.8;
+    font-size: 11px;
+    line-height: 1.5;
 }
 
-.government-background-note p:last-of-type {
-    margin-bottom: 0;
+.government-qualification-item dd {
+    margin: 0;
+    color: var(--ink);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.55;
+    overflow-wrap: break-word;
+}
+
+/* NAICS classification */
+.government-naics {
+    margin-top: 29px;
+    padding-top: 25px;
+    border-top: 1px solid var(--line);
+}
+
+.government-naics-entry {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 17px;
+}
+
+.government-naics-code {
+    flex: 0 0 auto;
+    display: inline-block;
+    padding: 10px 13px;
+    background: var(--surface-tinted);
+    border: 1px solid var(--line);
+    color: var(--ink);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: .025em;
+    font-variant-numeric: tabular-nums;
+}
+
+.government-naics-description {
+    min-width: 0;
+    color: var(--ink);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.government-qualification-footer {
+    margin: 27px 0 0;
+    padding-top: 21px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.75;
 }
 
 /* Closing contact action */
@@ -279,7 +344,7 @@
     flex: 0 0 auto;
 }
 
-/* Responsive layout */
+/* Tablet */
 @media (max-width: 980px) {
     .government-intro-grid {
         gap: 30px;
@@ -291,6 +356,7 @@
     }
 }
 
+/* Mobile */
 @media (max-width: 720px) {
     .government-intro {
         padding: 65px 0;
@@ -303,6 +369,10 @@
         grid-template-columns: 1fr;
     }
 
+    .government-certification-logo {
+        width: 200px;
+    }
+
     .government-contact-grid {
         flex-direction: column;
         align-items: flex-start;
@@ -313,8 +383,37 @@
     }
 }
 
+/* Small mobile screens */
 @media (max-width: 430px) {
     .government-intro-actions .btn {
         width: 100%;
+    }
+
+    .government-certification,
+    .government-engagement-panel,
+    .government-qualifications {
+        padding: 26px 23px;
+    }
+
+    .government-qualification-grid {
+        gap: 20px 14px;
+    }
+
+    .government-qualification-item dd {
+        font-size: 12px;
+    }
+
+    .government-naics-entry {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .government-naics-code {
+        padding: 9px 10px;
+        font-size: 12px;
+    }
+
+    .government-naics-description {
+        font-size: 12px;
     }
 }
