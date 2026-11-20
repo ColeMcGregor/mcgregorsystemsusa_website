@@ -50,7 +50,7 @@ export function renderSiteHeader(siteRoot) {
             <div class="shell">
                 <a class="brand" href="${resolve("index.html")}">
                     <span class="brand-mark">
-                        <img src="${companyLogo}" width="32" height="32" alt="">
+                        <img src="${companyLogo}" alt="">
                     </span>
                     <div>
                         <div class="brand-name">McGregor Systems</div>

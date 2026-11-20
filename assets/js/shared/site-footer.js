@@ -42,7 +42,7 @@ export function renderSiteFooter(siteRoot) {
                     <div class="footer-column footer-column--brand">
                         <div class="brand">
                             <span class="brand-mark">
-                                <img src="${companyLogo}" width="32" height="32" alt="" loading="lazy">
+                                <img src="${companyLogo}" alt="" loading="lazy">
                             </span>
                             <div>
                                 <div class="brand-name">McGregor Systems</div>

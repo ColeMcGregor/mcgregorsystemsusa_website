@@ -46,7 +46,7 @@
                     </p>
 
                     <div class="hero-actions">
-                        <a class="btn btn-dark" href="#contact">
+                        <a class="btn btn-dark" href="contact.html">
                             Discuss a project
                             <span aria-hidden="true">↗</span>
                         </a>
@@ -308,7 +308,7 @@
                         Project planner setup is in progress.
                         For now, see
                         <a href="services.html">services and starting prices</a>,
-                        or <a href="#contact">send an inquiry</a>.
+                        or <a href="contact.html">send an inquiry</a>.
                     </p>
                 </div>
             </div>
@@ -441,6 +441,7 @@
                                 </div>
 
                                 <div class="fake-cal-grid">
+                                    <span></span>
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -594,7 +595,7 @@
                         <li>Commercial and subcontracting engagements</li>
                     </ul>
 
-                    <a class="btn btn-dark" href="#contact">
+                    <a class="btn btn-dark" href="contact.html">
                         Discuss a contracting need
                         <span aria-hidden="true">↗</span>
                     </a>
@@ -646,14 +647,14 @@
                         <div>Veteran-owned business</div>
                     </div>
 
-                    <a class="btn-link" href="#contact">
+                    <a class="btn-link" href="contact.html">
                         Start a conversation
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Project inquiry -->
+        <!-- Homepage contact call to action; the inquiry form lives on contact.html. -->
         <section
             class="contact"
             id="contact"
@@ -661,18 +662,15 @@
         >
             <div class="shell contact-grid">
                 <div>
-                    <div class="caps">
-                        07 / Start a conversation
-                    </div>
+                    <div class="caps">07 / Start a conversation</div>
 
                     <h2 id="contact-heading">
                         Have a problem worth <em>solving?</em>
                     </h2>
 
                     <p>
-                        Describe what you want to build, repair, or improve.
-                        You do not need a technical specification
-                        to get started.
+                        Have something you want to build, repair, or improve?
+                        Tell me a little about it and we can discuss the next steps.
                     </p>
 
                     <div class="contact-email">
@@ -681,142 +679,20 @@
                         </a>
                     </div>
 
-                    <p>
-                        Albany, NY · Remote collaboration available
-                    </p>
+                    <p>Albany, NY · Remote collaboration available</p>
                 </div>
 
-                <!-- Existing Formspree integration. Verify before launch. -->
-                <form
-                    class="contact-form"
-                    id="project-inquiry"
-                    action="https://formspree.io/f/xzdgwkre"
-                    method="POST"
-                >
-                    <h3>Tell us about your project.</h3>
+                <div class="contact-form">
+                    <h3>Let's talk about your project.</h3>
                     <p>
-                        Short first contact.
-                        We can work out the details together.
+                        Share a short description of the work you have in mind.
+                        I'll review it and follow up about next steps.
                     </p>
-
-                    <input
-                        type="hidden"
-                        name="_subject"
-                        value="New Project Inquiry - McGregor Systems LLC"
-                    >
-
-                    <input
-                        type="text"
-                        name="_gotcha"
-                        tabindex="-1"
-                        autocomplete="off"
-                        hidden
-                        aria-hidden="true"
-                    >
-
-                    <div class="form-row">
-                        <div class="field">
-                            <label for="first-name">First name</label>
-                            <input
-                                id="first-name"
-                                name="first_name"
-                                autocomplete="given-name"
-                                required
-                            >
-                        </div>
-
-                        <div class="field">
-                            <label for="last-name">Last name</label>
-                            <input
-                                id="last-name"
-                                name="last_name"
-                                autocomplete="family-name"
-                                required
-                            >
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="field">
-                            <label for="email">Email</label>
-                            <input
-                                id="email"
-                                name="email"
-                                type="email"
-                                autocomplete="email"
-                                required
-                            >
-                        </div>
-
-                        <div class="field">
-                            <label for="phone">Phone (optional)</label>
-                            <input
-                                id="phone"
-                                name="phone"
-                                type="tel"
-                                autocomplete="tel"
-                            >
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label for="service-interest">
-                            What can we help with?
-                        </label>
-
-                        <select
-                            id="service-interest"
-                            name="service"
-                        >
-                            <option value="">
-                                Choose a service (optional)
-                            </option>
-                            <option value="Business website">
-                                Business website
-                            </option>
-                            <option value="Custom software">
-                                Custom software
-                            </option>
-                            <option value="Integration or automation">
-                                Integration or automation
-                            </option>
-                            <option value="Maintenance or repair">
-                                Maintenance or repair
-                            </option>
-                            <option value="Government or subcontracting">
-                                Government or subcontracting
-                            </option>
-                            <option value="Other">
-                                Something else
-                            </option>
-                        </select>
-                    </div>
-
-                    <div class="field">
-                        <label for="project-details">
-                            A few details
-                        </label>
-
-                        <textarea
-                            id="project-details"
-                            name="project_details"
-                            rows="5"
-                            placeholder="What are you trying to build, fix, or improve?"
-                            required
-                        ></textarea>
-                    </div>
-
-                    <div class="form-foot">
-                        <button class="btn btn-dark" type="submit">
-                            Send inquiry
-                            <span aria-hidden="true">↗</span>
-                        </button>
-
-                        <small>
-                            Submitting sends your details through Formspree.
-                        </small>
-                    </div>
-                </form>
+                    <a class="btn btn-dark" href="contact.html">
+                        Send a project inquiry
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
