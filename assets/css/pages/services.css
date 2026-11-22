@@ -1,49 +1,317 @@
 
-/* Services page layout and pricing cards.
-   Classes describe section roles and display variants.
-   IDs remain HTML link targets.
-   Shared typography, colors, buttons, and base cards are in site.css. */
+/* Services page layout.
+   Shared colors, typography, buttons, and base service cards
+   are defined in site.css. */
 
-/* Introduction */
+/* Introduction — asymmetric editorial */
 .services-page .services-intro {
-    padding: 88px 0 78px;
+    padding: 78px 0 82px;
     background: var(--paper);
     border-bottom: 1px solid var(--line);
 }
 
 .services-intro h1 {
-    max-width: 780px;
-    margin: 12px 0 0;
-    font-size: clamp(42px, 5.8vw, 72px);
+    max-width: 1080px;
+    margin: 22px 0 0;
+    color: var(--ink);
+    font-size: clamp(44px, 6.2vw, 82px);
     font-weight: 720;
-    letter-spacing: -0.058em;
-    line-height: 1.06;
+    letter-spacing: -.058em;
+    line-height: 1.07;
 }
 
-.services-intro .section-head {
+.services-intro h1 em {
+    display: block;
+    color: var(--accent);
+    font-family: var(--serif);
+    font-weight: 400;
+}
+
+.services-intro-bottom {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr);
     align-items: end;
-    margin-bottom: 24px;
+    gap: clamp(35px, 6vw, 90px);
+    margin-top: 34px;
 }
 
-.services-intro .shell > p {
-    max-width: 750px;
-    margin: 0 0 29px;
+.services-intro-copy {
+    min-width: 0;
+}
+
+.services-intro-copy p {
+    max-width: 650px;
+    margin: 0;
     color: var(--muted);
     font-size: 16px;
+    line-height: 1.85;
+}
+
+.services-intro-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 27px;
+}
+
+.services-intro-statement {
+    min-width: 0;
+    padding: clamp(23px, 3vw, 33px);
+    background: var(--surface-tinted);
+    border-left: 3px solid var(--accent);
+}
+
+.services-intro-statement h2 {
+    max-width: 440px;
+    margin: 0 0 13px;
+    color: var(--ink);
+    font-size: clamp(19px, 2vw, 25px);
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: -.025em;
+}
+
+.services-intro-statement p {
+    max-width: 450px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
     line-height: 1.8;
 }
 
-/* Package sections and reusable plan cards */
-.services-page .service-plans--cream {
+/* 01 / Service capabilities */
+.services-capabilities {
     background: var(--cream);
 }
 
-.services-page .service-plans--tinted {
-    background: #edf3ee;
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
+.services-capability-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 17px;
 }
 
+.services-capability-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: clamp(24px, 2.8vw, 33px);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--accent);
+    box-shadow: 0 12px 32px rgba(20, 39, 49, .035);
+}
+
+.services-capability-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.services-capability-number {
+    flex: 0 0 auto;
+    color: var(--accent);
+    font-family: var(--serif);
+    font-size: 29px;
+    line-height: 1;
+}
+
+.services-capability-type {
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    line-height: 1.4;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.services-capability-card h3 {
+    margin: 0 0 15px;
+    color: var(--ink);
+    font-size: clamp(23px, 2.2vw, 29px);
+    line-height: 1.2;
+    letter-spacing: -.035em;
+}
+
+.services-capability-description {
+    margin: 0 0 23px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+.services-capability-details {
+    margin-top: auto;
+    padding-top: 21px;
+    border-top: 1px solid var(--line);
+}
+
+.services-capability-details h4 {
+    margin: 0 0 14px;
+    color: var(--ink);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.services-capability-details ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.services-capability-details li {
+    position: relative;
+    padding: 0 0 0 15px;
+    margin-bottom: 11px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+.services-capability-details li::before {
+    content: "";
+    position: absolute;
+    top: .69em;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    background: var(--accent);
+}
+
+.services-capability-details li:last-child {
+    margin-bottom: 0;
+}
+
+.services-capability-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    gap: 12px;
+    margin-top: 25px;
+    padding-top: 17px;
+    border-top: 1px solid var(--line);
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 750;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.services-capability-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.services-capability-link span {
+    flex: 0 0 auto;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.services-capabilities-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 28px;
+    padding: 23px 0 0;
+    border-top: 1px solid var(--line);
+}
+
+.services-capabilities-footer p {
+    max-width: 650px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+.services-capabilities-footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    flex: 0 0 auto;
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 750;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.services-capabilities-footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* 02 / Service details and pricing */
+.services-page .services-details {
+    background: var(--paper);
+}
+
+.services-details > .shell > .section-head {
+    margin-bottom: 44px;
+}
+
+.services-detail-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.services-detail-entry {
+    min-width: 0;
+    scroll-margin-top: 105px;
+}
+
+.services-detail-entry + .services-detail-entry {
+    margin-top: 59px;
+    padding-top: 50px;
+    border-top: 1px solid var(--line);
+}
+
+.services-detail-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    margin-bottom: 28px;
+}
+
+.services-detail-number {
+    flex: 0 0 auto;
+    color: var(--accent);
+    font-family: var(--serif);
+    font-size: 37px;
+    line-height: 1;
+}
+
+.services-detail-heading > div {
+    min-width: 0;
+}
+
+.services-detail-heading h3 {
+    max-width: 790px;
+    margin: 12px 0 12px;
+    color: var(--ink);
+    font-size: clamp(28px, 3.4vw, 43px);
+    line-height: 1.16;
+    letter-spacing: -.04em;
+}
+
+.services-detail-heading p {
+    max-width: 800px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+/* Package cards for software and websites */
 .service-plan-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -55,7 +323,7 @@
     min-width: 0;
     height: 100%;
     border-top: 3px solid var(--accent);
-    box-shadow: 0 12px 32px rgba(20, 39, 49, 0.035);
+    box-shadow: 0 12px 32px rgba(20, 39, 49, .035);
 }
 
 .service-plan-card .core-copy {
@@ -67,16 +335,20 @@
 }
 
 .service-plan-card .core-brow {
+    display: flex;
     width: 100%;
     flex-wrap: wrap;
     gap: 5px 12px;
 }
 
-.service-plan-card h3 {
+.service-plan-card h4 {
     min-height: 70px;
     margin: 23px 0 15px;
+    color: var(--ink);
     font-size: clamp(24px, 2.35vw, 31px);
+    font-weight: 700;
     line-height: 1.15;
+    letter-spacing: -.035em;
 }
 
 .service-plan-card .core-startprice {
@@ -88,112 +360,439 @@
 .service-plan-card p {
     min-height: 0;
     margin: 0;
+    color: var(--muted);
     font-size: 14px;
     line-height: 1.75;
 }
 
-/* Maintenance and support section */
-.services-page .service-support {
-    background: var(--paper);
-}
-
-.service-support-card {
-    max-width: 970px;
+/* Custom quote panels for services 03–06 */
+.services-quote-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+    min-width: 0;
+    background: var(--cream);
+    border: 1px solid var(--line);
     border-left: 4px solid var(--accent);
+    box-shadow: 0 12px 32px rgba(20, 39, 49, .035);
 }
 
-.service-support-card .core-copy {
-    padding: clamp(28px, 4vw, 47px);
+.services-quote-main {
+    min-width: 0;
+    padding: clamp(27px, 3.7vw, 46px);
 }
 
-.service-support-card h3 {
-    margin-top: 0;
+.services-quote-main h4 {
+    max-width: 620px;
+    margin: 13px 0 17px;
+    color: var(--ink);
+    font-size: clamp(25px, 3vw, 37px);
+    line-height: 1.15;
+    letter-spacing: -.04em;
 }
 
-.service-support-card p {
-    max-width: 760px;
-    min-height: 0;
-    margin: 0;
+.services-quote-main > p {
+    max-width: 620px;
+    margin: 0 0 23px;
+    color: var(--muted);
     font-size: 14px;
+    line-height: 1.85;
 }
 
-.service-support-card ul {
-    columns: 2;
-    column-gap: 34px;
-    max-width: 770px;
-    margin: 20px 0 0;
+.services-quote-main .btn {
+    margin-top: 3px;
+}
+
+.services-quote-rate {
+    margin: -3px 0 17px;
+    color: var(--accent);
+    font-size: 18px;
+    font-weight: 650;
+    line-height: 1.5;
+}
+
+.services-quote-secondary-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    margin-top: 19px;
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 750;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.services-quote-secondary-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.services-quote-factors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    padding: clamp(27px, 3.7vw, 46px);
+    background: var(--surface-tinted);
+    border-left: 1px solid var(--line);
+}
+
+.services-quote-factors h5 {
+    margin: 0 0 19px;
+    color: var(--ink);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .075em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.services-quote-factors ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.services-quote-factors li {
+    position: relative;
+    padding: 12px 0 12px 18px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
     font-size: 13px;
+    line-height: 1.6;
 }
 
-.service-support-card li {
-    break-inside: avoid;
+.services-quote-factors li::before {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background: var(--accent);
 }
 
-/* Pricing notes and follow-up action */
+.services-detail-disclaimer {
+    max-width: 950px;
+    margin: 19px 0 0;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* 03 / General pricing notes */
 .services-page .services-pricing-notes {
     background: var(--cream);
     border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
 }
 
-.services-pricing-notes .shell > p {
-    max-width: 800px;
+.services-pricing-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(300px, .9fr);
+    align-items: center;
+    gap: clamp(40px, 6vw, 90px);
+}
+
+.services-pricing-notes h2 {
+    max-width: 650px;
+    margin: 13px 0 22px;
+    color: var(--ink);
+    font-size: clamp(32px, 3.8vw, 49px);
+    line-height: 1.13;
+    letter-spacing: -.045em;
+}
+
+.services-pricing-notes .services-pricing-grid > div > p {
+    max-width: 680px;
+    margin: 0 0 15px;
     color: var(--muted);
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.85;
 }
 
 .services-pricing-notes .btn {
-    margin-top: 21px;
+    margin-top: 17px;
 }
 
+.services-pricing-aside {
+    min-width: 0;
+    padding: clamp(27px, 3.5vw, 43px);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    box-shadow: 0 14px 35px rgba(20, 39, 49, .04);
+}
+
+.services-pricing-aside h3 {
+    margin: 14px 0 13px;
+    color: var(--ink);
+    font-size: clamp(24px, 2.7vw, 33px);
+    line-height: 1.2;
+    letter-spacing: -.035em;
+}
+
+.services-pricing-aside p {
+    margin: 0 0 18px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.services-pricing-aside ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.services-pricing-aside li {
+    position: relative;
+    padding: 11px 0 11px 18px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.services-pricing-aside li::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background: var(--accent);
+}
+
+.services-pricing-aside a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 23px;
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 750;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.services-pricing-aside a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* Closing contact invitation */
 .services-page .services-cta {
     padding: 75px 0;
     background: var(--dark);
-    color: var(--paper);
+    color: var(--text-on-dark);
+}
+
+.services-cta-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
 }
 
 .services-cta .caps {
     color: var(--lime);
 }
 
-.services-cta .section-head h2 {
-    color: var(--paper);
+.services-cta h2 {
+    margin: 12px 0;
+    color: var(--text-on-dark);
+    font-size: clamp(29px, 3.8vw, 47px);
+    line-height: 1.13;
+    letter-spacing: -.045em;
 }
 
-.services-cta .section-head p {
-    color: #bed0cc;
+.services-cta p {
+    max-width: 630px;
+    margin: 0;
+    color: var(--text-on-dark-muted);
+    font-size: 14px;
+    line-height: 1.7;
 }
 
-.services-cta .btn-dark {
-    background: var(--paper);
-    color: var(--dark);
+.services-cta .btn {
+    flex: 0 0 auto;
 }
 
-.services-cta .btn-dark:hover {
-    background: var(--accentLight);
+/* Anchor positioning */
+.services-page #capabilities,
+.services-page #service-details,
+.services-page #pricing-notes {
+    scroll-margin-top: 95px;
 }
 
-/* Responsive behavior */
-@media (max-width: 1000px) {
+/* Keyboard focus */
+.services-page a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+/* Tablet and smaller desktop */
+@media (max-width: 1050px) {
+    .services-capability-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .service-plan-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-}
 
-@media (max-width: 720px) {
-    .services-page .services-intro {
-        padding: 65px 0;
+    .services-intro-bottom {
+        gap: 35px;
     }
 
+    .services-pricing-grid {
+        gap: 38px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+    .services-intro-bottom,
+    .services-pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-intro-bottom {
+        align-items: start;
+    }
+
+    .services-intro-statement {
+        max-width: 650px;
+    }
+
+    .services-pricing-aside {
+        max-width: none;
+    }
+
+    .services-quote-card {
+        grid-template-columns: 1fr;
+    }
+
+    .services-quote-factors {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+    }
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+    .services-page .services-intro {
+        padding: 62px 0 68px;
+    }
+
+    .services-intro h1 {
+        font-size: clamp(40px, 9vw, 58px);
+    }
+
+    .services-intro-bottom {
+        margin-top: 26px;
+        gap: 26px;
+    }
+
+    .services-capability-grid,
     .service-plan-grid {
         grid-template-columns: 1fr;
     }
 
-    .service-plan-card h3 {
+    .services-capabilities-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .services-details > .shell > .section-head {
+        margin-bottom: 32px;
+    }
+
+    .services-detail-entry + .services-detail-entry {
+        margin-top: 42px;
+        padding-top: 36px;
+    }
+
+    .services-detail-heading {
+        gap: 16px;
+        margin-bottom: 22px;
+    }
+
+    .services-detail-number {
+        font-size: 31px;
+    }
+
+    .services-detail-heading h3 {
+        font-size: clamp(26px, 5.5vw, 36px);
+    }
+
+    .service-plan-card h4 {
         min-height: 0;
     }
 
-    .service-support-card ul {
-        columns: 1;
+    .services-cta-grid {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .services-page .services-cta {
+        padding: 65px 0;
+    }
+}
+
+/* Small screens */
+@media (max-width: 430px) {
+    .services-intro h1 {
+        font-size: clamp(37px, 9vw, 44px);
+        letter-spacing: -.045em;
+    }
+
+    .services-intro-actions {
+        flex-direction: column;
+    }
+
+    .services-intro-actions .btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .services-intro-statement {
+        padding: 22px;
+    }
+
+    .services-capability-card {
+        padding: 25px 22px;
+    }
+
+    .services-capability-card h3 {
+        font-size: 25px;
+    }
+
+    .service-plan-card .core-copy {
+        padding: 28px 23px;
+    }
+
+    .services-quote-main,
+    .services-quote-factors {
+        padding: 25px 22px;
+    }
+
+    .services-quote-main h4 {
+        font-size: 28px;
+    }
+
+    .services-pricing-aside {
+        padding: 27px 23px;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .services-page *,
+    .services-page *::before,
+    .services-page *::after {
+        scroll-behavior: auto;
     }
 }
