@@ -17,7 +17,11 @@
 <body>
     <!-- Shared navigation is provided by assets/js/shared/site-header.js. -->
     <div id="site-header">
-        <header class="nav"><div class="shell"><a class="brand" href="index.html">McGregor Systems LLC</a></div></header>
+        <header class="nav">
+            <div class="shell">
+                <a class="brand" href="index.html">McGregor Systems LLC</a>
+            </div>
+        </header>
     </div>
 
     <main id="main-content" class="contact-page">
@@ -25,34 +29,43 @@
         <section class="contact-page-hero" aria-labelledby="contact-heading">
             <div class="shell">
                 <div class="caps subtle">Contact / Project inquiries</div>
+
                 <div class="contact-page-hero-grid">
-                    <h1 id="contact-heading">Have something in mind? <em>Let's talk.</em></h1>
+                    <h1 id="contact-heading">
+                        Have something in mind? <em>Let's talk.</em>
+                    </h1>
+
                     <p>
                         Every project starts with understanding what the problem is.
-                        Whether you're developing a new application, improving an existing
-                        business workflow, or looking for engineering support, I'm happy to discuss
-                        the details. 
+                        Whether you're developing a new application, improving an
+                        existing business workflow, or looking for engineering support,
+                        I'm happy to discuss the details.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Contact methods and project inquiry -->
-        <section class="contact-page-section" aria-label="Contact information and project inquiry">
+        <!-- 01 / Contact methods and project inquiry -->
+        <section class="contact-page-section"
+                 aria-label="Contact information and project inquiry">
             <div class="shell contact-page-grid">
                 <div class="contact-page-details">
                     <div class="caps subtle">01 / Start here</div>
-                        <h2>Getting started is simple.</h2>
-                        <p>
-                            Use the form to describe what you need, or reach out by email
-                            if that's easier. I'll review what you send and follow up
-                            to discuss the project, ask questions, and determine the
-                            next steps.
-                        </p>
+
+                    <h2>Getting started is simple.</h2>
+
+                    <p>
+                        Use the form to describe what you need, or reach out by email
+                        if that's easier. I'll review what you send and follow up
+                        to discuss the project, ask questions, and determine
+                        the next steps.
+                    </p>
 
                     <div class="contact-method">
                         <h3>Email</h3>
-                        <a href="mailto:mcgregorsystemsllc@gmail.com">mcgregorsystemsllc@gmail.com</a>
+                        <a href="mailto:mcgregorsystemsllc@gmail.com">
+                            mcgregorsystemsllc@gmail.com
+                        </a>
                     </div>
 
                     <div class="contact-method">
@@ -67,6 +80,15 @@
                             Service-Disabled Veteran-Owned Business. Agencies and
                             prime contractors are welcome to send project requirements
                             or inquiries about subcontracting and teaming opportunities.
+                        </p>
+                    </div>
+
+                    <div class="contact-page-note">
+                        <strong>You don't need a technical specification.</strong>
+                        <p>
+                            A general description of the problem, idea, or work you
+                            need help with is enough to start. We can determine
+                            which additional details matter through discussion.
                         </p>
                     </div>
                 </div>
@@ -84,33 +106,81 @@
                         <p>A short description is enough to start the conversation.</p>
                     </div>
 
-                    <input type="hidden" name="_subject" value="New Project Inquiry - McGregor Systems LLC">
-                    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" hidden aria-hidden="true">
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="New Project Inquiry - McGregor Systems LLC"
+                    >
+
+                    <input
+                        type="text"
+                        name="_gotcha"
+                        tabindex="-1"
+                        autocomplete="off"
+                        hidden
+                        aria-hidden="true"
+                    >
 
                     <div class="form-row">
                         <div class="field">
-                            <label for="contact-first-name">First name <span aria-hidden="true">*</span></label>
-                            <input id="contact-first-name" name="first_name" type="text" autocomplete="given-name" required>
+                            <label for="contact-first-name">
+                                First name <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                id="contact-first-name"
+                                name="first_name"
+                                type="text"
+                                autocomplete="given-name"
+                                required
+                            >
                         </div>
+
                         <div class="field">
-                            <label for="contact-last-name">Last name <span aria-hidden="true">*</span></label>
-                            <input id="contact-last-name" name="last_name" type="text" autocomplete="family-name" required>
+                            <label for="contact-last-name">
+                                Last name <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                id="contact-last-name"
+                                name="last_name"
+                                type="text"
+                                autocomplete="family-name"
+                                required
+                            >
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="field">
-                            <label for="contact-email">Email <span aria-hidden="true">*</span></label>
-                            <input id="contact-email" name="email" type="email" autocomplete="email" required>
+                            <label for="contact-email">
+                                Email <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                id="contact-email"
+                                name="email"
+                                type="email"
+                                autocomplete="email"
+                                required
+                            >
                         </div>
+
                         <div class="field">
                             <label for="contact-phone">Phone (optional)</label>
-                            <input id="contact-phone" name="phone" type="tel" autocomplete="tel">
+
+                            <input
+                                id="contact-phone"
+                                name="phone"
+                                type="tel"
+                                autocomplete="tel"
+                            >
                         </div>
                     </div>
 
                     <div class="field">
                         <label for="contact-service">Type of work</label>
+
                         <select id="contact-service" name="service">
                             <option value="">Not sure yet</option>
                             <option value="Business website">Business website</option>
@@ -123,13 +193,38 @@
                         </select>
                     </div>
 
+                    <!-- Security guidance placed beside the field it concerns. -->
+                    <div class="contact-sensitive-notice" id="contact-sensitive-notice">
+                        <div class="contact-sensitive-notice-heading">
+                            <span class="contact-sensitive-notice-icon" aria-hidden="true">!</span>
+
+                            <strong>Please don't include sensitive information</strong>
+                        </div>
+
+                        <p>
+                            Describe your project in general terms. Do not submit
+                            passwords, access credentials, private customer records,
+                            financial details, or confidential business information
+                            through this form.
+                        </p>
+
+                        <p>
+                            If sensitive information is needed later, we'll arrange
+                            an appropriate way to share it.
+                        </p>
+                    </div>
+
                     <div class="field">
-                        <label for="contact-project-details">Project details <span aria-hidden="true">*</span></label>
+                        <label for="contact-project-details">
+                            Project details <span aria-hidden="true">*</span>
+                        </label>
+
                         <textarea
                             id="contact-project-details"
                             name="project_details"
                             rows="8"
                             placeholder="What are you trying to build, change, or improve?"
+                            aria-describedby="contact-sensitive-notice"
                             required
                         ></textarea>
                     </div>
@@ -138,6 +233,7 @@
                         <button class="btn btn-dark" type="submit">
                             Send inquiry <span aria-hidden="true">↗</span>
                         </button>
+
                         <small>Your message is submitted through Formspree.</small>
                     </div>
 
@@ -152,18 +248,140 @@
             </div>
         </section>
 
-        <!-- Optional way to explore project scope before contacting us. -->
-        <section class="contact-page-next" aria-labelledby="contact-next-heading">
+        <!-- 03 / What happens after an inquiry -->
+        <section class="contact-page-process"
+                 aria-labelledby="contact-process-heading">
+            <div class="shell">
+                <div class="section-head">
+                    <div>
+                        <div class="caps subtle">03 / After your inquiry</div>
+
+                        <h2 id="contact-process-heading">
+                            What happens after you reach out?
+                        </h2>
+                    </div>
+
+                    <p>
+                        An inquiry begins a conversation, not a commitment
+                        to a project.
+                    </p>
+                </div>
+
+                <div class="contact-process-grid">
+                    <article class="contact-process-step">
+                        <span class="contact-process-number" aria-hidden="true">
+                            01
+                        </span>
+
+                        <div>
+                            <h3>I review your inquiry.</h3>
+
+                            <p>
+                                I'll look over what you've described to get an initial
+                                understanding of the problem, the kind of work involved,
+                                and whether it's something McGregor Systems LLC
+                                may be able to help with.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="contact-process-step">
+                        <span class="contact-process-number" aria-hidden="true">
+                            02
+                        </span>
+
+                        <div>
+                            <h3>We discuss the details.</h3>
+
+                            <p>
+                                If your project appears to be a potential fit,
+                                we'll discuss your goals, existing systems, constraints,
+                                and any important questions. We can communicate by
+                                email, phone, video call, or meet in person when
+                                practical, depending on your preference and
+                                the needs of the project.
+                            </p>
+
+                            <p>
+                                You don't need to prepare a technical
+                                specification beforehand.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="contact-process-step">
+                        <span class="contact-process-number" aria-hidden="true">
+                            03
+                        </span>
+
+                        <div>
+                            <h3>We determine an appropriate next step.</h3>
+
+                            <p>
+                                Depending on the project, that might mean gathering
+                                additional information, reviewing an existing system,
+                                preparing a proposal, or defining a Statement of Work.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="contact-process-step">
+                        <span class="contact-process-number" aria-hidden="true">
+                            04
+                        </span>
+
+                        <div>
+                            <h3>We agree on the work before development begins.</h3>
+
+                            <p>
+                                If we decide to proceed, we'll establish the applicable
+                                scope, responsibilities, deliverables, pricing, and
+                                contractual terms before beginning the agreed
+                                development work.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="contact-process-expectations">
+                    <div>
+                        <div class="caps subtle">Working together</div>
+
+                        <h3>
+                            Your involvement depends on the project.
+                        </h3>
+                    </div>
+
+                    <p>
+                        Some work requires frequent feedback and decisions.
+                        Other engagements involve relatively little client
+                        involvement once the requirements are established.
+                        We'll discuss communication, review expectations,
+                        and responsibilities before work begins.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 04 / Secondary action -->
+        <section class="contact-page-next"
+                 aria-labelledby="contact-next-heading">
             <div class="shell">
                 <div class="caps">Still planning?</div>
-                <h2 id="contact-next-heading">Not sure about the scope yet?</h2>
+
+                <h2 id="contact-next-heading">
+                    Not sure about the scope yet?
+                </h2>
+
                 <p>
                     The project planner outlines common types of work and their
                     starting prices. You can use it to get an idea of the scope
                     before reaching out.
                 </p>
+
                 <a class="btn btn-white" href="index.html#scope">
-                    Explore the project planner <span aria-hidden="true">↗</span>
+                    Explore the project planner
+                    <span aria-hidden="true">↗</span>
                 </a>
             </div>
         </section>
@@ -171,7 +389,11 @@
 
     <!-- Shared footer is provided by assets/js/shared/site-footer.js. -->
     <div id="site-footer">
-        <footer class="footer"><div class="shell"><p>McGregor Systems LLC · Albany, New York</p></div></footer>
+        <footer class="footer">
+            <div class="shell">
+                <p>McGregor Systems LLC · Albany, New York</p>
+            </div>
+        </footer>
     </div>
 
     <script type="module" src="assets/js/main.js"></script>

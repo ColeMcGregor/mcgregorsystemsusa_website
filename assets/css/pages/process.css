@@ -1,6 +1,5 @@
 
 /* Process page presentation.
-   Class names describe component roles, not the text or project behind them.
    Shared typography, buttons, and layout rules come from site.css. */
 
 /* Introduction */
@@ -182,6 +181,18 @@
     letter-spacing: -.035em;
 }
 
+.process-scope-intro {
+    margin: 0 0 22px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.process-scope-intro em {
+    color: var(--ink);
+    font-weight: 500;
+}
+
 .process-scope-list {
     margin: 0;
     padding: 0;
@@ -196,37 +207,493 @@
     line-height: 1.5;
 }
 
-/* Common engagement types */
+/* Clickable scoping checklist */
+.process-scope-interactive-list li {
+    padding: 0;
+}
+
+.process-scope-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    min-height: 40px;
+    padding: 7px 2px;
+    border: 0;
+    background: transparent;
+    color: var(--ink);
+    font: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: left;
+    cursor: pointer;
+    transition: color .18s ease;
+}
+
+.process-scope-trigger > span:first-child {
+    min-width: 0;
+}
+
+.process-scope-trigger-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 19px;
+    width: 19px;
+    height: 19px;
+    box-sizing: border-box;
+    padding: 0 2px 2px 0;
+    border: 1px solid var(--line);
+    color: var(--accent);
+    font-size: 17px;
+    line-height: 1;
+    transition:
+        background-color .18s ease,
+        border-color .18s ease,
+        color .18s ease,
+        transform .18s ease;
+}
+
+.process-scope-trigger:hover {
+    color: var(--accent);
+}
+
+.process-scope-trigger:hover .process-scope-trigger-icon {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+    transform: translate(1px, -1px);
+}
+
+.process-scope-trigger:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.process-scope-trigger:focus-visible .process-scope-trigger-icon {
+    border-color: var(--accent);
+}
+
+/* Different kinds of work — Section 03 */
 .process-work-types {
     background: var(--paper);
 }
 
 .process-work-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
 }
 
 .process-work-card {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
     min-width: 0;
+    min-height: 155px;
     padding: 28px;
     background: var(--cream);
     border: 1px solid var(--line);
     border-left: 3px solid var(--accent);
+    color: var(--ink);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition:
+        background-color .18s ease,
+        border-color .18s ease,
+        transform .18s ease;
 }
 
-.process-work-card h3 {
-    margin: 0 0 13px;
+.process-work-card:hover {
+    background: var(--surface-tinted);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.process-work-card:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.process-work-card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    color: var(--ink);
     font-size: 21px;
+    font-weight: 650;
     line-height: 1.25;
     letter-spacing: -.03em;
 }
 
-.process-work-card p {
-    margin: 0;
+.process-work-card-heading > span:last-child {
+    display: none;
+}
+
+.process-work-card-description {
     color: var(--muted);
     font-size: 13px;
     line-height: 1.8;
+}
+
+.process-work-note {
+    max-width: 790px;
+    margin: 25px 0 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* Documentation and deliverables — Section 04 */
+.process-deliverables {
+    background: var(--cream);
+    border-bottom: 1px solid var(--line);
+}
+
+.process-deliverables .section-head {
+    align-items: end;
+}
+
+.process-deliverables .section-head h2 {
+    margin-top: 13px;
+}
+
+.process-deliverables-note {
+    max-width: 860px;
+    margin: 0 0 42px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.process-deliverable-groups {
+    display: grid;
+    gap: 48px;
+}
+
+.process-deliverable-group {
+    min-width: 0;
+}
+
+.process-deliverable-group + .process-deliverable-group {
+    padding-top: 37px;
+    border-top: 1px solid var(--line);
+}
+
+.process-deliverable-group-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 19px;
+    margin-bottom: 21px;
+}
+
+.process-deliverable-group-number {
+    flex: 0 0 auto;
+    color: var(--accent);
+    font-family: var(--serif);
+    font-size: 32px;
+    line-height: 1;
+}
+
+.process-deliverable-group-heading h3 {
+    margin: 0 0 7px;
+    color: var(--ink);
+    font-size: clamp(22px, 2.5vw, 30px);
+    line-height: 1.2;
+    letter-spacing: -.035em;
+}
+
+.process-deliverable-group-heading p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.process-deliverable-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.process-deliverable-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 14px;
+    width: 100%;
+    min-width: 0;
+    min-height: 154px;
+    padding: 22px;
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--accent);
+    background: var(--paper);
+    color: var(--ink);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition:
+        border-color .18s ease,
+        box-shadow .18s ease,
+        transform .18s ease;
+}
+
+.process-deliverable-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 10px 25px rgba(20, 39, 49, .07);
+    transform: translateY(-2px);
+}
+
+.process-deliverable-card:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.process-deliverable-card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.process-deliverable-card-top > span:last-child {
+    display: none;
+}
+
+.process-deliverable-card-title {
+    color: var(--ink);
+    font-size: 17px;
+    font-weight: 650;
+    line-height: 1.3;
+    letter-spacing: -.025em;
+}
+
+.process-deliverable-card-description {
+    display: block;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+.process-deliverable-card-primary {
+    background: var(--dark);
+    border-color: var(--dark);
+    border-top-color: var(--lime);
+}
+
+.process-deliverable-card-primary .process-deliverable-card-title {
+    color: var(--text-on-dark);
+}
+
+.process-deliverable-card-primary .process-deliverable-card-description {
+    color: var(--text-on-dark-muted);
+}
+
+.process-deliverable-card-primary:hover {
+    border-color: var(--accent);
+    border-top-color: var(--lime);
+}
+
+.process-deliverables-closing {
+    max-width: 880px;
+    margin: 45px 0 0;
+    padding: 23px 0 0;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+/* Shared Process information dialog */
+.process-scope-dialog {
+    position: fixed;
+    box-sizing: border-box;
+    width: min(680px, calc(100% - 32px));
+    max-width: none;
+    max-height: min(85vh, 850px);
+    max-height: min(85dvh, 850px);
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    color: var(--ink);
+    box-shadow: 0 28px 90px rgba(20, 39, 49, .25);
+}
+
+.process-scope-dialog[open] {
+    display: flex;
+    flex-direction: column;
+}
+
+.process-scope-dialog::backdrop {
+    background: rgba(12, 27, 35, .7);
+}
+
+.process-scope-dialog-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 0 0 auto;
+    padding: 30px 34px 25px;
+    border-bottom: 1px solid var(--line);
+}
+
+.process-scope-dialog-header > div {
+    min-width: 0;
+}
+
+.process-scope-dialog-header h2 {
+    margin: 12px 0 0;
+    font-size: clamp(25px, 3vw, 35px);
+    line-height: 1.2;
+    letter-spacing: -.04em;
+}
+
+.process-scope-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--ink);
+    font: inherit;
+    font-size: 27px;
+    line-height: 1;
+    cursor: pointer;
+    transition:
+        background-color .18s ease,
+        color .18s ease,
+        border-color .18s ease;
+}
+
+.process-scope-close:hover {
+    background: var(--dark);
+    border-color: var(--dark);
+    color: var(--text-on-dark);
+}
+
+.process-scope-close:focus-visible,
+.process-scope-done:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.process-scope-dialog-content {
+    flex: 1 1 auto;
+    min-height: 0;
+    padding: 29px 34px 34px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+}
+
+.process-scope-dialog-content section + section {
+    margin-top: 28px;
+}
+
+.process-scope-dialog-content h3 {
+    margin: 0 0 10px;
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.35;
+    letter-spacing: -.015em;
+}
+
+.process-scope-dialog-content p {
+    margin: 0 0 12px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.process-scope-dialog-content p:last-child {
+    margin-bottom: 0;
+}
+
+.process-scope-dialog-content ul {
+    margin: 12px 0 0;
+    padding-left: 21px;
+}
+
+.process-scope-dialog-content li {
+    padding-left: 4px;
+    margin-bottom: 10px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.process-scope-dialog-content li:last-child {
+    margin-bottom: 0;
+}
+
+.process-scope-dialog-content li::marker {
+    color: var(--accent);
+}
+
+.process-scope-dialog-prompt {
+    padding: 20px 22px;
+    background: var(--surface-tinted);
+    border-left: 3px solid var(--accent);
+}
+
+.process-scope-dialog-prompt h3 {
+    margin-top: 0;
+}
+
+.process-scope-dialog-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+    gap: 12px;
+    padding: 18px 34px;
+    border-top: 1px solid var(--line);
+    background: var(--paper);
+}
+
+.process-scope-done {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 43px;
+    padding: 11px 19px;
+    border: 1px solid var(--dark);
+    background: var(--dark);
+    color: var(--text-on-dark);
+    font: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    cursor: pointer;
+    transition:
+        background-color .18s ease,
+        border-color .18s ease;
+}
+
+.process-scope-done:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
+.process-dialog-error {
+    margin: 8px 0;
+    padding: 8px 12px;
+    color: var(--ink);
+    background: var(--surface-tinted);
+    border-left: 3px solid var(--accent);
+    font-size: 12px;
+    line-height: 1.5;
 }
 
 /* Closing call to action */
@@ -278,6 +745,10 @@
     .process-scope-grid {
         gap: 32px;
     }
+
+    .process-deliverable-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 /* Mobile */
@@ -292,12 +763,53 @@
     }
 
     .process-stage-grid,
-    .process-work-grid {
+    .process-work-grid,
+    .process-deliverable-grid {
         grid-template-columns: 1fr;
     }
 
     .process-stage {
         gap: 20px;
+    }
+
+    .process-scope-trigger {
+        min-height: 44px;
+    }
+
+    .process-deliverable-groups {
+        gap: 38px;
+    }
+
+    .process-deliverable-card {
+        min-height: 0;
+        padding: 19px;
+    }
+
+    .process-deliverable-group + .process-deliverable-group {
+        padding-top: 30px;
+    }
+
+    .process-work-card {
+        min-height: 0;
+        padding: 23px;
+    }
+
+    .process-scope-dialog {
+        width: calc(100% - 24px);
+        max-height: 90vh;
+        max-height: 90dvh;
+    }
+
+    .process-scope-dialog-header {
+        padding: 22px 22px 19px;
+    }
+
+    .process-scope-dialog-content {
+        padding: 23px 22px 28px;
+    }
+
+    .process-scope-dialog-footer {
+        padding: 14px 22px;
     }
 
     .process-cta-grid {
@@ -323,5 +835,64 @@
 
     .process-stage-number {
         font-size: 29px;
+    }
+
+    .process-scope-trigger {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .process-scope-dialog {
+        width: calc(100% - 16px);
+        max-height: 94vh;
+        max-height: 94dvh;
+    }
+
+    .process-scope-dialog-header {
+        gap: 12px;
+        padding: 20px 18px 18px;
+    }
+
+    .process-scope-dialog-header h2 {
+        font-size: 24px;
+    }
+
+    .process-scope-dialog-content {
+        padding: 20px 18px 25px;
+    }
+
+    .process-scope-dialog-content p,
+    .process-scope-dialog-content li {
+        font-size: 13px;
+    }
+
+    .process-scope-dialog-prompt {
+        padding: 17px;
+    }
+
+    .process-scope-dialog-footer {
+        padding: 13px 18px;
+    }
+
+    .process-scope-done {
+        width: 100%;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .process-scope-trigger,
+    .process-scope-trigger-icon,
+    .process-deliverable-card,
+    .process-work-card,
+    .process-scope-close,
+    .process-scope-done {
+        transition: none;
+    }
+
+    .process-scope-trigger:hover .process-scope-trigger-icon,
+    .process-deliverable-card:hover,
+    .process-work-card:hover {
+        transform: none;
     }
 }

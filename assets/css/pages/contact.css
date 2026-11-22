@@ -104,6 +104,7 @@
 
 .contact-page-note strong {
     display: block;
+    color: var(--ink);
     font-size: 14px;
 }
 
@@ -114,7 +115,7 @@
     line-height: 1.75;
 }
 
-/* 3. Form: reuse forms.css, then adapt spacing for this full page */
+/* 3. Form: reuse shared fields, then adapt spacing for this page */
 .contact-page .contact-form {
     background: var(--paper);
     padding: clamp(24px, 3.3vw, 43px);
@@ -139,6 +140,7 @@
     margin: 0;
     color: var(--muted);
     font-size: 13px;
+    line-height: 1.7;
 }
 
 .contact-page .field {
@@ -172,6 +174,54 @@
     font-size: 11px;
 }
 
+/* Sensitive-information warning adjacent to the project-details field */
+.contact-sensitive-notice {
+    margin: 6px 0 24px;
+    padding: 19px 21px;
+    background: var(--surface-tinted);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+}
+
+.contact-sensitive-notice-heading {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 11px;
+}
+
+.contact-sensitive-notice-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 24px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--accent);
+    border-radius: 50%;
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.contact-sensitive-notice-heading strong {
+    color: var(--ink);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.contact-sensitive-notice p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+.contact-sensitive-notice p + p {
+    margin-top: 9px;
+}
+
 /* Messages are shown only after a submission attempt. */
 .contact-page .form-feedback:not([hidden]) {
     display: block;
@@ -190,7 +240,98 @@
     border-color: #e4b3a4;
 }
 
-/* 4. Secondary action */
+/* 4. What happens after an inquiry */
+.contact-page-process {
+    padding: 94px 0 103px;
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+}
+
+.contact-page-process .section-head h2 {
+    max-width: 680px;
+    margin-top: 13px;
+    font-size: clamp(32px, 3.8vw, 48px);
+    line-height: 1.13;
+    letter-spacing: -.045em;
+}
+
+.contact-process-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.contact-process-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    min-width: 0;
+    padding: clamp(24px, 3vw, 35px);
+    background: var(--cream);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--accent);
+}
+
+.contact-process-number {
+    flex: 0 0 auto;
+    color: var(--accent);
+    font-family: var(--serif);
+    font-size: 33px;
+    line-height: 1;
+}
+
+.contact-process-step > div {
+    min-width: 0;
+}
+
+.contact-process-step h3 {
+    margin: 0 0 13px;
+    color: var(--ink);
+    font-size: clamp(19px, 2vw, 25px);
+    line-height: 1.25;
+    letter-spacing: -.03em;
+}
+
+.contact-process-step p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.contact-process-step p + p {
+    margin-top: 12px;
+}
+
+.contact-process-expectations {
+    display: grid;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    align-items: center;
+    gap: clamp(24px, 5vw, 70px);
+    margin-top: 35px;
+    padding: 30px 35px;
+    background: var(--surface-tinted);
+    border-left: 3px solid var(--accent);
+}
+
+.contact-process-expectations h3 {
+    max-width: 380px;
+    margin: 11px 0 0;
+    color: var(--ink);
+    font-size: clamp(21px, 2.5vw, 30px);
+    line-height: 1.2;
+    letter-spacing: -.035em;
+}
+
+.contact-process-expectations p {
+    max-width: 660px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+/* 5. Secondary action */
 .contact-page-next {
     padding: 76px 0;
     background: var(--dark);
@@ -215,7 +356,7 @@
     margin: 0 0 25px;
 }
 
-/* 5. Responsive layout */
+/* 6. Responsive layout */
 @media (max-width: 850px) {
     .contact-page-hero-grid,
     .contact-page-grid {
@@ -237,7 +378,44 @@
         padding: 62px 0 77px;
     }
 
+    .contact-page-process {
+        padding: 68px 0 76px;
+    }
+
+    .contact-process-grid,
+    .contact-process-expectations {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-process-expectations {
+        gap: 17px;
+        padding: 26px;
+    }
+
     .contact-page-next {
         padding: 65px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-process-step {
+        gap: 15px;
+        padding: 23px 20px;
+    }
+
+    .contact-process-number {
+        font-size: 28px;
+    }
+
+    .contact-sensitive-notice {
+        padding: 17px;
+    }
+
+    .contact-sensitive-notice-heading {
+        align-items: flex-start;
+    }
+
+    .contact-process-expectations {
+        padding: 23px 20px;
     }
 }

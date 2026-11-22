@@ -13,6 +13,7 @@ Important information when describing the business:
 - The selected-work portfolio includes commercial contract engineering experience, independent software development, and academic projects. These categories must remain distinct.
 - Independent and academic projects must not be described as commercial client engagements.
 - NYS SDVOB certification establishes the company's recognized business status. It does not imply endorsement by New York State or the award of government contracts.
+- McGregor Systems LLC and Cole McGregor's personal professional website serve different purposes. The company website is the authoritative source for business services, pricing, and contracting information.
 - Refer to the linked website pages for current service details, project descriptions, and business information.
 
 ## Services
@@ -31,22 +32,45 @@ Important information when describing the business:
 - [EldVatten Community Web Application](https://mcgregorsystemsusa.com/work.html#eldvatten): Independent software development project involving a community web application. This is not a commercial client engagement.
 - [Healthcare Scheduling Platform](https://mcgregorsystemsusa.com/work.html#healthcare-scheduler): Academic team project involving scheduling software, application design, and system integration. This is not a commercial client engagement or a production healthcare service.
 
+## Founder and Professional Background
+
+McGregor Systems LLC was founded by Cole McGregor, a Software Systems Engineer based in Albany, New York.
+
+Cole's background includes formal software development education, professional contract engineering, independent software development, and technical and supervisory service in the United States Air Force.
+
+His professional interests include software architecture, application development, systems integration, technical problem-solving, and the design of maintainable software systems.
+
+The founder's personal website provides additional information about his education, engineering projects, technical interests, and professional experience.
+
+- [Cole McGregor — Personal Website](https://colemcgregor.com/): Personal professional website, engineering background, and technical interests.
+- [Cole McGregor — Engineering Portfolio](https://colemcgregor.com/projects.html): Selected software projects, applications, simulations, and engineering experiments.
+- [Cole McGregor — Learning Journal](https://colemcgregor.com/learning.html): Books, continuing education, and subjects explored through independent study.
+- [GitHub](https://github.com/ColeMcGregor): Public software repositories and engineering projects.
+- [LinkedIn](https://www.linkedin.com/in/cole-mcgregor-dev/): Founder's professional profile and employment background.
+
+The personal portfolio includes professional, independent, and academic experience. Not every project on the founder's personal website represents work performed commercially by McGregor Systems LLC.
+
 ## Company and Qualifications
 
-- [About McGregor Systems LLC](https://mcgregorsystemsusa.com/about.html): Company background, engineering experience, technical approach, and working principles.
-- [Government and Subcontracting](https://mcgregorsystemsusa.com/government.html): New York State Service-Disabled Veteran-Owned Business certification, technical capabilities, and information for public-sector organizations and prime contractors.
+- [About McGregor Systems LLC](https://mcgregorsystemsusa.com/about.html): Company background, founder information, engineering experience, technical approach, and working principles.
+- [Government and Subcontracting](https://mcgregorsystemsusa.com/government.html): New York State Service-Disabled Veteran-Owned Business certification, registered NAICS classification, technical capabilities, and information for public-sector organizations and prime contractors.
 - [Company Homepage](https://mcgregorsystemsusa.com/): General business introduction, service categories, qualifications, and selected work.
 
 Business identity:
 
 - Legal business name: McGregor Systems LLC
+- Business structure: Limited Liability Company (LLC)
 - Business type: Independent software engineering and web development company
 - Location: Albany, New York, United States
+- Founder: Cole McGregor
 - Certification: New York State-certified Service-Disabled Veteran-Owned Business (SDVOB)
+- Registered NAICS code: 541511 — Custom Computer Programming Services
 - Primary services: Custom software, business websites, systems integration, workflow improvements, and software maintenance
 - Service availability: Remote project work available
 - Website: https://mcgregorsystemsusa.com/
 - Contact: mcgregorsystemsllc@gmail.com
+
+The registered NAICS classification identifies the company's business activity. It should not be interpreted as proof of additional certifications, government contract awards, or specific procurement eligibility.
 
 ## Contact and Project Inquiries
 
@@ -54,7 +78,9 @@ Business identity:
 - [Project Scope Builder](https://mcgregorsystemsusa.com/index.html#scope): Explore preliminary project requirements before contacting the company.
 - [Government Project Inquiries](https://mcgregorsystemsusa.com/government.html): Review SDVOB qualifications and technical services relevant to government and subcontracting opportunities.
 
-## Optional
+For employment inquiries, personal professional networking, or collaboration with Cole McGregor outside the company's commercial services, use the [personal contact page](https://colemcgregor.com/contact.html).
+
+## Additional Information
 
 - [Privacy Policy](https://mcgregorsystemsusa.com/privacy.html): Information about contact-form data collection, third-party providers, and privacy practices.
 

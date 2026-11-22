@@ -1,0 +1,576 @@
+
+{
+  "scoping": [
+    {
+      "id": "scope-goals",
+      "title": "Project goals and intended users",
+      "meaning": [
+        "What are you hoping to accomplish, and who will use the finished software? You don't need to know how the software should be built. Start with the problem you want to solve or something you'd like to make easier."
+      ],
+      "importance": [
+        "Understanding your goals helps us choose an appropriate solution instead of building something that looks impressive but doesn't solve your problem."
+      ],
+      "examples": [
+        "A restaurant wants customers to place pickup orders online.",
+        "A small office wants to stop entering the same information into several spreadsheets.",
+        "A nonprofit wants members to register for events.",
+        "A business owner wants to view sales reports without preparing them manually.",
+        "An organization wants employees to access information while working away from the office."
+      ],
+      "questions": [
+        "What isn't working well today? What would you like to accomplish? Who would use the finished software, and how would it help them?"
+      ]
+    },
+    {
+      "id": "scope-features",
+      "title": "Features and deliverables",
+      "meaning": [
+        "Features are the things your software can do. Deliverables are the things you receive when the project is finished.",
+        "For example, allowing customers to book appointments is a feature. The completed booking website is a deliverable."
+      ],
+      "importance": [
+        "Identifying these helps us understand what needs to be built and when the project can be considered complete."
+      ],
+      "examples": [
+        "A website with a contact form and a page describing your services.",
+        "An application that lets employees sign in and update customer information.",
+        "A system that automatically generates PDF reports.",
+        "A dashboard that displays inventory quantities.",
+        "Delivery of the completed software, its source code, and any agreed instructions."
+      ],
+      "questions": [
+        "What do you want the software to do? Are there websites or applications with similar features you like? What do you expect to receive when the work is finished?"
+      ]
+    },
+    {
+      "id": "scope-integrations",
+      "title": "Existing services, accounts, and integrations",
+      "meaning": [
+        "You may already use websites, applications, databases, or online services that the new software needs to work with.",
+        "When two software systems exchange information or work together, this is called an integration."
+      ],
+      "importance": [
+        "Existing technology can affect how we design the new software. Knowing about it early helps us avoid unnecessary replacements, duplicated work, and unexpected compatibility problems."
+      ],
+      "examples": [
+        "Connecting a new website to an existing payment processor.",
+        "Using a domain name your business already owns.",
+        "Importing information from spreadsheets.",
+        "Building a reporting tool that reads from an existing database.",
+        "Connecting an application to a scheduling or customer-management service."
+      ],
+      "questions": [
+        "What software does your organization already use? Do you have an existing website? Will the new system need to read, send, or update information in another application?"
+      ]
+    },
+    {
+      "id": "scope-materials",
+      "title": "Client-provided material and access",
+      "meaning": [
+        "Some projects need information, materials, or permissions that only you or your organization can provide.",
+        "This might include photographs, written content, branding, sample data, or permission to work with an existing system."
+      ],
+      "importance": [
+        "Knowing what is available helps us plan the work. Missing materials or account access can delay development, even when the software itself is ready to be worked on."
+      ],
+      "examples": [
+        "Providing your company's logo and photographs for a website.",
+        "Supplying product descriptions or service information.",
+        "Sharing example spreadsheets or reports to demonstrate a process.",
+        "Arranging appropriate access to an existing website or hosting account.",
+        "Identifying an employee who can approve changes to company systems."
+      ],
+      "questions": [
+        "What materials do you already have? Who manages your existing accounts? Is there anyone whose permission we will need?",
+        "For security, account access should be arranged through appropriate permissions or secure methods. You should not send passwords through an ordinary inquiry form."
+      ]
+    },
+    {
+      "id": "scope-security",
+      "title": "Data, privacy, and security needs",
+      "meaning": [
+        "Many applications collect, store, or use information. We need to understand what that information is, who should be allowed to see it, and whether it needs special protection.",
+        "You don't need to understand cybersecurity to have this discussion."
+      ],
+      "importance": [
+        "A public restaurant menu and a database containing private customer records have different security needs. Understanding the information involved helps us make appropriate decisions about storage, access, privacy, and protection."
+      ],
+      "examples": [
+        "A customer portal where users can view only their own information.",
+        "An employee system where managers have additional permissions.",
+        "A website that collects names, email addresses, and contact messages.",
+        "An application that stores confidential business documents.",
+        "A system that needs backups to protect against accidental data loss.",
+        "An organization subject to particular data-handling or privacy requirements, like medical or student information."
+      ],
+      "questions": [
+        "What information will the software handle? Who should be able to access it? Does your organization have privacy policies, legal requirements, or security rules we should know about?"
+      ]
+    },
+    {
+      "id": "scope-accessibility",
+      "title": "Accessibility, language, and usability requirements",
+      "meaning": [
+        "Software should be usable by the people it's intended for. That includes considering disabilities, different languages, devices, and how comfortable users are with technology.",
+        "Accessibility helps people with disabilities use software. Language support allows people to use software in different languages. Usability concerns how understandable and practical the software is for its users."
+      ],
+      "importance": [
+        "These needs can influence the layout, navigation, content, and technical design of an application. Understanding them early helps us build a more appropriate experience."
+      ],
+      "examples": [
+        "A business website available in English and Spanish.",
+        "An application that lets users select their preferred language.",
+        "A website that supports screen readers and keyboard navigation.",
+        "Forms with clear instructions and understandable error messages.",
+        "A system that works well on phones, tablets, and computers.",
+        "An application that supports right-to-left languages, such as Arabic.",
+        "An employee tool designed for people who have little experience with computers."
+      ],
+      "questions": [
+        "Who will use the software? What languages should it support? Will users primarily use phones or computers? Are there accessibility standards, translation needs, or other usability requirements we should plan for?",
+        "Basic accessibility and usability are engineering considerations regardless of whether a client specifically requests them. This discussion helps establish additional or project-specific requirements."
+      ]
+    },
+    {
+      "id": "scope-testing",
+      "title": "Testing and review expectations",
+      "meaning": [
+        "Testing means checking whether software works as intended and identifying problems.",
+        "Reviewing means examining the software, trying its features, and giving feedback about whether it meets your needs."
+      ],
+      "importance": [
+        "Testing and review help establish whether the agreed requirements have been satisfied. Some projects also need particular kinds of verification before they can be delivered or used."
+      ],
+      "examples": [
+        "Checking that a contact form sends messages successfully.",
+        "Confirming that a calculator or reporting tool produces correct results.",
+        "Testing a website on different screen sizes and browsers.",
+        "Checking that users cannot access information they aren't authorized to see.",
+        "Having employees try a new workflow before it is introduced to the entire organization.",
+        "Verifying that an application works with an existing service."
+      ],
+      "questions": [
+        "Which functions are most important? Are there situations where errors would be especially costly? Who should review the software, and are there specific devices or environments it must work in?"
+      ]
+    },
+    {
+      "id": "scope-schedule",
+      "title": "Schedule, price, and work outside the scope",
+      "meaning": [
+        "The schedule concerns when work is expected to happen and when it needs to be completed.",
+        "Price concerns the cost of the agreed work and how payment will be handled.",
+        "Work outside the scope means requests or responsibilities that aren't included in the current project agreement."
+      ],
+      "importance": [
+        "Discussing these details helps prevent misunderstandings. It also helps us decide which features are essential now and which could be added later."
+      ],
+      "examples": [
+        "A business needs its website ready before a grand opening.",
+        "A client has a limited budget and wants to prioritize essential features.",
+        "An initial application includes user accounts but not online payments.",
+        "A client requests an additional reporting feature after development begins.",
+        "A project includes building a website but not writing all of its marketing content.",
+        "An unexpected technical limitation requires reconsidering the original schedule or approach."
+      ],
+      "questions": [
+        "Do you have a deadline or budget in mind? Which features are essential? What would you be comfortable postponing? Are there tasks you expect to handle yourself?",
+        "A budget does not have to be an exact figure to be useful. Even an approximate range can help determine what is practical."
+      ]
+    },
+    {
+      "id": "scope-handoff",
+      "title": "Handoff, hosting, and support responsibilities",
+      "meaning": [
+        "Handoff is how the completed software and relevant information are transferred to you.",
+        "Hosting refers to the computers or services where a website or application runs.",
+        "Support includes assistance with problems, updates, or changes after the original project has been delivered."
+      ],
+      "importance": [
+        "We should understand who will be responsible for operating and maintaining the software once development is complete. That includes ownership of relevant accounts, access to the software, and any ongoing services."
+      ],
+      "examples": [
+        "A website is deployed to a hosting account owned by the client.",
+        "A client receives the application's source code and setup instructions.",
+        "A business remains responsible for its domain registration and hosting fees.",
+        "An organization's IT department takes responsibility for maintaining a delivered system.",
+        "A separate maintenance agreement covers future updates and bug fixes.",
+        "A developer provides an agreed handoff session to explain how to manage the software."
+      ],
+      "questions": [
+        "Who will manage the software after delivery? Do you already have hosting? Will you need instructions or training? Would you like to discuss ongoing support?",
+        "Ongoing maintenance and support are not automatically included in every development project. Their availability and responsibilities are established through the agreement."
+      ]
+    }
+  ],
+  "deliverables": [
+    {
+      "id": "deliverable-proposal",
+      "title": "Project proposal",
+      "description": "An outline of the proposed work, recommended approach, and preliminary cost.",
+      "meaning": [
+        "A project proposal describes how I recommend addressing your needs. It connects the problem or opportunity we discussed with a proposed solution, expected outcomes, and an initial understanding of the project's cost and complexity.",
+        "It helps you evaluate the proposed work before making a commitment."
+      ],
+      "includes": [
+        "The problem or business need being addressed",
+        "Project objectives and expected outcomes",
+        "A recommended technical or development approach",
+        "Preliminary features and deliverables",
+        "Estimated cost or pricing structure",
+        "Important assumptions, limitations, and dependencies",
+        "Recommended next steps"
+      ],
+      "timing": [
+        "After an initial discussion, when a formal proposal is appropriate, and before entering a project agreement. Smaller engagements may proceed directly to a defined scope of work instead."
+      ]
+    },
+    {
+      "id": "deliverable-sow",
+      "title": "Statement of Work (SOW)",
+      "description": "A written definition of the work, expected deliverables, responsibilities, and project boundaries.",
+      "meaning": [
+        "A Statement of Work defines the specific work that McGregor Systems LLC and the client agree will be performed. It establishes what is included, what will be delivered, and the responsibilities and expectations associated with completing the project.",
+        "Unlike an initial proposal, an agreed SOW becomes part of the project's contractual commitments."
+      ],
+      "includes": [
+        "Description of the work to be performed",
+        "Specific deliverables and expected outcomes",
+        "Features or services included in the scope",
+        "Work explicitly excluded from the scope",
+        "Responsibilities of both parties",
+        "Project milestones and delivery expectations",
+        "Acceptance criteria or completion conditions",
+        "Applicable pricing and payment milestones"
+      ],
+      "timing": [
+        "Before development begins, as part of establishing the project agreement. An SOW may be a standalone document incorporated into a services agreement or a section of the agreement itself."
+      ]
+    },
+    {
+      "id": "deliverable-agreement",
+      "title": "Services agreement",
+      "description": "The contractual terms governing our professional relationship and the agreed work.",
+      "meaning": [
+        "A services agreement is the contract establishing the legal and business terms under which McGregor Systems LLC provides its services.",
+        "While a Statement of Work describes the particular project, the services agreement defines the broader responsibilities, rights, and obligations of both parties."
+      ],
+      "includes": [
+        "Identification of the contracting parties",
+        "Services covered by the agreement",
+        "Payment terms and billing arrangements",
+        "Ownership and intellectual-property provisions",
+        "Confidentiality responsibilities",
+        "Warranties, liability provisions, and applicable limitations",
+        "Procedures for changes or disputes",
+        "Termination conditions",
+        "References to applicable Statements of Work"
+      ],
+      "timing": [
+        "Before work begins. Both parties review and agree to the contractual terms before the engagement proceeds."
+      ]
+    },
+    {
+      "id": "deliverable-requirements",
+      "title": "Requirements specification",
+      "description": "A description of what the software must do and the conditions it must satisfy.",
+      "meaning": [
+        "A requirements specification describes the functionality, behavior, and important constraints of the software being developed.",
+        "It translates business needs into requirements that can guide implementation and help determine whether the completed software meets the agreed expectations."
+      ],
+      "includes": [
+        "Required features and functionality",
+        "Expected user interactions and workflows",
+        "Information the software must collect, process, or display",
+        "Connections to existing systems",
+        "Security, privacy, accessibility, and performance requirements",
+        "Technical or operational constraints",
+        "Conditions used to verify that requirements have been met"
+      ],
+      "timing": [
+        "During planning, before or as the corresponding development work begins. Requirements may be maintained and refined through agreed changes. Smaller projects may document them directly in the SOW rather than a separate specification."
+      ]
+    },
+    {
+      "id": "deliverable-schedule",
+      "title": "Project schedule and milestone plan",
+      "description": "A plan showing anticipated milestones, reviews, dependencies, and delivery dates.",
+      "meaning": [
+        "A project schedule describes the anticipated sequence and timing of the work. It helps both parties understand when major activities are expected to occur and when decisions, reviews, or client-provided materials may be needed."
+      ],
+      "includes": [
+        "Planned start and completion dates",
+        "Major development milestones",
+        "Expected review and feedback periods",
+        "Dependencies between tasks",
+        "Client responsibilities affecting the schedule",
+        "Important delivery dates",
+        "Time allowances or uncertainties where appropriate"
+      ],
+      "timing": [
+        "During planning, before development begins. The schedule may be revised when both parties agree to changes or when circumstances affect the original plan."
+      ]
+    },
+    {
+      "id": "deliverable-progress",
+      "title": "Progress reviews and updates",
+      "description": "Opportunities to review completed work, discuss findings, and provide feedback.",
+      "meaning": [
+        "Progress reviews keep you informed about the work being performed and provide opportunities to examine the software as it develops.",
+        "Depending on the project, these may take the form of written updates, demonstrations, meetings, or access to working features."
+      ],
+      "contentsHeading": "What they typically include",
+      "includes": [
+        "Work completed since the previous review",
+        "Features or changes available for examination",
+        "Current development priorities",
+        "Issues, limitations, or technical findings",
+        "Decisions or feedback needed from the client",
+        "Expected next steps"
+      ],
+      "timing": [
+        "Throughout development at intervals appropriate to the project. The frequency and form of communication are established according to the engagement rather than following an unnecessary fixed schedule."
+      ]
+    },
+    {
+      "id": "deliverable-changes",
+      "title": "Change orders",
+      "description": "Written records of approved changes to the original project agreement.",
+      "meaning": [
+        "A change order documents an agreed modification to the original project scope, deliverables, schedule, or cost.",
+        "New ideas and unexpected requirements sometimes arise during development. A change order helps ensure that both parties understand and approve significant changes before the additional or altered work begins."
+      ],
+      "includes": [
+        "Description of the requested change",
+        "Reason for the change",
+        "Features or deliverables affected",
+        "Impact on cost",
+        "Impact on the project schedule",
+        "Any revised responsibilities or acceptance criteria",
+        "Approval by the appropriate parties"
+      ],
+      "timing": [
+        "When a proposed change requires modification of the agreed project terms. Not every small adjustment requires a formal change order; the agreement determines how changes are authorized."
+      ]
+    },
+    {
+      "id": "deliverable-invoices",
+      "title": "Invoices and billing records",
+      "description": "Itemized billing records for agreed services, milestones, or completed work.",
+      "meaning": [
+        "An invoice is a formal request for payment for services provided or amounts due under the agreed billing arrangement.",
+        "It identifies what is being charged, how much is owed, and the applicable payment terms."
+      ],
+      "includes": [
+        "McGregor Systems LLC's business information",
+        "Client and project identification",
+        "Invoice number and date",
+        "Description of billed work or milestones",
+        "Applicable rates, quantities, or agreed amounts",
+        "Total amount due",
+        "Payment instructions and due date"
+      ],
+      "timing": [
+        "According to the payment schedule established in the agreement. This may involve an initial deposit, milestone payments, recurring billing, or payment upon completion, depending on the engagement."
+      ]
+    },
+    {
+      "id": "deliverable-technical",
+      "title": "Technical documentation",
+      "description": "Information explaining important technical decisions, system components, or operating requirements.",
+      "meaning": [
+        "Technical documentation records information needed to understand, maintain, extend, or operate the software.",
+        "The amount of documentation depends on the project's complexity and what future developers, administrators, or maintainers will need to know."
+      ],
+      "includes": [
+        "System architecture or component descriptions",
+        "Important design decisions and their reasoning",
+        "Database structures or relevant data models",
+        "External integrations and interfaces",
+        "Configuration requirements",
+        "Development and deployment instructions",
+        "Dependencies and important technical limitations"
+      ],
+      "timing": [
+        "As agreed, during development or at handoff. Documentation may be maintained alongside the source code and delivered as part of the completed project."
+      ]
+    },
+    {
+      "id": "deliverable-software",
+      "title": "The agreed software",
+      "description": "The website, application, automation, integration, or system improvements you commissioned.",
+      "meaning": [
+        "The primary outcome of most development engagements is the software or system improvement we agreed to produce.",
+        "Depending on your project, this may be an entirely new application, a website, an automated process, an integration between existing systems, or changes to software you already use."
+      ],
+      "contentsHeading": "What it may include",
+      "includes": [
+        "A new business website or web application",
+        "A desktop or mobile application",
+        "An automated business process or reporting tool",
+        "An integration connecting existing systems",
+        "New features added to an existing application",
+        "Corrections to defects or unreliable behavior",
+        "Improvements to performance, maintainability, or security"
+      ],
+      "timing": [
+        "At agreed milestones or upon project completion, according to the SOW. Delivery may involve deployment into a live environment, transfer of the completed application, or integration of changes into an existing system."
+      ]
+    },
+    {
+      "id": "deliverable-source",
+      "title": "Source code and project files",
+      "description": "The agreed source code, configuration, and development materials associated with your project.",
+      "meaning": [
+        "Source code contains the instructions developers write to create software. Project files may also include configuration, database definitions, scripts, and other materials needed to build or maintain the application.",
+        "Where included in the agreement, these materials can be transferred so that you or another developer can continue working with the software."
+      ],
+      "includes": [
+        "Agreed source code and repositories",
+        "Project configuration files",
+        "Build or deployment scripts",
+        "Database schema definitions and migrations, where applicable",
+        "Relevant project assets",
+        "Dependency information",
+        "Instructions for obtaining or building the software"
+      ],
+      "timing": [
+        "At the agreed milestones or project handoff, according to the contract.",
+        "The agreement determines which materials are delivered and what ownership or licensing rights apply. Third-party software, reusable components, and other intellectual property may be subject to separate terms."
+      ]
+    },
+    {
+      "id": "deliverable-handoff",
+      "title": "Handoff documentation",
+      "description": "Instructions and information needed to operate, administer, or maintain the delivered software.",
+      "meaning": [
+        "Handoff documentation helps transfer responsibility for the completed software to the client or whoever will operate and maintain it.",
+        "Depending on the project, this might be a short set of instructions or a more detailed operational guide."
+      ],
+      "includes": [
+        "Instructions for accessing or using the software",
+        "Setup or deployment procedures",
+        "Administrative responsibilities",
+        "Hosting and environment information",
+        "Relevant account or access-transfer procedures",
+        "Backup and recovery guidance, where applicable",
+        "Known limitations or outstanding issues",
+        "Maintenance and support arrangements"
+      ],
+      "timing": [
+        "During final delivery or as part of a planned transition. The documentation should reflect the responsibilities and technical knowledge of the people receiving the system."
+      ]
+    },
+    {
+      "id": "deliverable-acceptance",
+      "title": "Testing and acceptance records",
+      "description": "Records showing what was verified and how the completed work was reviewed.",
+      "meaning": [
+        "Testing records document the verification performed on the software. Acceptance records establish whether the agreed deliverables have met the project's completion criteria.",
+        "These records help both parties understand what was tested, what results were obtained, and whether any issues remain."
+      ],
+      "contentsHeading": "What they typically include",
+      "includes": [
+        "Features or requirements tested",
+        "Test procedures or verification methods",
+        "Test outcomes and relevant evidence",
+        "Identified defects and their resolution status",
+        "Known limitations or outstanding issues",
+        "Results of agreed acceptance checks",
+        "Client acceptance or approval records, where required"
+      ],
+      "timing": [
+        "During final review or at delivery, as required by the agreement. Smaller projects may use a concise completion checklist, while larger or more sensitive systems may require formal testing reports and acceptance records."
+      ]
+    }
+  ],
+  "engagements": [
+    {
+      "id": "engagement-new",
+      "title": "New development",
+      "meaning": [
+        "You have an idea or a business need that calls for new software. It could be a website, application, automation tool, or another system built from the ground up.",
+        "New development can also support or improve software you already use. For example, you might need a new application, reporting tool, or service that works alongside an existing system rather than replacing or modifying it.",
+        "You might already have detailed requirements, or you might only know what problem you want solved."
+      ],
+      "examples": [
+        "You want a business website built for the first time.",
+        "Your employees need an application to manage information currently stored in spreadsheets.",
+        "You have an idea for a mobile or desktop application.",
+        "You want to automate a repetitive business task.",
+        "You need a custom system because existing products don't meet your requirements.",
+        "You want a new reporting dashboard that uses information from your existing business software.",
+        "You need a separate application or service that adds capabilities to an existing system."
+      ],
+      "recognition": [
+        "You need something new built, whether it will operate independently or work alongside software you already have."
+      ],
+      "nextSteps": [
+        "We begin by understanding your goals, intended users, and requirements. If the new software will interact with existing systems, we also examine their capabilities, interfaces, and constraints. From there, we determine the appropriate scope, implementation approach, and expected deliverables."
+      ]
+    },
+    {
+      "id": "engagement-existing",
+      "title": "Existing software",
+      "meaning": [
+        "You already have a website, application, or software system, but something about it needs to change. The work might involve fixing defects, introducing new features, improving performance, or connecting it to another system."
+      ],
+      "examples": [
+        "Your website has problems that need to be corrected.",
+        "An application needs a new feature or report.",
+        "Your existing system is slow, unreliable, or difficult to maintain.",
+        "Two applications need to exchange information.",
+        "A previous developer is no longer available, and you need someone to continue the work.",
+        "You want to modernize part of an older application without replacing everything."
+      ],
+      "recognition": [
+        "You have software that generally serves a useful purpose but needs repairs, changes, extensions, or technical improvements."
+      ],
+      "nextSteps": [
+        "We review the existing system, its behavior, and its technical constraints before proposing changes. The goal is to understand what already works and avoid introducing unnecessary problems."
+      ]
+    },
+    {
+      "id": "engagement-contract",
+      "title": "Contract and subcontract work",
+      "meaning": [
+        "Your organization already has a project, client commitment, or development team and needs outside engineering assistance.",
+        "McGregor Systems LLC can discuss performing an agreed portion of the work under a direct contract or as a subcontractor supporting a larger engagement."
+      ],
+      "examples": [
+        "A software company needs help implementing part of an application.",
+        "A prime contractor needs additional software development capacity.",
+        "An organization needs a developer to work within an established codebase.",
+        "A project team needs assistance with testing, integrations, or backend development.",
+        "A business needs specialized engineering work without hiring another permanent employee."
+      ],
+      "recognition": [
+        "You have an established project or contract and need another business to contribute technical work under your organization's requirements."
+      ],
+      "nextSteps": [
+        "We discuss the responsibilities, technical environment, project standards, reporting expectations, schedule, and contractual requirements of the engagement."
+      ]
+    },
+    {
+      "id": "engagement-ongoing",
+      "title": "Ongoing development",
+      "meaning": [
+        "Your software needs attention beyond a single defined project. That might involve regular improvements, maintenance, defect correction, technical updates, or new functionality introduced over time.",
+        "Ongoing work is arranged according to an agreed scope, schedule, and billing structure."
+      ],
+      "examples": [
+        "Your business website needs periodic updates and improvements.",
+        "An internal application requires continuing development as your organization grows.",
+        "You want a developer available for agreed maintenance work.",
+        "Your system needs periodic dependency or compatibility updates.",
+        "You expect to introduce new features over several months.",
+        "You need recurring technical assistance but don't require a full-time employee."
+      ],
+      "recognition": [
+        "Your needs are recurring rather than limited to one defined delivery, and you want to discuss a continuing working relationship."
+      ],
+      "nextSteps": [
+        "We establish the types of work to be covered, priorities, availability, communication expectations, and an appropriate agreement. Ongoing support is not automatically included in a one-time development project."
+      ]
+    }
+  ]
+}
