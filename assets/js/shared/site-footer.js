@@ -18,6 +18,12 @@ const contactLinks = [
     { label: "Contact", path: "contact.html" }
 ];
 
+const legalLinks = [
+    { label: "Privacy Policy", path: "legal.html#privacy" },
+    { label: "Website Terms", path: "legal.html#terms" },
+    { label: "Credits & Attributions", path: "legal.html#credits" }
+];
+
 export function renderSiteFooter(siteRoot) {
     const placeholder = document.getElementById("site-footer");
 
@@ -32,6 +38,11 @@ export function renderSiteFooter(siteRoot) {
     const makeLinks = (items) => items.map(({ label, path }) =>
         `<li><a href="${resolve(path)}">${label}</a></li>`
     ).join("");
+
+    const makeLegalLinks = (items) => items.map(({ label, path }, index) => `
+        ${index > 0 ? '<span class="footer-legal-separator" aria-hidden="true">·</span>' : ""}
+        <a href="${resolve(path)}">${label}</a>
+    `).join("");
 
     const template = document.createElement("template");
 
@@ -49,7 +60,10 @@ export function renderSiteFooter(siteRoot) {
                                 <div class="brand-sub">Software Engineering · LLC</div>
                             </div>
                         </div>
-                        <p>Custom software, websites, and systems integration for practical business needs.</p>
+                        <p>
+                            Custom software, software modernization,
+                            systems integration, and custom websites.
+                        </p>
                     </div>
 
                     <div class="footer-column footer-column--explore">
@@ -76,14 +90,26 @@ export function renderSiteFooter(siteRoot) {
                             alt="New York State-certified Service-Disabled Veteran-Owned Business"
                             loading="lazy"
                         >
-                        <p>NYS-Certified Service-Disabled Veteran-Owned Business</p>
+                        <p>
+                            NYS-Certified Service-Disabled
+                            Veteran-Owned Business
+                        </p>
                         <p>Albany, New York</p>
                     </div>
                 </div>
 
                 <div class="footbottom">
-                    <span>© ${new Date().getFullYear()} McGregor Systems LLC. All rights reserved.</span>
-                    <span><a href="${resolve("privacy.html")}">Privacy Policy</a> · Albany, New York</span>
+                    <span class="footer-copyright">
+                        © ${new Date().getFullYear()} McGregor Systems LLC.
+                        All rights reserved.
+                    </span>
+
+                    <nav
+                        class="footer-legal-links"
+                        aria-label="Legal information"
+                    >
+                        ${makeLegalLinks(legalLinks)}
+                    </nav>
                 </div>
             </div>
         </footer>

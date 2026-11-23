@@ -1,3 +1,4 @@
+
 /**
  * Homepage project planner.
  * Generates the controls, updates the starting price, and copies selections
@@ -56,7 +57,7 @@ function buildInquirySummary(state) {
         `Package: ${getPackageDescription(state.kind, state.size)}`,
         `Starting price: ${formatCurrency.format(getStartingPrice(state.kind, state.size))}`,
         `Additional features: ${extras.length ? extras.join(", ") : "None selected"}`,
-        "Note: This is a starting figure, not a final quote. Additional features are quoted separately.",
+        "Pricing notice: This figure is preliminary and nonbinding. Additional requirements, project complexity, and technical review may affect final pricing. Actual pricing and deliverables are established through a separately accepted written proposal or agreement.",
         "[/Project planner summary]"
     ].join("\n");
 }
@@ -72,7 +73,7 @@ function copyScopeToInquiry(state) {
     }
 
     const serviceName = state.kind === "website"
-        ? "Business website"
+        ? "Custom website"
         : state.kind === "app"
             ? "Custom software"
             : "Website and custom software";
@@ -202,9 +203,14 @@ export function initializeScopeBuilder() {
                     ></div>
 
                     <p class="scope-disclaimer">
-                        Starting prices apply to defined scopes.
-                        Extra features and complex requirements
-                        need a custom quote.
+                        This is a preliminary, nonbinding starting
+                        estimate, not a final quote. Software projects
+                        vary in complexity, requirements, and scope.
+                        Final pricing is established through a
+                        separately accepted written agreement.
+                        <a href="legal.html#terms">
+                            Read our pricing terms.
+                        </a>
                     </p>
                 </div>
 
@@ -230,8 +236,9 @@ export function initializeScopeBuilder() {
 
                     <p>
                         Selected extras are not priced automatically.
-                        The final scope, timing, and price are
-                        confirmed in writing.
+                        Technical requirements, added features,
+                        and project constraints may affect the
+                        final scope and price.
                     </p>
                 </div>
 
