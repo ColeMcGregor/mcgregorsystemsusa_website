@@ -5,699 +5,656 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="McGregor Systems LLC">
-    <meta name="description" content="McGregor Systems LLC provides custom software development, business websites, systems integration, and maintenance services from Albany, New York.">
+    <meta
+        name="description"
+        content="McGregor Systems LLC provides custom software engineering, software modernization, systems integration, maintenance, and custom website development in Albany, New York."
+    >
     <meta name="theme-color" content="#142731">
 
-    <title>McGregor Systems LLC | Software Engineering &amp; Web Development</title>
+    <title>McGregor Systems LLC | Custom Software &amp; Websites</title>
 
-    <link rel="icon" type="image/png" href="assets/images/branding/favicon.png">
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/images/branding/favicon.png"
+    >
     <link rel="stylesheet" href="assets/css/site.css">
     <link rel="stylesheet" href="assets/css/pages/home.css">
+    <link
+        rel="stylesheet"
+        href="assets/css/components/technology-marquee.css"
+    >
 </head>
+
 <body>
-    <!-- Shared navigation is rendered by site-header.js. -->
     <div id="site-header">
         <header class="nav">
             <div class="shell">
-                <a class="brand" href="index.html">McGregor Systems LLC</a>
+                <a class="brand" href="index.html">
+                    McGregor Systems LLC
+                </a>
             </div>
         </header>
     </div>
 
     <main id="main-content">
 
-        <!-- Homepage introduction -->
-        <section class="hero" id="home" aria-labelledby="home-heading">
-            <div class="shell hero-grid">
-                <div class="hero-copy">
-                    <div class="caps pill">
-                        <span class="dot" aria-hidden="true"></span>
-                        Albany, NY · Software engineering &amp; web development
-                    </div>
-
-                    <h1 id="home-heading">
-                        Useful software.<br>
-                        <em>Built for the work.</em>
-                    </h1>
-
-                    <p class="lede">
-                        Business websites, custom applications, and connected workflows.
-                        Work directly with the engineer building your solution.
-                    </p>
-
-                    <div class="hero-actions">
-                        <a class="btn btn-dark" href="contact.html">
-                            Discuss a project
-                            <span aria-hidden="true">↗</span>
-                        </a>
-
-                        <a class="btn btn-outline" href="#scope">
-                            Explore project scope
-                            <span aria-hidden="true">↘</span>
-                        </a>
-                    </div>
-
-                    <div class="hero-ticks" aria-label="Working priorities">
-                        <span>Clear project scope</span>
-                        <span>Direct collaboration</span>
-                        <span>Maintainable systems</span>
-                    </div>
-                </div>
-
-                <!-- Replaced by hero-showcase.js when JavaScript initializes. -->
-                <div
-                    id="hero-showcase"
-                    class="hero-showcase"
-                    data-component="hero-showcase"
-                    aria-label="Illustrations of a business website and software dashboard"
-                >
-                    <div class="showcase-glow" aria-hidden="true"></div>
-
-                    <div class="border-orbit orbit-front">
-                        <div class="showcase-site-window">
-                            <img
-                                src="assets/images/branding/LogoMcGregorSystems.png"
-                                alt="McGregor Systems LLC logo"
-                            >
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Company qualifications -->
-        <section class="proofbar" aria-label="Company details">
-            <div class="shell">
-                <div class="proof">
-                    <span class="icon" aria-hidden="true">◇</span>
-                    <div>
-                        <strong>Custom software &amp; websites</strong>
-                        <span>Design, development, and support</span>
-                    </div>
-                </div>
-
-                <div class="proof">
-                    <span class="icon" aria-hidden="true">◇</span>
-                    <div>
-                        <strong>Direct engineering contact</strong>
-                        <span>Founder-led project work</span>
-                    </div>
-                </div>
-
-                <div class="proof">
-                    <span class="icon" aria-hidden="true">◇</span>
-                    <div>
-                        <strong>NYS-certified SDVOB</strong>
-                        <span>Albany, New York</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Primary service categories -->
+        <!-- Centered introduction -->
         <section
-            class="section dual-services"
+            class="home-hero"
+            id="home"
+            aria-labelledby="home-heading"
+        >
+            <div class="shell home-hero-inner">
+                <div class="caps subtle">
+                    Independent Software Engineering · Albany, New York
+                </div>
+
+                <h1 id="home-heading">
+                    What could work <em>better</em>
+                    for your organization?
+                </h1>
+
+                <p class="home-hero-lede">
+                    Build something new, modernize existing software,
+                    connect your systems, or establish a stronger web
+                    presence. Practical engineering designed around
+                    what you need to accomplish.
+                </p>
+
+                <div class="home-hero-actions">
+                    <a class="btn btn-dark" href="contact.html">
+                        Discuss your project
+                        <span aria-hidden="true">↗</span>
+                    </a>
+
+                    <a class="home-text-link" href="#services">
+                        Explore our services
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <div
+                    class="home-trust-strip"
+                    aria-label="Company qualifications"
+                >
+                    <span>Direct engineering contact</span>
+                    <span>Development &amp; modernization</span>
+                    <span>NYS-certified SDVOB</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services: left visual, right-aligned copy -->
+        <section
+            class="section home-services"
             id="services"
             aria-labelledby="services-heading"
         >
-            <div class="shell">
-                <div class="section-head">
-                    <div>
-                        <div class="caps subtle">01 / What we build</div>
-                        <h2 id="services-heading">
-                            Two core offerings.<br>
-                            <span class="serif-phrase">One engineering approach.</span>
-                        </h2>
+            <div class="shell home-split">
+
+                <div
+                    class="home-services-visual"
+                    aria-hidden="true"
+                >
+                    <div class="home-system-window">
+                        <div class="home-system-window-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="home-system-window-body">
+                            <div class="home-system-sidebar">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+
+                            <div class="home-system-content">
+                                <div class="home-system-heading"></div>
+
+                                <div class="home-system-data">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+
+                                <div class="home-system-record"></div>
+                                <div class="home-system-record"></div>
+                                <div class="home-system-record"></div>
+                            </div>
+                        </div>
                     </div>
 
+                    <div class="home-visual-caption">
+                        Systems · Applications · Websites
+                    </div>
+                </div>
+
+                <div class="home-section-copy home-section-copy--right">
+                    <div class="caps subtle">
+                        01 / What we do
+                    </div>
+
+                    <h2 id="services-heading">
+                        Different problems.<br>
+                        <em>Thoughtful solutions.</em>
+                    </h2>
+
                     <p>
-                        Some organizations need a better public presence.
-                        Others need software that improves the work behind
-                        the scenes. Some need both.
+                        From new applications to aging software,
+                        we help individuals and organizations build,
+                        modernize, integrate, and maintain the
+                        technology they depend on.
                     </p>
+
+                    <nav
+                        class="home-service-list"
+                        aria-label="Software engineering services"
+                    >
+                        <a href="services.html#software">
+                            <span>Build custom software</span>
+                            <span aria-hidden="true">↗</span>
+                        </a>
+
+                        <a href="services.html#modernization">
+                            <span>Modernize existing software</span>
+                            <span aria-hidden="true">↗</span>
+                        </a>
+
+                        <a href="services.html#integration">
+                            <span>Integrate &amp; maintain systems</span>
+                            <span aria-hidden="true">↗</span>
+                        </a>
+
+                        <a href="services.html#websites">
+                            <span>Create custom websites</span>
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </nav>
+
+                    <a
+                        class="home-text-link"
+                        href="services.html"
+                    >
+                        Explore all services
+                        <span aria-hidden="true">→</span>
+                    </a>
                 </div>
 
-                <div class="core-grid">
-                    <article class="core-service">
-                        <!-- Replaced by service-visuals.js. -->
-                        <div
-                            class="core-art core-art-web"
-                            data-component="website-service-visual"
-                        >
-                            <div class="small-orbit">
-                                <div class="web-demo">
-                                    <div class="web-demo-main">
-                                        <span class="micro-label">
-                                            BUSINESS WEBSITE / CONCEPT
-                                        </span>
-                                        <h3>Your work,<br>made clear.</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <span class="art-corner-label">
-                                01 / WEBSITES
-                            </span>
-                        </div>
-
-                        <div class="core-copy">
-                            <div class="core-brow">
-                                <span>01</span>
-                                <span>Public-facing</span>
-                            </div>
-
-                            <h3>Business websites</h3>
-
-                            <div
-                                class="core-startprice"
-                                data-starting-price="website"
-                                data-package-size="small"
-                            >
-                                Contact us for current pricing
-                            </div>
-
-                            <p>
-                                A clear, responsive place where customers
-                                can learn about your organization and get
-                                in touch.
-                            </p>
-
-                            <ul>
-                                <li>Business and service websites</li>
-                                <li>Responsive layouts and accessible structure</li>
-                                <li>Forms, content, and essential integrations</li>
-                            </ul>
-
-                            <a class="btn-link" href="services.html#websites">
-                                Explore website services
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="core-service">
-                        <div
-                            class="core-art core-art-app"
-                            data-component="software-service-visual"
-                        >
-                            <div class="small-orbit alt">
-                                <div class="sys-demo">
-                                    <div class="sys-demo-body">
-                                        <div class="sys-title">
-                                            Activity overview
-                                            <small>CONCEPT</small>
-                                        </div>
-
-                                        <div class="sys-stats">
-                                            <span>
-                                                128
-                                                <small>Records</small>
-                                            </span>
-                                            <span>
-                                                42
-                                                <small>Open</small>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <span class="art-corner-label">
-                                02 / SOFTWARE
-                            </span>
-                        </div>
-
-                        <div class="core-copy">
-                            <div class="core-brow">
-                                <span>02</span>
-                                <span>Behind the scenes</span>
-                            </div>
-
-                            <h3>Custom software &amp; systems</h3>
-
-                            <div
-                                class="core-startprice"
-                                data-starting-price="app"
-                                data-package-size="small"
-                            >
-                                Contact us for current pricing
-                            </div>
-
-                            <p>
-                                Internal tools, applications, and connected
-                                systems designed around practical work.
-                            </p>
-
-                            <ul>
-                                <li>Portals, dashboards, and internal applications</li>
-                                <li>Databases, APIs, and workflow automation</li>
-                                <li>Existing software improvements and support</li>
-                            </ul>
-
-                            <a class="btn-link" href="services.html#software">
-                                Explore software services
-                            </a>
-                        </div>
-                    </article>
-                </div>
-
-                <p class="work-note">
-                    Prices shown are starting figures for defined scopes.
-                    Final quotations depend on requirements.
-                </p>
             </div>
         </section>
 
-        <!-- Interactive project planner -->
+        <!-- Technology marquee -->
+        <div data-technology-marquee>
+            <section
+                class="technology-marquee-fallback"
+                aria-label="Tools and technologies"
+            >
+                <div class="shell">
+                    <div class="caps subtle">
+                        Tools &amp; Technologies
+                    </div>
+
+                    <p>
+                        JavaScript · Python · Java · C# · C++ ·
+                        Kotlin · Django · PostgreSQL · Docker ·
+                        Git · Android · Firebase
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Selected work: left copy, right project examples -->
         <section
-            class="scope-section"
+            class="section home-work"
+            id="work"
+            aria-labelledby="work-heading"
+        >
+            <div class="shell home-split">
+
+                <div class="home-section-copy">
+                    <div class="caps subtle">
+                        02 / Selected work
+                    </div>
+
+                    <h2 id="work-heading">
+                        Engineering in <em>practice.</em>
+                    </h2>
+
+                    <p>
+                        Explore commercial contract engineering
+                        and independently developed applications,
+                        with each project clearly identified by
+                        its development context.
+                    </p>
+
+                    <a
+                        class="home-text-link"
+                        href="work.html"
+                    >
+                        Explore selected work
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <div class="home-project-grid">
+
+                    <article class="home-project">
+                        <a
+                            class="home-project-preview home-project-preview--ras"
+                            href="work.html#ras-systems"
+                            aria-label="View RAS Systems project details"
+                        >
+                            <img
+                                src="assets/images/projects/bubble_example_work.png"
+                                alt="Independent example interface illustrating reporting-related development work"
+                                loading="lazy"
+                            >
+                        </a>
+
+                        <div class="home-project-content">
+                            <div class="home-project-type">
+                                Commercial contract experience
+                            </div>
+
+                            <h3>
+                                <a href="work.html#ras-systems">
+                                    RAS Systems
+                                </a>
+                            </h3>
+
+                            <p>
+                                Reporting, integration, and
+                                improvements to existing
+                                business software.
+                            </p>
+
+                            <p class="home-project-disclosure">
+                                Preview uses an independently
+                                created demonstration.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="home-project">
+                        <a
+                            class="home-project-preview home-project-preview--eldvatten"
+                            href="work.html#eldvatten"
+                            aria-label="View EldVatten project details"
+                        >
+                            <div
+                                class="home-project-ui"
+                                aria-hidden="true"
+                            >
+                                <div class="home-project-ui-bar"></div>
+
+                                <div class="home-project-ui-main">
+                                    <div class="home-project-ui-side">
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                    </div>
+
+                                    <div class="home-project-ui-feed">
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="home-project-preview-note">
+                                Interface illustration
+                            </span>
+                        </a>
+
+                        <div class="home-project-content">
+                            <div class="home-project-type">
+                                Independent application
+                            </div>
+
+                            <h3>
+                                <a href="work.html#eldvatten">
+                                    EldVatten
+                                </a>
+                            </h3>
+
+                            <p>
+                                A Django community platform
+                                with member accounts, events,
+                                discussions, and administration.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Engineering approach: dark editorial section -->
+        <section
+            class="section home-approach"
+            id="approach"
+            aria-labelledby="approach-heading"
+        >
+            <div class="shell home-split">
+
+                <div class="home-approach-statement">
+                    <div class="home-approach-quote">
+                        Understand the problem.<br>
+                        Define the scope.<br>
+                        Build deliberately.
+                    </div>
+
+                    <div class="home-approach-caption">
+                        The McGregor Systems approach
+                    </div>
+                </div>
+
+                <div class="home-section-copy">
+                    <div class="caps">
+                        03 / How we work
+                    </div>
+
+                    <h2 id="approach-heading">
+                        A process that starts
+                        <em>with understanding.</em>
+                    </h2>
+
+                    <p>
+                        Engineering decisions should reflect the
+                        requirements, constraints, and people who
+                        rely on the finished system.
+                    </p>
+
+                    <p>
+                        We consider maintainability, reliability,
+                        usability, and the realities of supporting
+                        a system after delivery.
+                    </p>
+
+                    <a
+                        class="home-text-link"
+                        href="process.html"
+                    >
+                        Learn about our process
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Project planner: left explanation, right interactive builder -->
+        <section
+            class="section home-planning"
             id="scope"
             aria-labelledby="scope-heading"
         >
             <div class="shell">
-                <div class="scope-header">
-                    <div>
-                        <div class="caps">
-                            02 / Interactive project planner
-                        </div>
-
-                        <h2 id="scope-heading">
-                            Let's outline<br>
-                            <em>what you need.</em>
-                        </h2>
+                <div class="home-planning-intro">
+                    <div class="caps subtle">
+                        04 / Project planning
                     </div>
 
-                    <div class="scope-intro">
-                        <p>
-                            Choose a project type and scope to review
-                            our starting prices. Extra features require
-                            a custom quote.
-                        </p>
-
-                        <div class="scope-demo-mark">
-                            Starting figures only · Not a binding quote
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Populated by scope-builder.js. -->
-                <div
-                    id="scope-builder"
-                    data-component="scope-builder"
-                >
-                    <p>
-                        Project planner setup is in progress.
-                        For now, see
-                        <a href="services.html">services and starting prices</a>,
-                        or <a href="contact.html">send an inquiry</a>.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Engineering approach -->
-        <section class="mantra" aria-labelledby="approach-heading">
-            <div class="shell">
-                <div>
-                    <div class="caps">Our approach</div>
-
-                    <h2 id="approach-heading">
-                        Build what is needed.<br>
-                        <em>Make it maintainable.</em>
+                    <h2 id="scope-heading">
+                        Let's give your project
+                        <em>some shape.</em>
                     </h2>
+
+                    <p>
+                        Identify the features and requirements you
+                        have in mind, explore factors affecting
+                        complexity, and get a clearer starting
+                        point for discussing your project.
+                    </p>
+
+                    <p>
+                        Preliminary prices are appropriate only
+                        for sufficiently defined services.
+                        Custom software, integrations, and
+                        modernization often require technical
+                        discovery before a responsible estimate
+                        can be made.
+                    </p>
+
+                    <a
+                        class="home-text-link"
+                        href="legal.html#terms"
+                    >
+                        How project pricing works
+                        <span aria-hidden="true">→</span>
+                    </a>
                 </div>
 
-                <p>
-                    New projects and existing systems both require
-                    decisions about scope, reliability, and support.
-                    Those decisions should guide the work from the beginning.
-                </p>
+                <div class="home-planning-builder">
+                    <div class="home-planning-builder-heading">
+                        <span>Project Scope Builder</span>
+                        <span>Preliminary planning</span>
+                    </div>
+
+                    <div
+                        id="scope-builder"
+                        data-component="scope-builder"
+                    >
+                        <p>
+                            The interactive project planner
+                            requires JavaScript.
+                            You can also
+                            <a href="services.html">
+                                explore services
+                            </a>
+                            or
+                            <a href="contact.html">
+                                send a project inquiry
+                            </a>.
+                        </p>
+                    </div>
+
+                    <p class="home-planning-disclaimer">
+                        Website-generated figures are preliminary
+                        and nonbinding. Final pricing depends on
+                        project requirements and an accepted
+                        written agreement.
+                        <a href="legal.html#terms">
+                            Read website terms.
+                        </a>
+                    </p>
+                </div>
             </div>
         </section>
 
-        <!-- Selected work -->
+        <!-- Founder-led value and project lifecycle -->
         <section
-            class="section work"
-            id="work"
-            aria-labelledby="work-heading"
+            class="section home-why"
+            id="why-us"
+            aria-labelledby="why-heading"
         >
             <div class="shell">
-                <div class="section-head">
-                    <div>
-                        <div class="caps subtle">03 / Selected work</div>
-                        <h2 id="work-heading">
-                            See the engineering behind the work.
-                        </h2>
+                <div class="home-why-intro">
+                    <div class="caps subtle">
+                        05 / Why McGregor Systems
                     </div>
 
+                    <h2 id="why-heading">
+                        Direct collaboration.<br>
+                        <em>Clear accountability.</em>
+                    </h2>
+
                     <p>
-                        Commercial experience and clearly labeled
-                        independent or academic projects.
+                        Work directly with the engineer responsible
+                        for your project, with attention to
+                        requirements, implementation, documentation,
+                        and long-term maintainability.
                     </p>
                 </div>
 
-                <div class="work-grid">
-                    <!-- The visual variant is independent of project identity. -->
-                    <article class="work-card">
-                        <div class="work-visual work-visual--sage">
-                            <div class="visual-label">
-                                Business reporting · Illustration
-                            </div>
+                <div class="home-process-grid">
 
-                            <div class="fake-sheet">
-                                <b>Document processing</b>
-                                <div class="fake-row"></div>
-                                <div class="fake-row"></div>
-                                <div class="fake-row"></div>
-                            </div>
+                    <article class="home-process-step">
+                        <div class="home-process-number">
+                            01
                         </div>
 
-                        <div class="work-copy">
-                            <div class="work-type">
-                                Commercial contract experience
-                            </div>
+                        <h3>Discover</h3>
 
-                            <h3>RAS Systems reporting workflows</h3>
-
-                            <p>
-                                Maintenance and integration work involving
-                                business software, PDF reports, permissions,
-                                and existing workflows.
-                            </p>
-
-                            <a class="btn-link" href="work.html#ras-systems">
-                                Read the case study
-                            </a>
-                        </div>
+                        <p>
+                            Understand the goals, existing
+                            systems, and constraints.
+                        </p>
                     </article>
 
-                    <article class="work-card">
-                        <div class="work-visual work-visual--dark">
-                            <div class="visual-label">
-                                Community application · Illustration
-                            </div>
-
-                            <div class="fake-forum">
-                                <aside>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </aside>
-
-                                <div>
-                                    <b>Community overview</b>
-                                    <div class="fake-post"></div>
-                                    <div class="fake-post"></div>
-                                </div>
-                            </div>
+                    <article class="home-process-step">
+                        <div class="home-process-number">
+                            02
                         </div>
 
-                        <div class="work-copy">
-                            <div class="work-type">Independent project</div>
+                        <h3>Define</h3>
 
-                            <h3>EldVatten community platform</h3>
-
-                            <p>
-                                A Django web application with accounts,
-                                events, discussions, member roles,
-                                and community administration.
-                            </p>
-
-                            <a class="btn-link" href="work.html#eldvatten">
-                                See project details
-                            </a>
-                        </div>
+                        <p>
+                            Establish scope, deliverables,
+                            and expectations.
+                        </p>
                     </article>
 
-                    <article class="work-card">
-                        <div class="work-visual work-visual--warm">
-                            <div class="visual-label">
-                                Scheduling system · Illustration
-                            </div>
-
-                            <div class="fake-calendar">
-                                <div class="fake-cal-head">
-                                    <span>Scheduling</span>
-                                    <span>EXAMPLE</span>
-                                </div>
-
-                                <div class="fake-cal-grid">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                            </div>
+                    <article class="home-process-step">
+                        <div class="home-process-number">
+                            03
                         </div>
 
-                        <div class="work-copy">
-                            <div class="work-type">Academic capstone</div>
+                        <h3>Develop</h3>
 
-                            <h3>Healthcare scheduling platform</h3>
-
-                            <p>
-                                A service-oriented scheduling system with
-                                separate application services and integration
-                                components.
-                            </p>
-
-                            <a class="btn-link" href="work.html#healthcare-scheduler">
-                                See project details
-                            </a>
-                        </div>
+                        <p>
+                            Implement, test, review,
+                            and refine the work.
+                        </p>
                     </article>
+
+                    <article class="home-process-step">
+                        <div class="home-process-number">
+                            04
+                        </div>
+
+                        <h3>Deliver</h3>
+
+                        <p>
+                            Provide agreed deliverables
+                            and arrange support if needed.
+                        </p>
+                    </article>
+
                 </div>
 
-                <p class="work-note">
-                    Illustrations are conceptual, not screenshots
-                    of completed applications.
-                </p>
-            </div>
-        </section>
-
-        <!-- Project process -->
-        <section
-            class="section"
-            id="process"
-            aria-labelledby="process-heading"
-        >
-            <div class="shell">
-                <div class="section-head">
-                    <div>
-                        <div class="caps subtle">04 / How we work</div>
-                        <h2 id="process-heading">
-                            Clear steps. Fewer surprises.
-                        </h2>
-                    </div>
-
-                    <p>
-                        Projects vary, but the steps should remain
-                        understandable from the first discussion
-                        through delivery.
-                    </p>
-                </div>
-
-                <div class="process-row">
-                    <article class="process-step">
-                        <div class="process-no">01.</div>
-                        <h3>Understand the need</h3>
-                        <p>
-                            Discuss the problem, current systems,
-                            constraints, and what a useful result looks like.
-                        </p>
-                    </article>
-
-                    <article class="process-step">
-                        <div class="process-no">02.</div>
-                        <h3>Define the scope</h3>
-                        <p>
-                            Agree on deliverables, milestones, assumptions,
-                            and work outside the project.
-                        </p>
-                    </article>
-
-                    <article class="process-step">
-                        <div class="process-no">03.</div>
-                        <h3>Build and review</h3>
-                        <p>
-                            Develop in stages, test important behavior,
-                            and review progress.
-                        </p>
-                    </article>
-
-                    <article class="process-step">
-                        <div class="process-no">04.</div>
-                        <h3>Deliver and support</h3>
-                        <p>
-                            Provide agreed deliverables and documentation,
-                            with support terms as needed.
-                        </p>
-                    </article>
+                <div class="home-process-footer">
+                    <a
+                        class="home-text-link"
+                        href="process.html"
+                    >
+                        View our full process
+                        <span aria-hidden="true">→</span>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Government contracting -->
+        <!-- Government and subcontracting -->
         <section
-            class="government"
+            class="section home-government"
             id="government"
             aria-labelledby="government-heading"
         >
-            <div class="shell gov-grid">
-                <div class="gov-panel">
-                    <div class="caps">
-                        Public-sector capabilities
-                    </div>
+            <div class="shell home-split">
 
-                    <h3>
-                        Software engineering for public-sector needs.
-                    </h3>
+                <div class="home-certification">
+                    <img
+                        src="assets/images/branding/NYS-Certified-Logo.png"
+                        alt="New York State-certified Service-Disabled Veteran-Owned Business certification logo"
+                        loading="lazy"
+                    >
 
-                    <p>
-                        Development, integration, and subcontracting
-                        support for defined technical work.
-                    </p>
+                    <div>
+                        <strong>
+                            NYS-Certified SDVOB
+                        </strong>
 
-                    <div class="gov-seal">
-                        NYS-certified service-disabled veteran-owned business
+                        <span>
+                            Service-Disabled Veteran-Owned Business
+                        </span>
                     </div>
                 </div>
 
-                <div class="gov-copy">
+                <div class="home-section-copy">
                     <div class="caps subtle">
-                        05 / Government &amp; subcontracting
+                        06 / Government &amp; subcontracting
                     </div>
 
                     <h2 id="government-heading">
-                        A practical engineering partner for contract work.
+                        Qualified for
+                        <em>contract opportunities.</em>
                     </h2>
 
                     <p>
-                        McGregor Systems LLC is certified by New York State
-                        as a Service-Disabled Veteran-Owned Business.
-                        We welcome inquiries about software development,
-                        maintenance, integrations, and subcontracting opportunities.
-                    </p>
-
-                    <ul class="gov-list">
-                        <li>New York State SDVOB certification</li>
-                        <li>Software engineering and systems design</li>
-                        <li>Commercial and subcontracting engagements</li>
-                    </ul>
-
-                    <a class="btn btn-dark" href="contact.html">
-                        Discuss a contracting need
-                        <span aria-hidden="true">↗</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Company introduction -->
-        <section
-            class="section about"
-            id="about"
-            aria-labelledby="about-heading"
-        >
-            <div class="shell about-grid">
-                <div class="about-art">
-                    <div class="about-quote">
-                        <div class="caps">
-                            Why founder-led matters
-                        </div>
-                        <p>
-                            Talk directly with the engineer doing the work.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="about-copy">
-                    <div class="caps subtle">06 / The company</div>
-
-                    <h2 id="about-heading">
-                        Practical experience. Direct accountability.
-                    </h2>
-
-                    <p>
-                        McGregor Systems LLC is an independent software
-                        engineering business based in the Albany,
-                        New York area.
+                        McGregor Systems LLC is certified by
+                        New York State as a Service-Disabled
+                        Veteran-Owned Business.
                     </p>
 
                     <p>
-                        The work includes application development,
-                        system improvements, and technical planning
-                        based on a client's actual needs.
+                        We welcome inquiries about software
+                        engineering, maintenance, modernization,
+                        integration, and subcontracting opportunities.
                     </p>
 
-                    <div class="about-points">
-                        <div>Software engineering</div>
-                        <div>Application integration</div>
-                        <div>Technical documentation</div>
-                        <div>Veteran-owned business</div>
-                    </div>
-
-                    <a class="btn-link" href="contact.html">
-                        Start a conversation
+                    <a
+                        class="home-text-link"
+                        href="government.html"
+                    >
+                        Government contracting capabilities
+                        <span aria-hidden="true">→</span>
                     </a>
                 </div>
+
             </div>
         </section>
 
-        <!-- Homepage contact call to action; the inquiry form lives on contact.html. -->
+        <!-- Closing call to action -->
         <section
-            class="contact"
+            class="home-contact"
             id="contact"
             aria-labelledby="contact-heading"
         >
-            <div class="shell contact-grid">
-                <div>
-                    <div class="caps">07 / Start a conversation</div>
-
-                    <h2 id="contact-heading">
-                        Have a problem worth <em>solving?</em>
-                    </h2>
-
-                    <p>
-                        Have something you want to build, repair, or improve?
-                        Tell me a little about it and we can discuss the next steps.
-                    </p>
-
-                    <div class="contact-email">
-                        <a href="mailto:mcgregorsystemsllc@gmail.com">
-                            mcgregorsystemsllc@gmail.com
-                        </a>
-                    </div>
-
-                    <p>Albany, NY · Remote collaboration available</p>
+            <div class="shell home-contact-inner">
+                <div class="caps">
+                    Start a conversation
                 </div>
 
-                <div class="contact-form">
-                    <h3>Let's talk about your project.</h3>
-                    <p>
-                        Share a short description of the work you have in mind.
-                        I'll review it and follow up about next steps.
-                    </p>
-                    <a class="btn btn-dark" href="contact.html">
-                        Send a project inquiry
-                        <span aria-hidden="true">↗</span>
-                    </a>
-                </div>
+                <h2 id="contact-heading">
+                    Have something to
+                    <em>build or improve?</em>
+                </h2>
+
+                <p>
+                    Tell us about the problem, the project,
+                    or the system you want to improve.
+                    We can discuss the requirements
+                    and appropriate next steps.
+                </p>
+
+                <a
+                    class="btn btn-white"
+                    href="contact.html"
+                >
+                    Discuss your project
+                    <span aria-hidden="true">↗</span>
+                </a>
             </div>
         </section>
+
     </main>
 
-    <!-- Shared footer is rendered by site-footer.js. -->
     <div id="site-footer">
         <footer class="footer">
             <div class="shell">
@@ -706,7 +663,14 @@
         </footer>
     </div>
 
-    <script type="module" src="assets/js/main.js"></script>
-    <script type="module" src="assets/js/features/service-pricing.js"></script>
+    <script
+        type="module"
+        src="assets/js/main.js"
+    ></script>
+
+    <script
+        type="module"
+        src="assets/js/components/technology-marquee.js"
+    ></script>
 </body>
 </html>

@@ -1,0 +1,351 @@
+
+/* Shared technology marquee.
+   Movement and infinite wrapping are handled by JavaScript. */
+
+.technology-marquee {
+    padding: 65px 0 58px;
+    overflow: hidden;
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+/* Heading */
+
+.technology-marquee-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 31px;
+}
+
+.technology-marquee-heading h2 {
+    max-width: 650px;
+    margin: 12px 0 0;
+    color: var(--ink);
+    font-size: clamp(25px, 3.2vw, 38px);
+    line-height: 1.18;
+    letter-spacing: -.045em;
+}
+
+.technology-marquee-heading h2 em {
+    color: var(--accent);
+    font-family: var(--serif);
+    font-weight: 400;
+}
+
+/* Horizontal scrolling viewport */
+
+.technology-marquee-viewport {
+    width: 100%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scrollbar-width: none;
+    overscroll-behavior-x: contain;
+    scroll-behavior: auto;
+
+    cursor: grab;
+
+    -webkit-overflow-scrolling: touch;
+
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 8%,
+        black 92%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 8%,
+        black 92%,
+        transparent 100%
+    );
+}
+
+.technology-marquee-viewport::-webkit-scrollbar {
+    display: none;
+}
+
+.technology-marquee-viewport:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -3px;
+}
+
+/* Three identical technology lists */
+
+.technology-marquee-track {
+    display: flex;
+    align-items: stretch;
+
+    width: max-content;
+    min-width: 100%;
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    overflow-anchor: none;
+}
+
+.technology-marquee-list {
+    display: flex;
+    align-items: stretch;
+    flex: 0 0 auto;
+
+    gap: clamp(30px, 3.5vw, 54px);
+
+    margin: 0;
+
+    padding:
+        10px clamp(30px, 3.5vw, 54px)
+        10px 0;
+
+    list-style: none;
+}
+
+/* Technology items */
+
+.technology-marquee-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    min-width: 85px;
+    min-height: 85px;
+}
+
+/* Documentation links */
+
+.technology-marquee-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 13px;
+
+    min-width: 85px;
+    padding: 8px 4px;
+
+    color: var(--muted);
+    text-decoration: none;
+    text-align: center;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition:
+        color .2s ease,
+        transform .2s ease;
+}
+
+.technology-marquee-link img {
+    display: block;
+
+    width: 40px;
+    height: 40px;
+
+    object-fit: contain;
+    pointer-events: none;
+
+    transition: transform .2s ease;
+}
+
+.technology-marquee-link img[hidden] {
+    display: none;
+}
+
+.technology-marquee-link span {
+    color: inherit;
+
+    font-size: 11px;
+    font-weight: 650;
+    line-height: 1.3;
+
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* Interactive states */
+
+.technology-marquee-link:hover,
+.technology-marquee-link:focus-visible {
+    color: var(--accent);
+}
+
+.technology-marquee-link:hover img,
+.technology-marquee-link:focus-visible img {
+    transform: translateY(-3px) scale(1.08);
+}
+
+.technology-marquee-link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+/* Mouse dragging */
+
+.technology-marquee--dragging
+.technology-marquee-viewport {
+    cursor: grabbing;
+}
+
+.technology-marquee--dragging
+.technology-marquee-link {
+    cursor: grabbing;
+}
+
+.technology-marquee--dragging
+.technology-marquee-link img {
+    transform: none;
+}
+
+/* Fallback when an SVG cannot load */
+
+.technology-marquee-item--text-only {
+    min-width: 110px;
+}
+
+.technology-marquee-item--text-only
+.technology-marquee-link span {
+    color: var(--ink);
+    font-size: 13px;
+    font-weight: 750;
+}
+
+/* Supporting text */
+
+.technology-marquee-caption {
+    margin: 25px 0 0;
+
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.7;
+
+    text-align: center;
+}
+
+.technology-marquee-caption span {
+    display: block;
+
+    margin-top: 5px;
+
+    color: var(--accent);
+    font-weight: 650;
+}
+
+/* Tablet */
+
+@media (max-width: 980px) {
+    .technology-marquee {
+        padding: 55px 0 49px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 720px) {
+    .technology-marquee {
+        padding: 43px 0 40px;
+    }
+
+    .technology-marquee-heading {
+        align-items: start;
+        gap: 14px;
+        margin-bottom: 24px;
+    }
+
+    .technology-marquee-heading h2 {
+        font-size: clamp(23px, 5.5vw, 30px);
+    }
+
+    .technology-marquee-item {
+        min-width: 80px;
+    }
+
+    .technology-marquee-link {
+        min-width: 80px;
+    }
+
+    .technology-marquee-link img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .technology-marquee-viewport {
+        -webkit-mask-image: linear-gradient(
+            to right,
+            transparent 0%,
+            black 5%,
+            black 95%,
+            transparent 100%
+        );
+
+        mask-image: linear-gradient(
+            to right,
+            transparent 0%,
+            black 5%,
+            black 95%,
+            transparent 100%
+        );
+    }
+
+    .technology-marquee-caption {
+        margin-top: 18px;
+        font-size: 10px;
+    }
+}
+
+/* Accessibility: reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .technology-marquee {
+        overflow: visible;
+    }
+
+    .technology-marquee-viewport {
+        overflow-x: visible;
+        overflow-y: visible;
+
+        cursor: default;
+
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    .technology-marquee-track {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .technology-marquee-list[aria-hidden="true"] {
+        display: none;
+    }
+
+    .technology-marquee-list:not([aria-hidden]) {
+        width: 100%;
+
+        flex-wrap: wrap;
+        justify-content: center;
+
+        padding: 10px 20px;
+        gap: 24px;
+    }
+
+    .technology-marquee-link {
+        cursor: pointer;
+        transition: none;
+    }
+
+    .technology-marquee-link img {
+        transition: none;
+    }
+}
