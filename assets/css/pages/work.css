@@ -1,153 +1,768 @@
 
-/* Selected Work page layout.
-   Project names and anchor IDs are content; presentation uses reusable classes. */
+/* Selected Work page.
+   Unified editorial project entries with explicitly identified contexts.
+   Shared layout, typography, and color variables come from site.css.
+   Wise Raven Studios uses scoped navy-and-gold accents.
+*/
 
-/* Page introduction */
-.work-page .work-page-intro {
-    padding: 88px 0 76px;
+/* Introduction */
+
+.work-page .work-intro {
+    padding: 88px 0 80px;
     background: var(--paper);
     border-bottom: 1px solid var(--line);
 }
 
-.work-page-intro h1 {
-    max-width: 780px;
-    margin: 12px 0 0;
-    font-size: clamp(42px, 5.7vw, 70px);
+.work-intro h1 {
+    max-width: 1000px;
+    margin: 18px 0 28px;
+    color: var(--ink);
+    font-size: clamp(44px, 6vw, 78px);
+    font-weight: 720;
     line-height: 1.07;
-    letter-spacing: -.055em;
+    letter-spacing: -.058em;
 }
 
-.work-page-intro .intro-description {
-    max-width: 790px;
+.work-intro h1 em {
+    display: block;
+    color: var(--accent);
+    font-family: var(--serif);
+    font-weight: 400;
+}
+
+.work-intro-bottom {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(270px, .9fr);
+    align-items: start;
+    gap: clamp(30px, 6vw, 90px);
+}
+
+.work-intro-description {
+    max-width: 680px;
     margin: 0;
     color: var(--muted);
-    font-size: 15px;
-    line-height: 1.8;
+    font-size: 16px;
+    line-height: 1.85;
 }
 
-/* Case-study sections: the variants can be assigned to any case study. */
-.work-page .case-study--light {
-    background: var(--cream);
+.work-intro-note {
+    max-width: 420px;
+    margin: 0;
+    padding: 4px 0 4px 22px;
+    border-left: 2px solid var(--accent);
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.85;
 }
 
-.work-page .case-study--tinted {
-    background: var(--surface-tinted);
+/* Unified project list */
+
+.work-page .work-additional {
+    background: var(--paper);
+}
+
+.work-additional .section-head {
+    margin-bottom: 40px;
+}
+
+.work-additional .section-head h2 {
+    max-width: 720px;
+}
+
+.work-additional .section-head h2 em {
+    color: var(--accent);
+    font-family: var(--serif);
+    font-weight: 400;
+}
+
+.work-project {
+    display: grid;
+    grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+    align-items: center;
+    gap: clamp(30px, 4vw, 65px);
+    padding: 43px 0;
     border-top: 1px solid var(--line);
 }
 
-.work-page .case-study--featured .work-card {
+.work-project:last-child {
+    padding-bottom: 0;
+}
+
+.work-project-visual {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 0;
+    min-height: 360px;
+    margin: 0;
+    padding: 23px;
+}
+
+.work-project-visual--ras {
+    background: #d7e6dc;
+}
+
+.work-project-visual--eldvatten {
+    background: #e0ebe6;
+}
+
+.work-project-visual--healthcare {
+    background: #ede9df;
+}
+
+.work-project-visual-label {
+    color: #506d67;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.work-project-visual-bottom {
+    color: #647a73;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+/* RAS report illustration */
+
+.work-report-illustration {
+    position: relative;
     display: grid;
-    grid-template-columns: minmax(270px, .82fr) minmax(0, 1.18fr);
-    align-items: stretch;
+    place-items: center;
+    min-height: 235px;
+    isolation: isolate;
 }
 
-.work-page .case-study--featured .work-visual {
-    height: auto;
-    min-height: 440px;
-    padding: 29px;
+.work-report-document {
+    position: relative;
+    z-index: 2;
+    width: min(68%, 205px);
+    min-height: 255px;
+    padding: 19px 16px;
+    background: #fff;
+    border: 1px solid #c6d3ca;
+    box-shadow: 0 19px 36px rgba(32, 63, 54, .12);
+    transform: rotate(-5deg);
 }
 
-.work-page .case-study--featured .work-copy {
-    padding: clamp(27px, 4vw, 50px);
+.work-report-document-shadow {
+    position: absolute;
+    z-index: 1;
+    width: min(68%, 205px);
+    min-height: 255px;
+    background: #abcbb8;
+    border: 1px solid #9dbda9;
+    transform: translate(17px, 15px) rotate(-5deg);
 }
 
-.work-page .case-study--standard .work-card {
-    max-width: 980px;
-    border-left: 4px solid var(--accent);
+.work-report-document-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #d8e0d9;
+    color: #557168;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .1em;
 }
 
-.work-page .case-study--standard .work-copy {
-    padding: clamp(27px, 4vw, 45px);
+.work-report-document-title {
+    margin: 22px 0 25px;
+    color: #29483e;
+    font-size: clamp(15px, 2vw, 21px);
+    font-weight: 750;
+    line-height: 1.2;
 }
 
-/* Work-page text: overrides the compact card-copy sizing used on the homepage. */
-.work-page .work-copy {
-    gap: 0;
+.work-report-line {
+    width: 100%;
+    height: 6px;
+    margin-bottom: 11px;
+    background: #d5dfd8;
 }
 
-.work-page .work-type {
+.work-report-line--short {
+    width: 62%;
+}
+
+.work-report-divider {
+    height: 1px;
+    margin: 24px 0 14px;
+    background: #d5dfd8;
+}
+
+.work-report-row {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e6ece7;
+}
+
+.work-report-row div {
+    height: 7px;
+    background: #d6e1da;
+}
+
+.work-report-row div:first-child {
+    width: 75%;
+}
+
+/* Project descriptions */
+
+.work-project-copy {
+    min-width: 0;
+    padding: 4px 0 8px;
+}
+
+.work-project-number {
     margin-bottom: 12px;
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
 }
 
-.work-page .case-study__heading {
-    margin: 24px 0 10px;
-    font-size: clamp(20px, 2vw, 25px);
-    letter-spacing: -.03em;
+.work-project-copy h3 {
+    margin: 0 0 7px;
+    color: var(--ink);
+    font-size: clamp(28px, 3.4vw, 43px);
+    line-height: 1.13;
+    letter-spacing: -.045em;
 }
 
-.work-page .case-study__heading--first {
-    margin-top: 0;
+.work-project-subtitle {
+    margin: 0 0 21px !important;
+    color: var(--ink) !important;
+    font-size: 15px !important;
+    font-weight: 650;
 }
 
-.work-page .work-copy p,
-.work-page .work-copy li {
+.work-project-copy p {
+    margin: 0 0 14px;
     color: var(--muted);
-    font-size: 14px;
-    line-height: 1.8;
+    font-size: 13px;
+    line-height: 1.85;
 }
 
-.work-page .work-copy p {
-    margin: 0 0 16px;
+.work-project-copy h4 {
+    margin: 23px 0 11px;
+    color: var(--ink);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .085em;
+    text-transform: uppercase;
 }
 
-.work-page .work-copy ul {
-    margin: 2px 0 5px;
-    padding-left: 23px;
+.work-project-contributions {
+    margin: 0 0 18px;
+    padding-left: 19px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.75;
 }
 
-.work-page .work-copy li {
-    margin-bottom: 8px;
-    padding-left: 3px;
+.work-project-contributions li {
+    margin-bottom: 7px;
 }
 
-.work-page .work-copy li::marker {
+.work-project-contributions li::marker {
     color: var(--accent);
 }
 
-/* Optional extra information within each case study.
-   Native details elements work without JavaScript. */
-.work-page .case-study__details {
-    margin-top: 24px;
+.work-project-technologies {
+    margin-top: 17px;
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 650;
+    line-height: 1.75;
+}
+
+.work-project-role {
+    margin-top: 15px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.work-project-role strong {
+    color: var(--ink);
+}
+
+.work-project-disclosure {
+    margin: 19px 0 0 !important;
+    color: var(--muted);
+    font-size: 11px !important;
+    font-style: italic;
+}
+
+/* Expandable technical details */
+
+.work-details {
+    margin-top: 23px;
     padding-top: 18px;
     border-top: 1px solid var(--line);
 }
 
-.work-page .case-study__details summary {
+.work-details summary {
     color: var(--accent);
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 800;
+    line-height: 1.5;
     cursor: pointer;
 }
 
-.work-page .case-study__details summary:hover {
+.work-details summary:hover {
     color: var(--dark);
 }
 
-.work-page .case-study__details-body {
-    padding-top: 15px;
+.work-details summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
 }
 
-.work-page .case-study__details-body p {
+.work-details-body {
+    padding-top: 16px;
+}
+
+.work-details-body p {
     margin: 0 0 13px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.85;
 }
 
-/* Document illustration layout; the reusable mockup itself is in cards.css. */
-.work-page .case-study--featured .visual-label {
-    position: static;
+.work-details-body p:last-child {
+    margin-bottom: 0;
+}
+
+/* Shared screenshot carousel */
+
+.work-carousel {
+    width: 100%;
+    min-width: 0;
+    outline-offset: 5px;
+}
+
+.work-carousel-stage {
+    display: grid;
+    grid-template-columns: 36px minmax(0, 1fr) 36px;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+.work-carousel-arrow {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid #b9cdc1;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, .78);
+    color: #285d50;
+    cursor: pointer;
+    transition:
+        background-color .16s ease,
+        border-color .16s ease,
+        transform .16s ease;
+}
+
+.work-carousel-arrow span {
     display: block;
-    color: #365c55;
-    font-size: 10px;
+    margin-top: -4px;
+    font-family: Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1;
 }
 
-.work-page .case-study--featured .document-preview {
-    margin: 33px auto 0;
+.work-carousel-arrow:hover:not(:disabled) {
+    background: #fff;
+    border-color: #398070;
+    transform: translateY(-1px);
+}
+
+.work-carousel-arrow:disabled {
+    opacity: .4;
+    cursor: not-allowed;
+}
+
+.work-carousel-arrow:focus-visible,
+.work-carousel:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+.work-carousel-meta {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.work-carousel-caption {
+    min-width: 0;
+    color: #456b60;
+    font-size: 11px;
+    font-weight: 650;
+    line-height: 1.5;
+}
+
+.work-carousel-count {
+    flex: 0 0 auto;
+    color: #617d70;
+    font-size: 11px;
+    font-weight: 750;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+.work-carousel [data-carousel-slide][hidden] {
+    display: none !important;
+}
+
+/* EldVatten desktop monitor */
+
+.work-carousel--desktop {
+    margin: 27px 0 20px;
+}
+
+.work-monitor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+}
+
+.work-monitor-bezel {
+    position: relative;
+    width: 100%;
+    padding: 9px 9px 15px;
+    border: 1px solid #25353b;
+    border-radius: 10px;
+    background: linear-gradient(140deg, #34454c, #17252b 75%);
+    box-shadow:
+        0 13px 25px rgba(21, 47, 42, .19),
+        inset 0 1px rgba(255, 255, 255, .12);
+}
+
+.work-monitor-bezel::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #8fa9a3;
+    transform: translateX(-50%);
+}
+
+.work-monitor-screen {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #f4f6f4;
+    border: 1px solid #0f1d21;
+}
+
+.work-monitor-screen img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    object-fit: contain;
+    object-position: center;
+}
+
+.work-monitor-neck {
+    width: 18%;
+    height: 23px;
+    background: linear-gradient(
+        90deg,
+        #56676b,
+        #2c3c42 28%,
+        #526267 75%,
+        #344449
+    );
+}
+
+.work-monitor-base {
+    width: 44%;
+    height: 8px;
+    border-radius: 55% 55% 3px 3px;
+    background: linear-gradient(180deg, #536469, #25353a);
+    box-shadow: 0 5px 9px rgba(21, 47, 42, .16);
+}
+
+/* Healthcare project image */
+
+.work-project-image-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    margin: 25px 0;
+}
+
+.work-project-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 380px;
+    object-fit: contain;
+    border: 1px solid rgba(20, 39, 49, .14);
+    box-shadow: 0 13px 30px rgba(20, 39, 49, .12);
+}
+
+/* Wise Raven Studios entry.
+   Same project layout, but studio-specific visual identity. */
+
+.work-project--studio {
+    --studio-bg: #03101d;
+    --studio-card: #102a43;
+    --studio-accent: #ffd66b;
+    --studio-accent-soft: #ffe59d;
+    --studio-muted: #a8b8c8;
+}
+
+.work-project-visual--studio {
+    min-height: 570px;
+    background:
+        radial-gradient(
+            circle at 50% 43%,
+            #19354c,
+            #03101d 78%
+        );
+    color: #f4f7fb;
+}
+
+.work-project--studio .work-project-visual-label,
+.work-project--studio .work-project-visual-bottom {
+    color: #c0d0de;
+}
+
+.work-project--studio .work-project-number,
+.work-project--studio .work-project-technologies {
+    color: #916d20;
+}
+
+.work-project--studio .work-project-contributions li::marker {
+    color: #a98327;
+}
+
+.work-project-studio-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+    margin-top: 19px;
+    padding: 11px 17px;
+    border-radius: 4px;
+    background: #03101d;
+    color: #ffd66b;
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.work-project-studio-link:hover {
+    background: #102a43;
+    color: #ffe59d;
+}
+
+.work-project-studio-link:focus-visible {
+    outline: 2px solid #916d20;
+    outline-offset: 4px;
+}
+
+/* Arith-Matic phone carousel */
+
+.work-carousel--phone {
+    margin: 22px 0;
+}
+
+.work-carousel--phone .work-carousel-stage {
+    grid-template-columns: 36px minmax(0, 1fr) 36px;
+    gap: 9px;
+}
+
+.work-carousel--phone .work-carousel-arrow {
+    width: 36px;
+    height: 48px;
+    background: rgba(255, 214, 107, .06);
+    border-color: rgba(255, 214, 107, .4);
+    color: var(--studio-accent);
+}
+
+.work-carousel--phone .work-carousel-arrow:hover:not(:disabled) {
+    background: rgba(255, 214, 107, .15);
+    border-color: var(--studio-accent);
+}
+
+.work-carousel--phone .work-carousel-arrow:focus-visible,
+.work-carousel--phone:focus-visible {
+    outline-color: var(--studio-accent);
+}
+
+.work-carousel--phone .work-carousel-caption {
+    color: var(--studio-accent-soft);
+}
+
+.work-carousel--phone .work-carousel-count {
+    color: var(--studio-muted);
+}
+
+.work-phone {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-width: 0;
+}
+
+.work-phone-frame {
+    position: relative;
+    width: min(100%, 245px);
+    aspect-ratio: 9 / 19.5;
+    padding: 9px;
+    border: 3px solid #4a555d;
+    border-radius: 34px;
+    background: #101820;
+    box-shadow:
+        0 0 0 2px #080e14,
+        0 20px 42px rgba(0, 0, 0, .45),
+        inset 0 0 0 1px rgba(255, 255, 255, .17);
+}
+
+.work-phone-screen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+    background: #172c2b;
+}
+
+.work-phone-screen img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.work-phone-camera {
+    position: absolute;
+    z-index: 3;
+    top: 13px;
+    left: 50%;
+    width: 27%;
+    height: 15px;
+    border-radius: 999px;
+    background: #101820;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.work-phone-camera::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 13px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #2c424f;
+}
+
+/* Wise Raven Studios link section */
+
+.work-page .work-studio {
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+}
+
+.work-studio-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr);
+    align-items: center;
+    gap: clamp(35px, 6vw, 90px);
+}
+
+.work-studio-copy h2 {
+    margin: 13px 0 20px;
+    color: var(--ink);
+    font-size: clamp(32px, 3.8vw, 49px);
+    line-height: 1.13;
+    letter-spacing: -.045em;
+}
+
+.work-studio-copy p {
+    max-width: 680px;
+    margin: 0 0 17px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.work-studio-copy .btn {
+    margin-top: 13px;
+}
+
+.work-studio-aside {
+    min-width: 0;
+    padding: clamp(27px, 3.5vw, 43px);
+    background: var(--surface-tinted);
+    border-left: 3px solid var(--accent);
+}
+
+.work-studio-aside-label {
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.work-studio-aside h3 {
+    margin: 16px 0 13px;
+    color: var(--ink);
+    font-size: clamp(23px, 2.6vw, 32px);
+    line-height: 1.2;
+    letter-spacing: -.035em;
+}
+
+.work-studio-aside p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.85;
 }
 
 /* Closing invitation */
+
 .work-page .work-page-cta {
     padding: 75px 0;
     background: var(--dark);
     color: var(--text-on-dark);
+}
+
+.work-page-cta-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
 }
 
 .work-page-cta .caps {
@@ -155,54 +770,204 @@
 }
 
 .work-page-cta h2 {
+    margin: 12px 0;
     color: var(--text-on-dark);
+    font-size: clamp(29px, 3.8vw, 47px);
+    line-height: 1.13;
+    letter-spacing: -.045em;
 }
 
-.work-page-cta .section-head p {
+.work-page-cta p {
+    max-width: 650px;
+    margin: 0;
     color: var(--text-on-dark-muted);
+    font-size: 14px;
+    line-height: 1.75;
 }
 
-.work-page-cta .btn-dark {
-    background: var(--paper);
-    color: var(--dark);
+.work-page-cta .btn {
+    flex: 0 0 auto;
 }
 
-.work-page-cta .btn-dark:hover {
-    background: var(--accentLight);
+/* Anchor positioning and focus */
+
+.work-page #ras-systems,
+.work-page #eldvatten,
+.work-page #healthcare-scheduler,
+.work-page #arith-matic,
+.work-page #wise-raven-studios {
+    scroll-margin-top: 95px;
 }
 
-/* Responsive adjustments */
+.work-page a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 1050px) {
+    .work-project {
+        gap: 30px;
+    }
+
+    .work-carousel-stage {
+        grid-template-columns: 32px minmax(0, 1fr) 32px;
+        gap: 6px;
+    }
+
+    .work-carousel-arrow {
+        width: 32px;
+    }
+}
+
 @media (max-width: 850px) {
-    .work-page .case-study--featured .work-card {
+    .work-intro-bottom,
+    .work-studio-grid {
         grid-template-columns: 1fr;
     }
 
-    .work-page .case-study--featured .work-visual {
-        min-height: 365px;
+    .work-intro-note {
+        max-width: 650px;
     }
 
-    .work-page .case-study--featured .document-preview {
-        min-height: 280px;
-        margin-top: 19px;
+    .work-project {
+        grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+        gap: 25px;
+    }
+
+    .work-project-visual {
+        padding: 17px;
+    }
+
+    .work-carousel--desktop .work-carousel-stage {
+        grid-template-columns: 29px minmax(0, 1fr) 29px;
+        gap: 5px;
+    }
+
+    .work-carousel--desktop .work-carousel-arrow {
+        width: 29px;
+        height: 40px;
     }
 }
 
 @media (max-width: 720px) {
-    .work-page .work-page-intro {
+    .work-page .work-intro {
         padding: 65px 0;
     }
 
-    .work-page .case-study--featured .work-visual {
-        padding: 24px;
+    .work-intro h1 {
+        font-size: clamp(40px, 8.7vw, 58px);
     }
 
-    .work-page .case-study--featured .document-preview {
-        transform: rotate(-1deg);
+    .work-project {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 33px 0;
+    }
+
+    .work-project-visual {
+        min-height: 340px;
+        padding: 22px;
+    }
+
+    .work-project-visual--studio {
+        min-height: 570px;
+    }
+
+    .work-additional .section-head {
+        margin-bottom: 28px;
+    }
+
+    .work-carousel--desktop .work-carousel-stage {
+        grid-template-columns: 36px minmax(0, 1fr) 36px;
+        gap: 10px;
+    }
+
+    .work-carousel--desktop .work-carousel-arrow {
+        width: 36px;
+        height: 44px;
+    }
+
+    .work-page-cta-grid {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .work-page .work-page-cta {
+        padding: 65px 0;
+    }
+}
+
+@media (max-width: 430px) {
+    .work-intro h1 {
+        font-size: clamp(37px, 9vw, 44px);
+        letter-spacing: -.045em;
+    }
+
+    .work-project-visual {
+        padding: 17px 12px;
+    }
+
+    .work-carousel--desktop .work-carousel-stage {
+        grid-template-columns: 29px minmax(0, 1fr) 29px;
+        gap: 5px;
+    }
+
+    .work-carousel--desktop .work-carousel-arrow {
+        width: 29px;
+        height: 40px;
+    }
+
+    .work-monitor-bezel {
+        padding: 6px 6px 12px;
+        border-radius: 7px;
+    }
+
+    .work-monitor-neck {
+        height: 15px;
+    }
+
+    .work-carousel-caption {
+        font-size: 10px;
+    }
+
+    .work-carousel--phone .work-carousel-stage {
+        grid-template-columns: 31px minmax(0, 1fr) 31px;
+        gap: 6px;
+    }
+
+    .work-carousel--phone .work-carousel-arrow {
+        width: 31px;
+        height: 44px;
+    }
+
+    .work-phone-frame {
+        width: min(100%, 230px);
+        border-radius: 29px;
+        padding: 7px;
+    }
+
+    .work-phone-screen {
+        border-radius: 21px;
+    }
+
+    .work-studio-aside {
+        padding: 27px 23px;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .work-page .case-study--featured .document-preview {
+    .work-report-document,
+    .work-report-document-shadow {
+        transform: none;
+    }
+
+    .work-carousel-arrow {
+        transition: none;
+    }
+
+    .work-carousel-arrow:hover:not(:disabled) {
         transform: none;
     }
 }

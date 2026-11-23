@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="McGregor Systems LLC">
-    <meta name="description" content="Selected contract experience and software projects demonstrating reporting, application development, and systems engineering work.">
+    <meta
+        name="description"
+        content="Selected commercial software engineering experience, independent applications, academic development, and original software products from McGregor Systems LLC."
+    >
     <meta name="theme-color" content="#142731">
 
     <title>Selected Work | McGregor Systems LLC</title>
@@ -13,206 +16,1151 @@
     <link rel="icon" type="image/png" href="assets/images/branding/favicon.png">
     <link rel="stylesheet" href="assets/css/site.css">
     <link rel="stylesheet" href="assets/css/pages/work.css">
+
+    <style>
+        /* RAS uses ordinary software screenshots, not a device frame. */
+
+        .work-carousel--ras {
+            margin: 24px 0 18px;
+        }
+
+        .work-carousel--ras .work-carousel-stage {
+            grid-template-columns: 36px minmax(0, 1fr) 36px;
+            gap: 9px;
+        }
+
+        .work-ras-image-frame {
+            display: grid;
+            place-items: center;
+            width: 100%;
+            min-width: 0;
+            aspect-ratio: 16 / 10;
+            overflow: hidden;
+            border: 1px solid rgba(20, 39, 49, .13);
+            border-radius: 4px;
+            background: #f7faf8;
+            box-shadow: 0 12px 28px rgba(20, 39, 49, .11);
+        }
+
+        .work-ras-image-frame img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .work-carousel--ras .work-carousel-caption {
+            color: #315e53;
+        }
+
+        .work-ras-disclosure {
+            margin: 15px 0 0;
+            padding: 11px 13px;
+            border-left: 2px solid #82ad9b;
+            background: rgba(255, 255, 255, .45);
+            color: #526c63;
+            font-size: 11px;
+            line-height: 1.7;
+        }
+
+        .work-ras-disclosure strong {
+            color: #315e53;
+        }
+
+        @media (max-width: 430px) {
+            .work-carousel--ras .work-carousel-stage {
+                grid-template-columns: 29px minmax(0, 1fr) 29px;
+                gap: 5px;
+            }
+
+            .work-carousel--ras .work-carousel-arrow {
+                width: 29px;
+                height: 40px;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <div id="site-header">
         <header class="nav">
             <div class="shell">
-                <a class="brand" href="index.html">McGregor Systems LLC</a>
+                <a class="brand" href="index.html">
+                    McGregor Systems LLC
+                </a>
             </div>
         </header>
     </div>
 
     <main id="main-content" class="work-page">
-        <section class="section work-page-intro" aria-labelledby="work-heading">
+
+        <!-- Introduction -->
+        <section class="work-intro" aria-labelledby="work-heading">
             <div class="shell">
-                <div class="caps subtle">Selected work / Experience and projects</div>
-                <div class="section-head">
-                    <div>
-                        <h1 id="work-heading">Examples of the systems behind the work.</h1>
-                    </div>
-                    <p>Commercial contract work is identified separately from independent and academic development.</p>
+                <div class="caps subtle">
+                    Selected work / Engineering experience
                 </div>
-                <p class="intro-description">
-                    The examples below describe relevant engineering responsibilities and implementation decisions.
-                    They do not imply that every project was a McGregor Systems LLC client engagement.
-                </p>
+
+                <h1 id="work-heading">
+                    Problems solved.
+                    <em>Systems improved.</em>
+                </h1>
+
+                <div class="work-intro-bottom">
+                    <p class="work-intro-description">
+                        A selection of contract engineering responsibilities,
+                        independently developed systems, academic work,
+                        and original software products.
+                    </p>
+
+                    <p class="work-intro-note">
+                        Each project is identified by its development context
+                        so commercial engagements can be distinguished from
+                        independent and academic work.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <!-- Case-study IDs are for direct links, not CSS styling. -->
-        <section class="section case-study case-study--featured case-study--light" id="ras-systems" aria-labelledby="ras-heading">
+        <!-- Unified project list -->
+        <section
+            class="section work-additional"
+            id="additional-work"
+            aria-labelledby="additional-work-heading"
+        >
             <div class="shell">
+
                 <div class="section-head">
                     <div>
-                        <div class="caps subtle">01 / Commercial contract experience</div>
-                        <h2 id="ras-heading">RAS Systems — reporting and workflow maintenance</h2>
+                        <div class="caps subtle">
+                            Selected projects
+                        </div>
+
+                        <h2 id="additional-work-heading">
+                            Engineering in practice.
+                            <em>Across different systems.</em>
+                        </h2>
                     </div>
-                    <p>Existing business application · Reporting · Systems integration</p>
+
+                    <p>
+                        Commercial assignments, independent applications,
+                        academic development, and original products are
+                        shown together, with each project's context
+                        identified clearly.
+                    </p>
                 </div>
 
-                <article class="work-card">
-                    <!-- Concept artwork is reusable and is not client-supplied evidence. -->
-                    <div class="work-visual work-visual--sage" role="img" aria-label="Concept illustration of a report document">
-                        <div class="visual-label" aria-hidden="true">Reporting workflow · Concept illustration</div>
-                        <div class="document-preview" aria-hidden="true">
-                            <strong class="document-preview__heading">Document processing</strong>
-                            <div class="document-preview__row"></div>
-                            <div class="document-preview__row document-preview__row--medium"></div>
-                            <div class="document-preview__row"></div>
-                            <div class="document-preview__row document-preview__row--short"></div>
+                <!-- 01 / RAS Systems -->
+                <article
+                    class="work-project"
+                    id="ras-systems"
+                    aria-labelledby="ras-heading"
+                >
+                    <figure class="work-project-visual work-project-visual--ras">
+
+                        <div class="work-project-visual-label">
+                            Application workflows &amp; reporting
                         </div>
-                    </div>
 
-                    <div class="work-copy">
-                        <div class="work-type">Contract software engineering</div>
+                        <div
+                            class="work-carousel work-carousel--ras"
+                            data-work-carousel
+                            aria-label="RAS Systems development technology examples"
+                            tabindex="0"
+                        >
+                            <div class="work-carousel-stage">
 
-                        <h3 class="case-study__heading case-study__heading--first">Problem and context</h3>
-                        <p>
-                            Existing internal tools and reporting workflows involved multiple connected services.
-                            Permission rules, reporting logic, and document layouts required corrective work and closer review.
+                                <button
+                                    class="work-carousel-arrow work-carousel-arrow--prev"
+                                    type="button"
+                                    data-carousel-prev
+                                    aria-label="Previous RAS Systems screenshot"
+                                >
+                                    <span aria-hidden="true">‹</span>
+                                </button>
+
+                                <div class="work-ras-image-frame">
+
+                                    <!-- 01 / Bubble example -->
+                                    <img
+                                        data-carousel-slide
+                                        src="assets/images/projects/bubble_example_work.png"
+                                        alt="Bubble visual development editor showing an independently created example application"
+                                        data-caption="Bubble · Application workflow example"
+                                        decoding="async"
+                                    >
+
+                                    <!-- 02 / JSReport example -->
+                                    <img
+                                        data-carousel-slide
+                                        src="assets/images/projects/jsreport_example_work.png"
+                                        alt="JSReport development environment showing a McGregor Systems LLC engineering service report example"
+                                        data-caption="JSReport · Engineering report example"
+                                        loading="lazy"
+                                        decoding="async"
+                                        hidden
+                                    >
+
+                                </div>
+
+                                <button
+                                    class="work-carousel-arrow work-carousel-arrow--next"
+                                    type="button"
+                                    data-carousel-next
+                                    aria-label="Next RAS Systems screenshot"
+                                >
+                                    <span aria-hidden="true">›</span>
+                                </button>
+                            </div>
+
+                            <div class="work-carousel-meta">
+                                <span
+                                    class="work-carousel-caption"
+                                    data-carousel-caption
+                                    aria-live="polite"
+                                    aria-atomic="true"
+                                >
+                                    Bubble · Application workflow example
+                                </span>
+
+                                <span
+                                    class="work-carousel-count"
+                                    data-carousel-count
+                                    aria-label="Screenshot number"
+                                >
+                                    1 / 2
+                                </span>
+                            </div>
+                        </div>
+
+                        <figcaption class="work-project-visual-bottom">
+                            Independent demonstrations of development tools
+                            used during the engagement
+                        </figcaption>
+
+                        <p class="work-ras-disclosure">
+                            <strong>About these images:</strong>
+                            The screenshots are independently created examples
+                            of the development tools and reporting workflows
+                            used during this engagement. The original client's
+                            application, interface, and business data are
+                            proprietary and are not reproduced here.
+                        </p>
+                    </figure>
+
+                    <div class="work-project-copy">
+                        <div class="work-project-number">
+                            01 / Commercial contract experience
+                        </div>
+
+                        <h3 id="ras-heading">
+                            RAS Systems
+                        </h3>
+
+                        <p class="work-project-subtitle">
+                            Reporting and workflow maintenance
                         </p>
 
-                        <h3 class="case-study__heading">Engineering contributions</h3>
-                        <ul>
-                            <li>Added administrator-only work-order switching for cross-technician visibility.</li>
-                            <li>Investigated permissions, application state, and data-binding behavior.</li>
-                            <li>Worked on multi-page PDF output, including text continuation and layout rules.</li>
-                            <li>Improved image placement for mixed portrait and landscape content.</li>
-                            <li>Reviewed and simplified reporting templates and styles.</li>
-                            <li>Documented system behavior and advised on integration and data-flow risks.</li>
+                        <p>
+                            Existing internal tools and reporting workflows
+                            involved multiple connected services. Permission
+                            rules, reporting logic, and document layouts
+                            required corrective work and closer review.
+                        </p>
+
+                        <h4>Engineering contributions</h4>
+
+                        <ul class="work-project-contributions">
+                            <li>
+                                Added administrator-only work-order switching
+                                for cross-technician visibility.
+                            </li>
+
+                            <li>
+                                Investigated permissions, application state,
+                                and data-binding behavior.
+                            </li>
+
+                            <li>
+                                Worked on multi-page PDF output, including
+                                text continuation and layout rules.
+                            </li>
+
+                            <li>
+                                Improved image placement for mixed portrait
+                                and landscape content.
+                            </li>
+
+                            <li>
+                                Reviewed and simplified reporting templates
+                                and styles.
+                            </li>
+
+                            <li>
+                                Documented system behavior and advised on
+                                integration and data-flow risks.
+                            </li>
                         </ul>
 
-                        <h3 class="case-study__heading">Systems involved</h3>
-                        <p>Bubble, JavaScript, JSReport, HTML/CSS, AWS, SharePoint, and Salesforce.</p>
+                        <div class="work-project-technologies">
+                            Bubble · JavaScript · JSReport · HTML/CSS ·
+                            AWS · SharePoint · Salesforce
+                        </div>
 
-                        <details class="case-study__details">
-                            <summary>Additional technical context</summary>
-                            <div class="case-study__details-body">
+                        <details class="work-details">
+                            <summary>
+                                Additional technical context
+                            </summary>
+
+                            <div class="work-details-body">
                                 <p>
-                                    Access-sensitive features required a distinction between administrator
-                                    actions and ordinary user behavior. Reporting changes also needed to
-                                    account for text length and image orientation in generated documents.
+                                    Access-sensitive features required a
+                                    distinction between administrator actions
+                                    and ordinary user behavior. Reporting
+                                    changes also needed to account for text
+                                    length and image orientation in generated
+                                    documents.
                                 </p>
+
                                 <p>
-                                    This work involved investigating an existing application's behavior
-                                    before making focused changes. No confidential records, performance
-                                    claims, or customer endorsements are included here.
+                                    This work involved investigating an
+                                    existing application's behavior before
+                                    making focused changes. No confidential
+                                    records, performance claims, or customer
+                                    endorsements are included here.
                                 </p>
-                            </div>
-                        </details>
-                        <!-- Replace the conceptual illustration only with approved project media. -->
-                    </div>
-                </article>
-            </div>
-        </section>
 
-        <section class="section case-study case-study--standard case-study--tinted" id="eldvatten" aria-labelledby="eldvatten-heading">
-            <div class="shell">
-                <div class="section-head">
-                    <div>
-                        <div class="caps subtle">02 / Independent software project</div>
-                        <h2 id="eldvatten-heading">EldVatten community web application</h2>
-                    </div>
-                    <p>Community administration · Access controls · Web application architecture</p>
-                </div>
-
-                <article class="work-card">
-                    <div class="work-copy">
-                        <div class="work-type">Independent development — not a client engagement</div>
-
-                        <h3 class="case-study__heading case-study__heading--first">Application scope</h3>
-                        <p>A private community operations application covering member profiles, events, discussions, messaging, notifications, and administrative functions.</p>
-
-                        <h3 class="case-study__heading">Engineering focus</h3>
-                        <p>Backend-enforced permissions, relational data design, maintainable Django modules, operational workflows, and automated tests.</p>
-                        <p>Core technologies: Python, Django, PostgreSQL, HTML, CSS, JavaScript, and Docker.</p>
-
-                        <details class="case-study__details">
-                            <summary>Additional technical context</summary>
-                            <div class="case-study__details-body">
                                 <p>
-                                    The application organizes community records and workflows using
-                                    relational data. Roles, membership status, and administrative
-                                    responsibilities affect who may read or change that information.
-                                </p>
-                                <p>
-                                    The architecture favors backend permission checks, established
-                                    Django features, focused JavaScript, and maintainable modules.
-                                    Development remains in progress; the project scope is not a claim
-                                    that every planned feature has been deployed.
+                                    The Bubble and JSReport screenshots are
+                                    independent demonstrations created with
+                                    example application content and fictional
+                                    engineering records. They illustrate the
+                                    relevant development technologies, not the
+                                    original client's implementation.
                                 </p>
                             </div>
                         </details>
                     </div>
                 </article>
-            </div>
-        </section>
 
-        <section class="section case-study case-study--standard case-study--light" id="healthcare-scheduler" aria-labelledby="healthcare-heading">
-            <div class="shell">
-                <div class="section-head">
-                    <div>
-                        <div class="caps subtle">03 / Academic capstone project</div>
-                        <h2 id="healthcare-heading">Healthcare scheduling platform</h2>
-                    </div>
-                    <p>Services architecture · Integration · Scheduling workflows</p>
-                </div>
+                <!-- 02 / EldVatten -->
+                <article
+                    class="work-project"
+                    id="eldvatten"
+                    aria-labelledby="eldvatten-heading"
+                >
+                    <figure class="work-project-visual work-project-visual--eldvatten">
+                        <div class="work-project-visual-label">
+                            Community web application
+                        </div>
 
-                <article class="work-card">
-                    <div class="work-copy">
-                        <div class="work-type">Academic team project — not a client engagement</div>
+                        <div
+                            class="work-carousel work-carousel--desktop"
+                            data-work-carousel
+                            aria-label="EldVatten application screenshots"
+                            tabindex="0"
+                        >
+                            <div class="work-carousel-stage">
 
-                        <h3 class="case-study__heading case-study__heading--first">Project overview</h3>
-                        <p>A scheduling system developed as an academic software project, with service boundaries and integration components designed around scheduling functions.</p>
+                                <button
+                                    class="work-carousel-arrow work-carousel-arrow--prev"
+                                    type="button"
+                                    data-carousel-prev
+                                    aria-label="Previous EldVatten screenshot"
+                                >
+                                    <span aria-hidden="true">‹</span>
+                                </button>
 
-                        <h3 class="case-study__heading">Engineering focus</h3>
-                        <p>Service-oriented architecture, system decomposition, API behavior, and coordinating development work across project responsibilities.</p>
-                        <p>Technologies included Python backend services and Docker-based development infrastructure.</p>
+                                <div class="work-monitor">
+                                    <div class="work-monitor-bezel">
+                                        <div class="work-monitor-screen">
 
-                        <h3 class="case-study__heading">Role</h3>
-                        <p>Product Owner on an academic team project.</p>
+                                            <!-- 01 / Website home -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/Eldvatten-preview-site-home.png"
+                                                alt="EldVatten website home screen"
+                                                data-caption="Website home"
+                                                decoding="async"
+                                            >
 
-                        <details class="case-study__details">
-                            <summary>Additional technical context</summary>
-                            <div class="case-study__details-body">
+                                            <!-- 02 / The Tavern -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/Eldvatten-preview-webapp-tavern.png"
+                                                alt="EldVatten Tavern screen"
+                                                data-caption="The Tavern"
+                                                loading="lazy"
+                                                decoding="async"
+                                                hidden
+                                            >
+
+                                            <!-- 03 / My EldVatten -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/Eldvatten-preview-webapp-myeldvatten.png"
+                                                alt="EldVatten My EldVatten screen"
+                                                data-caption="My EldVatten"
+                                                loading="lazy"
+                                                decoding="async"
+                                                hidden
+                                            >
+
+                                            <!-- 04 / Event agenda -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/Eldvatten-preview-webapp-eventagenda.png"
+                                                alt="EldVatten event agenda screen"
+                                                data-caption="Event agenda"
+                                                loading="lazy"
+                                                decoding="async"
+                                                hidden
+                                            >
+
+                                            <!-- 05 / Event calendar -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/Eldvatten-preview-webapp-eventcalendar.png"
+                                                alt="EldVatten event calendar screen"
+                                                data-caption="Event calendar"
+                                                loading="lazy"
+                                                decoding="async"
+                                                hidden
+                                            >
+
+                                            <!-- 06 / Voting -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/Eldvatten-preview-webapp-voting.png"
+                                                alt="EldVatten voting screen"
+                                                data-caption="Voting"
+                                                loading="lazy"
+                                                decoding="async"
+                                                hidden
+                                            >
+
+                                            <!-- 07 / Messages -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/Eldvatten-preview-webapp-messages.png"
+                                                alt="EldVatten messages screen"
+                                                data-caption="Messages"
+                                                loading="lazy"
+                                                decoding="async"
+                                                hidden
+                                            >
+
+                                            <!-- 08 / Resources -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/Eldvatten-preview-webapp-resources.png"
+                                                alt="EldVatten resources screen"
+                                                data-caption="Resources"
+                                                loading="lazy"
+                                                decoding="async"
+                                                hidden
+                                            >
+
+                                            <!-- 09 / Member directory -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/Eldvatten-preview-webapp-directory.png"
+                                                alt="EldVatten member directory screen"
+                                                data-caption="Member directory"
+                                                loading="lazy"
+                                                decoding="async"
+                                                hidden
+                                            >
+
+                                            <!-- 10 / Administration -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/Eldvatten-preview-webapp-admin.png"
+                                                alt="EldVatten administration screen"
+                                                data-caption="Administration"
+                                                loading="lazy"
+                                                decoding="async"
+                                                hidden
+                                            >
+
+                                        </div>
+                                    </div>
+
+                                    <div class="work-monitor-neck"></div>
+                                    <div class="work-monitor-base"></div>
+                                </div>
+
+                                <button
+                                    class="work-carousel-arrow work-carousel-arrow--next"
+                                    type="button"
+                                    data-carousel-next
+                                    aria-label="Next EldVatten screenshot"
+                                >
+                                    <span aria-hidden="true">›</span>
+                                </button>
+                            </div>
+
+                            <div class="work-carousel-meta">
+                                <span
+                                    class="work-carousel-caption"
+                                    data-carousel-caption
+                                    aria-live="polite"
+                                    aria-atomic="true"
+                                >
+                                    Website home
+                                </span>
+
+                                <span
+                                    class="work-carousel-count"
+                                    data-carousel-count
+                                    aria-label="Screenshot number"
+                                >
+                                    1 / 10
+                                </span>
+                            </div>
+                        </div>
+
+                        <figcaption class="work-project-visual-bottom">
+                            EldVatten · Application interface previews
+                        </figcaption>
+                    </figure>
+
+                    <div class="work-project-copy">
+                        <div class="work-project-number">
+                            02 / Independent development
+                        </div>
+
+                        <h3 id="eldvatten-heading">
+                            EldVatten
+                        </h3>
+
+                        <p class="work-project-subtitle">
+                            Community web application
+                        </p>
+
+                        <p>
+                            A private community operations application
+                            covering member profiles, events, discussions,
+                            messaging, notifications, and administrative
+                            functions.
+                        </p>
+
+                        <h4>Engineering focus</h4>
+
+                        <p>
+                            Backend-enforced permissions, relational data
+                            design, maintainable Django modules, operational
+                            workflows, and automated tests.
+                        </p>
+
+                        <div class="work-project-technologies">
+                            Python · Django · PostgreSQL · HTML/CSS ·
+                            JavaScript · Docker
+                        </div>
+
+                        <details class="work-details">
+                            <summary>
+                                Additional technical context
+                            </summary>
+
+                            <div class="work-details-body">
                                 <p>
-                                    The project examined how scheduling responsibilities could be
-                                    divided across services and how those services would communicate.
-                                    This required attention to component boundaries, API behavior,
+                                    The application organizes community records
+                                    and workflows using relational data.
+                                    Roles, membership status, and administrative
+                                    responsibilities affect who may read or
+                                    change that information.
+                                </p>
+
+                                <p>
+                                    The architecture favors backend permission
+                                    checks, established Django features,
+                                    focused JavaScript, and maintainable modules.
+                                </p>
+
+                                <p>
+                                    Development remains in progress; the
+                                    project scope is not a claim that every
+                                    planned feature has been deployed.
+                                </p>
+                            </div>
+                        </details>
+
+                        <p class="work-project-disclosure">
+                            Independent software development,
+                            not a commercial client engagement.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- 03 / Healthcare scheduling -->
+                <article
+                    class="work-project"
+                    id="healthcare-scheduler"
+                    aria-labelledby="healthcare-heading"
+                >
+                    <figure class="work-project-visual work-project-visual--healthcare">
+                        <div class="work-project-visual-label">
+                            Academic scheduling project
+                        </div>
+
+                        <div class="work-project-image-frame">
+                            <img
+                                class="work-project-image"
+                                src="assets/images/projects/healthcare_project_case_study.png"
+                                alt="Healthcare scheduling academic project case-study image"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <figcaption class="work-project-visual-bottom">
+                            Healthcare scheduling · Project image
+                        </figcaption>
+                    </figure>
+
+                    <div class="work-project-copy">
+                        <div class="work-project-number">
+                            03 / Academic capstone project
+                        </div>
+
+                        <h3 id="healthcare-heading">
+                            Healthcare scheduling
+                        </h3>
+
+                        <p class="work-project-subtitle">
+                            Service-oriented scheduling platform
+                        </p>
+
+                        <p>
+                            A scheduling system developed as an academic
+                            software project, with service boundaries
+                            and integration components designed around
+                            scheduling functions.
+                        </p>
+
+                        <h4>Engineering focus</h4>
+
+                        <p>
+                            Service-oriented architecture, system
+                            decomposition, API behavior, and coordinating
+                            development work across project responsibilities.
+                        </p>
+
+                        <div class="work-project-technologies">
+                            Python backend services · Docker-based
+                            development infrastructure
+                        </div>
+
+                        <div class="work-project-role">
+                            <strong>Project role:</strong>
+                            Product Owner on an academic team project.
+                        </div>
+
+                        <details class="work-details">
+                            <summary>
+                                Additional technical context
+                            </summary>
+
+                            <div class="work-details-body">
+                                <p>
+                                    The project examined how scheduling
+                                    responsibilities could be divided
+                                    across services and how those services
+                                    would communicate. This required attention
+                                    to component boundaries, API behavior,
                                     and team coordination.
                                 </p>
+
                                 <p>
-                                    The project is presented as academic software design and development,
-                                    not a production healthcare system or commercial client engagement.
+                                    The project is presented as academic
+                                    software design and development,
+                                    not a production healthcare system
+                                    or commercial client engagement.
                                 </p>
                             </div>
                         </details>
+
+                        <p class="work-project-disclosure">
+                            Academic team project,
+                            not a commercial client engagement.
+                        </p>
                     </div>
                 </article>
+
+                <!-- 04 / Arith-Matic -->
+                <article
+                    class="work-project work-project--studio"
+                    id="arith-matic"
+                    aria-labelledby="arith-matic-heading"
+                >
+                    <figure class="work-project-visual work-project-visual--studio">
+                        <div class="work-project-visual-label">
+                            Wise Raven Studios · Android application
+                        </div>
+
+                        <div
+                            class="work-carousel work-carousel--phone"
+                            data-work-carousel
+                            aria-label="Arith-Matic application screenshots"
+                            tabindex="0"
+                        >
+                            <div class="work-carousel-stage">
+
+                                <button
+                                    class="work-carousel-arrow work-carousel-arrow--prev"
+                                    type="button"
+                                    data-carousel-prev
+                                    aria-label="Previous Arith-Matic screenshot"
+                                >
+                                    <span aria-hidden="true">‹</span>
+                                </button>
+
+                                <div class="work-phone">
+                                    <div class="work-phone-frame">
+                                        <div class="work-phone-screen">
+
+                                            <!-- 01 / Main menu -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/arithmatic-preview.png"
+                                                alt="Arith-Matic main menu screen"
+                                                data-caption="Main menu"
+                                                decoding="async"
+                                            >
+
+                                            <!-- 02 / Basic round settings -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/arithmatic-settings-basic.png"
+                                                alt="Arith-Matic basic round settings"
+                                                data-caption="Basic round settings"
+                                                loading="lazy"
+                                                decoding="async"
+                                                hidden
+                                            >
+
+                                            <!-- 03 / Advanced round settings -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/arithmatic-settings-advanced.png"
+                                                alt="Arith-Matic advanced round settings"
+                                                data-caption="Advanced round settings"
+                                                loading="lazy"
+                                                decoding="async"
+                                                hidden
+                                            >
+
+                                            <!-- 04 / Practice -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/arithmatic-practice.png"
+                                                alt="Arith-Matic practice screen"
+                                                data-caption="Practice"
+                                                loading="lazy"
+                                                decoding="async"
+                                                hidden
+                                            >
+
+                                            <!-- 05 / Round complete -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/arithmatic-round-complete.png"
+                                                alt="Arith-Matic completed round"
+                                                data-caption="Round complete"
+                                                loading="lazy"
+                                                decoding="async"
+                                                hidden
+                                            >
+
+                                            <!-- 06 / System settings -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/arithmatic-system-settings.png"
+                                                alt="Arith-Matic system settings"
+                                                data-caption="System settings"
+                                                loading="lazy"
+                                                decoding="async"
+                                                hidden
+                                            >
+
+                                            <!-- 07 / My statistics -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/arithmatic-my-stats.png"
+                                                alt="Arith-Matic my statistics"
+                                                data-caption="My statistics"
+                                                loading="lazy"
+                                                decoding="async"
+                                                hidden
+                                            >
+
+                                            <!-- 08 / Adult privacy -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/arithmatic-adults-privacy.png"
+                                                alt="Arith-Matic adult privacy settings"
+                                                data-caption="Adult privacy"
+                                                loading="lazy"
+                                                decoding="async"
+                                                hidden
+                                            >
+
+                                            <!-- 09 / Adult statistics -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/arithmatic-adults_stats.png"
+                                                alt="Arith-Matic adult statistics"
+                                                data-caption="Adult statistics"
+                                                loading="lazy"
+                                                decoding="async"
+                                                hidden
+                                            >
+
+                                            <!-- 10 / About -->
+                                            <img
+                                                data-carousel-slide
+                                                src="studio/assets/images/projects/arithmatic-about.png"
+                                                alt="Arith-Matic about screen"
+                                                data-caption="About"
+                                                loading="lazy"
+                                                decoding="async"
+                                                hidden
+                                            >
+
+                                        </div>
+
+                                        <div
+                                            class="work-phone-camera"
+                                            aria-hidden="true"
+                                        ></div>
+                                    </div>
+                                </div>
+
+                                <button
+                                    class="work-carousel-arrow work-carousel-arrow--next"
+                                    type="button"
+                                    data-carousel-next
+                                    aria-label="Next Arith-Matic screenshot"
+                                >
+                                    <span aria-hidden="true">›</span>
+                                </button>
+                            </div>
+
+                            <div class="work-carousel-meta">
+                                <span
+                                    class="work-carousel-caption"
+                                    data-carousel-caption
+                                    aria-live="polite"
+                                    aria-atomic="true"
+                                >
+                                    Main menu
+                                </span>
+
+                                <span
+                                    class="work-carousel-count"
+                                    data-carousel-count
+                                    aria-label="Screenshot number"
+                                >
+                                    1 / 10
+                                </span>
+                            </div>
+                        </div>
+
+                        <figcaption class="work-project-visual-bottom">
+                            Android application interface previews
+                        </figcaption>
+                    </figure>
+
+                    <div class="work-project-copy">
+                        <div class="work-project-number">
+                            04 / Original software product · Wise Raven Studios
+                        </div>
+
+                        <h3 id="arith-matic-heading">
+                            Arith-Matic
+                        </h3>
+
+                        <p class="work-project-subtitle">
+                            Arithmetic practice built around the learner
+                        </p>
+
+                        <p>
+                            Arith-Matic is a native Android application
+                            designed to provide configurable arithmetic
+                            practice. Learners can work with different
+                            operations, difficulty settings, and question
+                            configurations rather than following a single
+                            fixed practice sequence.
+                        </p>
+
+                        <h4>Engineering focus</h4>
+
+                        <ul class="work-project-contributions">
+                            <li>
+                                Kotlin and Jetpack Compose application
+                                development.
+                            </li>
+
+                            <li>
+                                Separation of interface, state, configuration,
+                                and question-generation logic.
+                            </li>
+
+                            <li>
+                                Configurable arithmetic question generation.
+                            </li>
+
+                            <li>
+                                Accessibility and adaptable user interfaces.
+                            </li>
+
+                            <li>
+                                Maintainable architecture and automated testing.
+                            </li>
+                        </ul>
+
+                        <div class="work-project-technologies">
+                            Kotlin · Android · Jetpack Compose
+                        </div>
+
+                        <p class="work-project-disclosure">
+                            An original product under development through
+                            Wise Raven Studios, operated by McGregor Systems LLC;
+                            not a client engagement.
+                        </p>
+
+                        <a
+                            class="work-project-studio-link"
+                            href="studio/projects/arithmatic.html"
+                        >
+                            Explore Arith-Matic
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
             </div>
         </section>
 
-        <section class="section work-page-cta" aria-labelledby="work-contact-heading">
-            <div class="shell">
-                <div class="section-head">
-                    <div>
-                        <div class="caps">Work with us</div>
-                        <h2 id="work-contact-heading">Have a similar technical problem?</h2>
+        <!-- Wise Raven Studios -->
+        <section
+            class="section work-studio"
+            id="wise-raven-studios"
+            aria-labelledby="work-studio-heading"
+        >
+            <div class="shell work-studio-grid">
+
+                <div class="work-studio-copy">
+                    <div class="caps subtle">
+                        Independent software development
                     </div>
-                    <p>We can discuss an existing application, reporting workflow, or new software requirement.</p>
+
+                    <h2 id="work-studio-heading">
+                        Wise Raven Studios
+                    </h2>
+
+                    <p>
+                        Wise Raven Studios is the independent software
+                        and game-development studio operated by
+                        McGregor Systems LLC.
+                    </p>
+
+                    <p>
+                        Its work focuses on original applications,
+                        educational software, games, and other digital
+                        experiences developed with attention to usability,
+                        accessibility, and the people who will use them.
+                    </p>
+
+                    <a class="btn btn-dark" href="studio/index.html">
+                        Visit Wise Raven Studios
+                        <span aria-hidden="true">↗</span>
+                    </a>
                 </div>
-                <a class="btn btn-dark" href="contact.html">Discuss your project <span aria-hidden="true">↗</span></a>
+
+                <aside class="work-studio-aside">
+                    <div class="work-studio-aside-label">
+                        Original software
+                    </div>
+
+                    <h3>
+                        Not every project begins with a client.
+                    </h3>
+
+                    <p>
+                        Alongside contract engineering, the company
+                        develops its own software products through
+                        Wise Raven Studios.
+                    </p>
+                </aside>
+
             </div>
         </section>
+
+        <!-- Closing invitation -->
+        <section
+            class="work-page-cta"
+            aria-labelledby="work-contact-heading"
+        >
+            <div class="shell work-page-cta-grid">
+
+                <div>
+                    <div class="caps">
+                        Work with us
+                    </div>
+
+                    <h2 id="work-contact-heading">
+                        Have a similar technical problem?
+                    </h2>
+
+                    <p>
+                        We can discuss an existing application,
+                        reporting workflow, integration, or new
+                        software requirement.
+                    </p>
+                </div>
+
+                <a class="btn btn-white" href="contact.html">
+                    Discuss your project
+                    <span aria-hidden="true">↗</span>
+                </a>
+
+            </div>
+        </section>
+
     </main>
 
     <div id="site-footer">
         <footer class="footer">
-            <div class="shell"><p>McGregor Systems LLC · Albany, New York</p></div>
+            <div class="shell">
+                <p>McGregor Systems LLC · Albany, New York</p>
+            </div>
         </footer>
     </div>
 
     <script type="module" src="assets/js/main.js"></script>
+
+    <!-- Shared carousel behavior -->
+    <script>
+        (() => {
+            "use strict";
+
+            const carousels = document.querySelectorAll(
+                "[data-work-carousel]"
+            );
+
+            carousels.forEach((carousel) => {
+                const previous = carousel.querySelector("[data-carousel-prev]");
+                const next = carousel.querySelector("[data-carousel-next]");
+                const caption = carousel.querySelector("[data-carousel-caption]");
+                const count = carousel.querySelector("[data-carousel-count]");
+
+                const allSlides = Array.from(
+                    carousel.querySelectorAll("[data-carousel-slide]")
+                );
+
+                let slides = [...allSlides];
+                let currentIndex = 0;
+
+                function render() {
+                    slides.forEach((slide, index) => {
+                        slide.hidden = index !== currentIndex;
+                    });
+
+                    if (slides.length === 0) {
+                        caption.textContent = "Images unavailable";
+                        count.textContent = "0 / 0";
+                        previous.disabled = true;
+                        next.disabled = true;
+                        return;
+                    }
+
+                    const active = slides[currentIndex];
+
+                    caption.textContent =
+                        active.dataset.caption ||
+                        active.alt ||
+                        "Project image";
+
+                    count.textContent =
+                        `${currentIndex + 1} / ${slides.length}`;
+
+                    const hasMultiple = slides.length > 1;
+
+                    previous.disabled = !hasMultiple;
+                    next.disabled = !hasMultiple;
+                }
+
+                function changeSlide(direction) {
+                    if (slides.length < 2) {
+                        return;
+                    }
+
+                    currentIndex =
+                        (currentIndex + direction + slides.length)
+                        % slides.length;
+
+                    render();
+                }
+
+                function removeBrokenSlide(slide) {
+                    const index = slides.indexOf(slide);
+
+                    if (index === -1) {
+                        return;
+                    }
+
+                    slides.splice(index, 1);
+
+                    if (index < currentIndex) {
+                        currentIndex--;
+                    }
+
+                    if (currentIndex >= slides.length) {
+                        currentIndex = 0;
+                    }
+
+                    slide.remove();
+                    render();
+                }
+
+                allSlides.forEach((slide) => {
+                    if (slide.tagName !== "IMG") {
+                        return;
+                    }
+
+                    slide.addEventListener("error", () => {
+                        removeBrokenSlide(slide);
+                    });
+
+                    if (slide.complete && slide.naturalWidth === 0) {
+                        removeBrokenSlide(slide);
+                    }
+                });
+
+                previous.addEventListener("click", () => {
+                    changeSlide(-1);
+                });
+
+                next.addEventListener("click", () => {
+                    changeSlide(1);
+                });
+
+                carousel.addEventListener("keydown", (event) => {
+                    if (event.key === "ArrowLeft") {
+                        event.preventDefault();
+                        changeSlide(-1);
+                    } else if (event.key === "ArrowRight") {
+                        event.preventDefault();
+                        changeSlide(1);
+                    }
+                });
+
+                render();
+            });
+        })();
+    </script>
 </body>
 </html>
