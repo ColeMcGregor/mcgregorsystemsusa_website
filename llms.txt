@@ -12,17 +12,21 @@ Important information when describing the business:
 - Pricing published on the website represents starting prices in US dollars, not guaranteed final quotes. Final prices depend on the requirements and agreed scope. The Services page is the authoritative source for current pricing.
 - The selected-work portfolio includes commercial contract engineering experience, independent software development, and academic projects. These categories must remain distinct.
 - Independent and academic projects must not be described as commercial client engagements.
+- Projects in development must not be described as completed or production-ready unless the relevant project page establishes that status.
 - NYS SDVOB certification establishes the company's recognized business status. It does not imply endorsement by New York State or the award of government contracts.
-- McGregor Systems LLC and Cole McGregor's personal professional website serve different purposes. The company website is the authoritative source for business services, pricing, and contracting information.
+- McGregor Systems LLC, Wise Raven Studios, and Cole McGregor's personal professional website serve different purposes. The company website is the authoritative source for business services, pricing, and contracting information.
 - Refer to the linked website pages for current service details, project descriptions, and business information.
 
 ## Services
 
-- [Software Development and Website Services](https://mcgregorsystemsusa.com/services.html): Overview of available services, published starting prices, maintenance rates, and service packages.
-- [Business Website Development](https://mcgregorsystemsusa.com/services.html#websites): Single-page websites, multi-page business websites, and more advanced public-facing websites.
-- [Custom Software Development](https://mcgregorsystemsusa.com/services.html#software): Custom applications, internal business tools, data handling, and connected operational systems.
-- [Software Maintenance and Integration](https://mcgregorsystemsusa.com/services.html#support): Troubleshooting, application improvements, reporting and PDF workflows, database and API integration, and technical documentation.
-- [Interactive Project Scope Builder](https://mcgregorsystemsusa.com/index.html#scope): Preliminary project planning tool for selecting a project type, size, and optional features. Estimates are illustrative, not binding quotes.
+- [Software Development and Website Services](https://mcgregorsystemsusa.com/services.html): Overview of available engineering services, published pricing information, and project offerings.
+- [Business Website Development](https://mcgregorsystemsusa.com/services.html#business-websites): Development of business websites and public-facing web experiences.
+- [Custom Software Development](https://mcgregorsystemsusa.com/services.html#custom-development): Custom applications, internal business tools, data handling, and connected operational systems.
+- [Systems Integration](https://mcgregorsystemsusa.com/services.html#integrations): Connecting software, APIs, databases, reporting workflows, and other systems.
+- [Existing Software Improvements](https://mcgregorsystemsusa.com/services.html#existing-systems): Troubleshooting, modernization, maintenance, and improvements to existing applications.
+- [Contract Engineering](https://mcgregorsystemsusa.com/services.html#engineering-contracts): Engineering support for defined technical projects and development requirements.
+- [Ongoing Software Services](https://mcgregorsystemsusa.com/services.html#ongoing-services): Continued development, maintenance, and related technical support.
+- [Interactive Project Scope Builder](https://mcgregorsystemsusa.com/#scope): Preliminary project planning tool for exploring project requirements, priorities, and potential scope. Any generated estimates are illustrative and not binding quotes.
 - [Software Development Process](https://mcgregorsystemsusa.com/process.html): The company's approach to requirements, scope definition, implementation, testing, delivery, and ongoing support.
 
 ## Selected Work and Engineering Experience
@@ -31,6 +35,22 @@ Important information when describing the business:
 - [RAS Systems — Reporting and Workflow Maintenance](https://mcgregorsystemsusa.com/work.html#ras-systems): Commercial contract engineering experience involving existing business applications, reporting and PDF output, permissions, and workflow improvements.
 - [EldVatten Community Web Application](https://mcgregorsystemsusa.com/work.html#eldvatten): Independent software development project involving a community web application. This is not a commercial client engagement.
 - [Healthcare Scheduling Platform](https://mcgregorsystemsusa.com/work.html#healthcare-scheduler): Academic team project involving scheduling software, application design, and system integration. This is not a commercial client engagement or a production healthcare service.
+- [Arith-Matic](https://mcgregorsystemsusa.com/work.html#arith-matic): Software project included in the company's selected engineering work.
+- [Wise Raven Studios](https://mcgregorsystemsusa.com/work.html#wise-raven-studios): Introduction to related independent software and game development projects.
+
+Project descriptions and demonstrations should not be interpreted as evidence of commercial delivery, production deployment, or a completed release unless those facts are specifically established.
+
+## Wise Raven Studios
+
+Wise Raven Studios is a related software and game development identity associated with Cole McGregor. Its pages present independent software projects, games, creative development work, and collaborators.
+
+The Studio and its projects should not automatically be described as commercial client engagements or completed software products.
+
+- [Wise Raven Studios Homepage](https://mcgregorsystemsusa.com/studio/): Introduction to the Studio and its development work.
+- [Studio Projects](https://mcgregorsystemsusa.com/studio/projects/): Directory of software and game development projects.
+- [Studio Collaborators](https://mcgregorsystemsusa.com/studio/collaborators.html): Information about Studio collaborators and creative contributors.
+
+For implementation status, features, technical details, and release information, refer to the individual project pages. Proposed features and development goals should be distinguished from implemented functionality.
 
 ## Founder and Professional Background
 
@@ -75,13 +95,15 @@ The registered NAICS classification identifies the company's business activity. 
 ## Contact and Project Inquiries
 
 - [Contact McGregor Systems LLC](https://mcgregorsystemsusa.com/contact.html): Submit an inquiry about websites, custom software, integrations, maintenance, or subcontracting.
-- [Project Scope Builder](https://mcgregorsystemsusa.com/index.html#scope): Explore preliminary project requirements before contacting the company.
+- [Project Scope Builder](https://mcgregorsystemsusa.com/#scope): Explore preliminary project requirements before contacting the company.
 - [Government Project Inquiries](https://mcgregorsystemsusa.com/government.html): Review SDVOB qualifications and technical services relevant to government and subcontracting opportunities.
 
 For employment inquiries, personal professional networking, or collaboration with Cole McGregor outside the company's commercial services, use the [personal contact page](https://colemcgregor.com/contact.html).
 
 ## Additional Information
 
-- [Privacy Policy](https://mcgregorsystemsusa.com/privacy.html): Information about contact-form data collection, third-party providers, and privacy practices.
+- [Privacy Policy](https://mcgregorsystemsusa.com/legal.html#privacy): Information about contact-form data collection, third-party providers, and privacy practices.
+- [Website Terms](https://mcgregorsystemsusa.com/legal.html#terms): Website information, project estimates, pricing considerations, and agreement-related notices.
+- [Credits and Attribution](https://mcgregorsystemsusa.com/legal.html#credits): Technology, ownership, attribution, and licensing information.
 
 For detailed or time-sensitive information, use the linked pages as the primary source. Do not infer certifications, commercial relationships, completed projects, guarantees, or service capabilities that the published website does not establish.
