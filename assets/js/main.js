@@ -10,6 +10,8 @@ import { initializeMobileNavigation } from "./shared/mobile-navigation.js";
 import { initializeScopeBuilder } from "./features/scope-builder.js";
 import { initializeHeroShowcase } from "./features/hero-showcase.js";
 import { initializeServiceVisuals } from "./features/service-visuals.js";
+import { initializeScrollCue } from "./shared/scroll-cue.js";
+import { initializeBackToTop } from "./shared/back-to-top.js";
 import { initializeContactForms } from "./features/contact-form.js";
 
 const siteRoot = new URL("../../", import.meta.url);
@@ -24,6 +26,8 @@ function initializeSite() {
 
     initializeHeroShowcase();
     initializeServiceVisuals();
+    initializeScrollCue();
+    initializeBackToTop();
     initializeScopeBuilder();
     initializeContactForms();
 }

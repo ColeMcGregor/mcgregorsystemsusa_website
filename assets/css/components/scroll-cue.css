@@ -1,0 +1,55 @@
+
+/* Scroll Cue component */
+
+.scroll-cue {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+    place-items: center;
+
+    width: 56px;
+    height: 56px;
+    margin: 28px auto -35px;
+
+    color: var(--accent);
+    text-decoration: none;
+
+    opacity: 1;
+    visibility: visible;
+
+    transition:
+        opacity .25s ease,
+        visibility .25s ease,
+        transform .2s ease;
+}
+
+.scroll-cue svg {
+    width: 36px;
+    height: 36px;
+}
+
+.scroll-cue:hover {
+    transform: translateY(4px);
+}
+
+.scroll-cue.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.scroll-cue:focus-visible {
+    outline: 2px solid var(--focus-outline);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .scroll-cue {
+        transition: none;
+    }
+
+    .scroll-cue:hover {
+        transform: none;
+    }
+}
