@@ -52,7 +52,7 @@ export function renderSiteHeader(siteRoot) {
                     <span class="brand-mark">
                         <img src="${companyLogo}" alt="">
                     </span>
-                    <div>
+                    <div class ="brand-text-group">
                         <div class="brand-name">McGregor Systems</div>
                         <div class="brand-sub">Software Engineering · LLC</div>
                     </div>
