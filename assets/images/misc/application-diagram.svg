@@ -1,0 +1,340 @@
+
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1100"
+    height="790"
+    viewBox="0 0 1100 790"
+    role="img"
+    aria-labelledby="title desc"
+>
+    <title id="title">Connected software systems</title>
+    <desc id="desc">
+        A central application with four independent curved connections
+        to a website, external services, existing business software,
+        and data storage.
+    </desc>
+
+    <defs>
+        <filter id="shadow" x="-20%" y="-25%" width="140%" height="155%">
+            <feDropShadow
+                dx="0"
+                dy="9"
+                stdDeviation="10"
+                flood-color="#142731"
+                flood-opacity=".10"
+            />
+        </filter>
+
+        <filter id="coreShadow" x="-20%" y="-25%" width="140%" height="155%">
+            <feDropShadow
+                dx="0"
+                dy="13"
+                stdDeviation="15"
+                flood-color="#142731"
+                flood-opacity=".16"
+            />
+        </filter>
+
+        <style>
+            .heading {
+                font: 700 23px 'Segoe UI', Arial, sans-serif;
+                fill: #20313b;
+                letter-spacing: .035em;
+            }
+
+            .sub {
+                font: 500 19px 'Segoe UI', Arial, sans-serif;
+                fill: #405b60;
+            }
+
+            .coreTitle {
+                font: 700 29px 'Segoe UI', Arial, sans-serif;
+                fill: #fffefa;
+                letter-spacing: .025em;
+            }
+
+            .coreSub {
+                font: 500 19px 'Segoe UI', Arial, sans-serif;
+                fill: #e0eee7;
+            }
+
+            .line {
+                fill: none;
+                stroke: #78aa98;
+                stroke-width: 6;
+                stroke-linecap: round;
+            }
+        </style>
+    </defs>
+
+    <!-- Independent connections to the central application -->
+    <g class="line">
+        <path d="M300 230 C300 253 405 251 440 285"/>
+        <path d="M800 230 C800 253 695 251 660 285"/>
+        <path d="M300 550 C300 527 405 531 440 520"/>
+        <path d="M800 550 C800 527 695 531 660 520"/>
+    </g>
+
+    <!-- Website -->
+    <g filter="url(#shadow)">
+        <rect
+            x="25"
+            y="25"
+            width="400"
+            height="205"
+            rx="17"
+            fill="#fffefa"
+            stroke="#b4d0c2"
+            stroke-width="2"
+        />
+    </g>
+
+    <rect
+        x="48"
+        y="52"
+        width="165"
+        height="125"
+        rx="8"
+        fill="#f5f9f5"
+        stroke="#d6e4dc"
+    />
+
+    <path
+        d="M48 60 Q48 52 56 52 H205 Q213 52 213 60 V76 H48Z"
+        fill="#29464e"
+    />
+
+    <circle cx="62" cy="64" r="3.5" fill="#acd3bf"/>
+    <circle cx="76" cy="64" r="3.5" fill="#acd3bf"/>
+    <circle cx="90" cy="64" r="3.5" fill="#acd3bf"/>
+
+    <rect x="62" y="91" width="72" height="11" rx="3" fill="#8eb8a6"/>
+    <rect x="62" y="113" width="132" height="8" rx="3" fill="#d6e6dc"/>
+    <rect x="62" y="132" width="114" height="8" rx="3" fill="#d6e6dc"/>
+    <rect x="62" y="152" width="66" height="14" rx="4" fill="#b0d7c3"/>
+
+    <text x="236" y="93" class="heading">WEBSITE</text>
+    <text x="236" y="129" class="sub">Web presence</text>
+    <text x="236" y="156" class="sub">and interfaces</text>
+
+    <!-- External services -->
+    <g filter="url(#shadow)">
+        <rect
+            x="675"
+            y="25"
+            width="400"
+            height="205"
+            rx="17"
+            fill="#fffefa"
+            stroke="#b4d0c2"
+            stroke-width="2"
+        />
+    </g>
+
+    <rect
+        x="698"
+        y="52"
+        width="165"
+        height="125"
+        rx="8"
+        fill="#f5f9f5"
+        stroke="#d6e4dc"
+    />
+
+    <rect x="712" y="71" width="41" height="43" rx="6" fill="#bcdccb"/>
+    <rect x="762" y="71" width="41" height="43" rx="6" fill="#d3e6da"/>
+    <rect x="812" y="71" width="37" height="43" rx="6" fill="#bcdccb"/>
+
+    <rect x="712" y="132" width="137" height="10" rx="4" fill="#90bda9"/>
+    <rect x="712" y="153" width="98" height="8" rx="3" fill="#d3e6da"/>
+
+    <text x="885" y="87" class="heading">EXTERNAL</text>
+    <text x="885" y="116" class="heading">SERVICES</text>
+    <text x="885" y="153" class="sub">APIs &amp; tools</text>
+
+    <!-- Existing business systems -->
+    <g filter="url(#shadow)">
+        <rect
+            x="25"
+            y="550"
+            width="400"
+            height="205"
+            rx="17"
+            fill="#fffefa"
+            stroke="#b4d0c2"
+            stroke-width="2"
+        />
+    </g>
+
+    <rect
+        x="48"
+        y="577"
+        width="165"
+        height="125"
+        rx="8"
+        fill="#f5f9f5"
+        stroke="#d6e4dc"
+    />
+
+    <path
+        d="M48 585 Q48 577 56 577 H205 Q213 577 213 585 V601 H48Z"
+        fill="#315d62"
+    />
+
+    <rect x="62" y="617" width="133" height="11" rx="3" fill="#94bba9"/>
+    <rect x="62" y="640" width="108" height="8" rx="3" fill="#d6e6dc"/>
+    <rect x="62" y="658" width="131" height="8" rx="3" fill="#d6e6dc"/>
+    <rect x="62" y="676" width="91" height="8" rx="3" fill="#d6e6dc"/>
+
+    <text x="236" y="615" class="heading">BUSINESS</text>
+    <text x="236" y="644" class="heading">SYSTEMS</text>
+    <text x="236" y="683" class="sub">Existing</text>
+    <text x="236" y="710" class="sub">software</text>
+
+    <!-- Data storage -->
+    <g filter="url(#shadow)">
+        <rect
+            x="675"
+            y="550"
+            width="400"
+            height="205"
+            rx="17"
+            fill="#e3f0e8"
+            stroke="#b4d0c2"
+            stroke-width="2"
+        />
+    </g>
+
+    <rect
+        x="698"
+        y="577"
+        width="165"
+        height="125"
+        rx="8"
+        fill="#f5f9f5"
+        stroke="#d6e4dc"
+    />
+
+    <!-- Minimal database cylinder -->
+    <g>
+        <!-- Solid cylinder body -->
+        <path
+            d="M721 620
+               V668
+               C721 679 747 687 780 687
+               C813 687 839 679 839 668
+               V620 Z"
+            fill="#8fb9a7"
+        />
+
+        <!-- Top face -->
+        <ellipse
+            cx="780"
+            cy="620"
+            rx="59"
+            ry="16"
+            fill="#9fc7b7"
+        />
+
+        <!-- Two curved layer separators -->
+        <path
+            d="M721 638
+               C721 649 747 657 780 657
+               C813 657 839 649 839 638"
+            fill="none"
+            stroke="#eef7f1"
+            stroke-width="3"
+        />
+
+        <path
+            d="M721 655
+               C721 666 747 674 780 674
+               C813 674 839 666 839 655"
+            fill="none"
+            stroke="#eef7f1"
+            stroke-width="3"
+        />
+    </g>
+
+    <text x="885" y="615" class="heading">DATA</text>
+    <text x="885" y="644" class="heading">STORAGE</text>
+    <text x="885" y="683" class="sub">Persistent</text>
+    <text x="885" y="710" class="sub">records</text>
+
+    <!-- Central application -->
+    <g filter="url(#coreShadow)">
+        <rect
+            x="375"
+            y="285"
+            width="350"
+            height="235"
+            rx="18"
+            fill="#29464e"
+            stroke="#406971"
+            stroke-width="2"
+        />
+    </g>
+
+    <path
+        d="M375 303 Q375 285 393 285 H707
+           Q725 285 725 303 V323 H375Z"
+        fill="#1a3740"
+    />
+
+    <circle cx="398" cy="304" r="4.5" fill="#94c3ae"/>
+    <circle cx="415" cy="304" r="4.5" fill="#94c3ae"/>
+    <circle cx="432" cy="304" r="4.5" fill="#94c3ae"/>
+
+    <text
+        x="550"
+        y="361"
+        text-anchor="middle"
+        class="coreTitle"
+    >
+        APPLICATION
+    </text>
+
+    <text
+        x="550"
+        y="391"
+        text-anchor="middle"
+        class="coreSub"
+    >
+        Business logic &amp; workflows
+    </text>
+
+    <!-- Application interface -->
+    <rect
+        x="400"
+        y="409"
+        width="300"
+        height="89"
+        rx="6"
+        fill="#fffefa"
+    />
+
+    <rect
+        x="400"
+        y="409"
+        width="70"
+        height="89"
+        rx="6"
+        fill="#3a6a6e"
+    />
+
+    <rect
+        x="458"
+        y="409"
+        width="12"
+        height="89"
+        fill="#3a6a6e"
+    />
+
+    <rect x="414" y="425" width="42" height="6" rx="2" fill="#a4d1b9"/>
+    <rect x="414" y="441" width="42" height="6" rx="2" fill="#81ab9c"/>
+    <rect x="414" y="457" width="33" height="6" rx="2" fill="#81ab9c"/>
+
+    <rect x="485" y="424" width="199" height="9" rx="3" fill="#98bfab"/>
+    <rect x="485" y="447" width="91" height="38" rx="3" fill="#d3e7d9"/>
+    <rect x="589" y="447" width="95" height="38" rx="3" fill="#bbd9c8"/>
+</svg>

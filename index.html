@@ -18,6 +18,7 @@
         type="image/png"
         href="assets/images/branding/favicon.png"
     >
+
     <link rel="stylesheet" href="assets/css/site.css">
     <link rel="stylesheet" href="assets/css/pages/home.css">
     <link
@@ -39,7 +40,7 @@
 
     <main id="main-content">
 
-        <!-- Centered introduction -->
+        <!-- Hero -->
         <section
             class="home-hero"
             id="home"
@@ -51,8 +52,8 @@
                 </div>
 
                 <h1 id="home-heading">
-                    What could work <em>better</em>
-                    for your organization?
+                    What could your software
+                    <em>do better?</em>
                 </h1>
 
                 <p class="home-hero-lede">
@@ -82,55 +83,47 @@
                     <span>Development &amp; modernization</span>
                     <span>NYS-certified SDVOB</span>
                 </div>
+
+                <a
+                    class="scroll-cue"
+                    href="#services"
+                    aria-label="Scroll down to our services"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="28"
+                        height="28"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <path d="M6 9l6 6 6-6"/>
+                    </svg>
+                </a>
             </div>
         </section>
 
-        <!-- Services: left visual, right-aligned copy -->
+        <!-- 01 / Services -->
         <section
             class="section home-services"
             id="services"
             aria-labelledby="services-heading"
         >
-            <div class="shell home-split">
+            <div class="shell home-split home-services-layout">
 
-                <div
-                    class="home-services-visual"
-                    aria-hidden="true"
-                >
-                    <div class="home-system-window">
-                        <div class="home-system-window-top">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-
-                        <div class="home-system-window-body">
-                            <div class="home-system-sidebar">
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                            </div>
-
-                            <div class="home-system-content">
-                                <div class="home-system-heading"></div>
-
-                                <div class="home-system-data">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-
-                                <div class="home-system-record"></div>
-                                <div class="home-system-record"></div>
-                                <div class="home-system-record"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="home-visual-caption">
-                        Systems · Applications · Websites
-                    </div>
+                <div class="home-services-visual">
+                    <img
+                        class="home-services-illustration"
+                        src="assets/images/misc/application-diagram.svg"
+                        alt="Diagram showing a central software application connected to a website, external services, business systems, and data storage."
+                        width="1100"
+                        height="790"
+                        loading="lazy"
+                        decoding="async"
+                    >
                 </div>
 
                 <div class="home-section-copy home-section-copy--right">
@@ -139,15 +132,17 @@
                     </div>
 
                     <h2 id="services-heading">
-                        Different problems.<br>
-                        <em>Thoughtful solutions.</em>
+                        Understand the need.<br>
+                        <em>Engineer the solution.</em>
                     </h2>
 
                     <p>
-                        From new applications to aging software,
-                        we help individuals and organizations build,
-                        modernize, integrate, and maintain the
-                        technology they depend on.
+                        We work directly with clients to understand
+                        their goals, existing systems, and technical
+                        challenges. Whether developing a new
+                        application or improving established software,
+                        we focus on building solutions suited to the
+                        people and organizations that use them.
                     </p>
 
                     <nav
@@ -183,7 +178,6 @@
                         <span aria-hidden="true">→</span>
                     </a>
                 </div>
-
             </div>
         </section>
 
@@ -201,13 +195,14 @@
                     <p>
                         JavaScript · Python · Java · C# · C++ ·
                         Kotlin · Django · PostgreSQL · Docker ·
-                        Git · Android · Firebase
+                        Git · Android · Firebase · Unreal Engine ·
+                        Unity · Perforce
                     </p>
                 </div>
             </section>
         </div>
 
-        <!-- Selected work: left copy, right project examples -->
+        <!-- 02 / Selected work -->
         <section
             class="section home-work"
             id="work"
@@ -221,14 +216,15 @@
                     </div>
 
                     <h2 id="work-heading">
-                        Engineering in <em>practice.</em>
+                        Selected projects.
+                        <em>Real experience.</em>
                     </h2>
 
                     <p>
-                        Explore commercial contract engineering
-                        and independently developed applications,
-                        with each project clearly identified by
-                        its development context.
+                        From improving established business software
+                        to developing new applications, our work
+                        reflects different challenges, requirements,
+                        and approaches to engineering.
                     </p>
 
                     <a
@@ -267,8 +263,8 @@
                             </h3>
 
                             <p>
-                                Reporting, integration, and
-                                improvements to existing
+                                Reporting tools, systems integration,
+                                and modernization of existing
                                 business software.
                             </p>
 
@@ -285,35 +281,16 @@
                             href="work.html#eldvatten"
                             aria-label="View EldVatten project details"
                         >
-                            <div
-                                class="home-project-ui"
-                                aria-hidden="true"
+                            <img
+                                src="studio/assets/images/projects/Eldvatten-preview-webapp-tavern.png"
+                                alt="Screenshot of the EldVatten community application's Tavern feed"
+                                loading="lazy"
                             >
-                                <div class="home-project-ui-bar"></div>
-
-                                <div class="home-project-ui-main">
-                                    <div class="home-project-ui-side">
-                                        <i></i>
-                                        <i></i>
-                                        <i></i>
-                                    </div>
-
-                                    <div class="home-project-ui-feed">
-                                        <i></i>
-                                        <i></i>
-                                        <i></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <span class="home-project-preview-note">
-                                Interface illustration
-                            </span>
                         </a>
 
                         <div class="home-project-content">
                             <div class="home-project-type">
-                                Independent application
+                                Independent development
                             </div>
 
                             <h3>
@@ -323,18 +300,18 @@
                             </h3>
 
                             <p>
-                                A Django community platform
-                                with member accounts, events,
-                                discussions, and administration.
+                                A new organization website connected
+                                to a Django-based community application
+                                for membership, communication, events,
+                                and administration.
                             </p>
                         </div>
                     </article>
-
                 </div>
             </div>
         </section>
 
-        <!-- Engineering approach: dark editorial section -->
+        <!-- 03 / Engineering approach -->
         <section
             class="section home-approach"
             id="approach"
@@ -344,9 +321,9 @@
 
                 <div class="home-approach-statement">
                     <div class="home-approach-quote">
-                        Understand the problem.<br>
-                        Define the scope.<br>
-                        Build deliberately.
+                        Listen carefully.<br>
+                        Plan together.<br>
+                        Build with purpose.
                     </div>
 
                     <div class="home-approach-caption">
@@ -365,15 +342,18 @@
                     </h2>
 
                     <p>
-                        Engineering decisions should reflect the
-                        requirements, constraints, and people who
-                        rely on the finished system.
+                        We believe effective software development
+                        is a collaborative process. By working
+                        directly with clients, we can make informed
+                        decisions that account for both technical
+                        requirements and practical business needs.
                     </p>
 
                     <p>
-                        We consider maintainability, reliability,
-                        usability, and the realities of supporting
-                        a system after delivery.
+                        Throughout development, we keep communication
+                        open, explain important technical decisions,
+                        and work to ensure the resulting software
+                        remains aligned with the project's goals.
                     </p>
 
                     <a
@@ -384,17 +364,17 @@
                         <span aria-hidden="true">→</span>
                     </a>
                 </div>
-
             </div>
         </section>
 
-        <!-- Project planner: left explanation, right interactive builder -->
+        <!-- 04 / Project planning -->
         <section
             class="section home-planning"
             id="scope"
             aria-labelledby="scope-heading"
         >
             <div class="shell">
+
                 <div class="home-planning-intro">
                     <div class="caps subtle">
                         04 / Project planning
@@ -406,19 +386,19 @@
                     </h2>
 
                     <p>
-                        Identify the features and requirements you
-                        have in mind, explore factors affecting
-                        complexity, and get a clearer starting
-                        point for discussing your project.
+                        Have a project in mind but aren't sure where
+                        to begin? Use our interactive planner to
+                        explore your requirements, consider your
+                        priorities, and prepare for a more
+                        productive conversation.
                     </p>
 
                     <p>
-                        Preliminary prices are appropriate only
-                        for sufficiently defined services.
-                        Custom software, integrations, and
-                        modernization often require technical
-                        discovery before a responsible estimate
-                        can be made.
+                        The planner is a starting point, not a formal
+                        estimate. Projects involving custom development
+                        or existing systems often require further
+                        discussion and technical discovery before
+                        scope and pricing can be established.
                     </p>
 
                     <a
@@ -467,13 +447,14 @@
             </div>
         </section>
 
-        <!-- Founder-led value and project lifecycle -->
+        <!-- 05 / Founder-led process -->
         <section
             class="section home-why"
             id="why-us"
             aria-labelledby="why-heading"
         >
             <div class="shell">
+
                 <div class="home-why-intro">
                     <div class="caps subtle">
                         05 / Why McGregor Systems
@@ -545,7 +526,6 @@
                             and arrange support if needed.
                         </p>
                     </article>
-
                 </div>
 
                 <div class="home-process-footer">
@@ -560,7 +540,7 @@
             </div>
         </section>
 
-        <!-- Government and subcontracting -->
+        <!-- 06 / Government and subcontracting -->
         <section
             class="section home-government"
             id="government"
@@ -592,20 +572,23 @@
                     </div>
 
                     <h2 id="government-heading">
-                        Qualified for
-                        <em>contract opportunities.</em>
+                        Engineering support for
+                        <em>government and industry.</em>
                     </h2>
 
                     <p>
-                        McGregor Systems LLC is certified by
-                        New York State as a Service-Disabled
-                        Veteran-Owned Business.
+                        McGregor Systems LLC is a New York State-certified
+                        Service-Disabled Veteran-Owned Business (SDVOB),
+                        available to support public-sector software
+                        engineering and technology projects.
                     </p>
 
                     <p>
-                        We welcome inquiries about software
-                        engineering, maintenance, modernization,
-                        integration, and subcontracting opportunities.
+                        Whether supporting an agency directly or
+                        contributing to a larger project as a
+                        subcontractor, we can discuss software
+                        development, integration, modernization,
+                        and maintenance requirements.
                     </p>
 
                     <a
@@ -616,7 +599,6 @@
                         <span aria-hidden="true">→</span>
                     </a>
                 </div>
-
             </div>
         </section>
 
