@@ -12,21 +12,26 @@
 
 .about-intro-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.2fr) minmax(290px, .8fr);
+    grid-template-columns: minmax(0, 1.15fr) minmax(290px, .85fr);
     align-items: center;
-    gap: clamp(32px, 6vw, 86px);
+    gap: clamp(40px, 6vw, 90px);
+}
+
+.about-intro-copy {
+    min-width: 0;
 }
 
 .about-intro-copy h1 {
-    max-width: 790px;
-    margin: 17px 0 24px;
+    max-width: 740px;
+    margin: 17px 0 26px;
+    color: var(--ink);
     font-size: clamp(44px, 5.8vw, 74px);
     line-height: 1.06;
     letter-spacing: -.058em;
 }
 
 .about-intro-copy h1 em {
-    display: inline;
+    display: block;
     color: var(--accent);
     font-family: var(--serif);
     font-weight: 400;
@@ -47,39 +52,58 @@
     margin-top: 29px;
 }
 
-/* Engineering principle panel */
-.about-intro-panel {
+/* Founder summary in the introduction */
+.about-intro-profile {
     min-width: 0;
     padding: clamp(28px, 3.5vw, 44px);
-    background: var(--dark);
-    color: var(--text-on-dark);
-    border: 1px solid var(--darker);
+    background: var(--surface-tinted);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
 }
 
-.about-intro-panel .caps {
-    color: var(--lime);
+.about-intro-profile .caps {
+    color: var(--accent);
 }
 
-.about-intro-panel h2 {
-    margin: 22px 0 18px;
-    font-size: clamp(26px, 2.8vw, 37px);
-    line-height: 1.17;
-    letter-spacing: -.04em;
+.about-intro-profile h2 {
+    margin: 22px 0 7px;
+    color: var(--ink);
+    font-size: clamp(28px, 3.1vw, 42px);
+    line-height: 1.12;
+    letter-spacing: -.045em;
 }
 
-.about-intro-panel p {
+.about-intro-profile-role {
     margin: 0;
-    color: var(--text-on-dark-muted);
-    font-size: 13px;
-    line-height: 1.85;
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.6;
 }
 
-.about-intro-panel-footer {
-    margin-top: 31px;
-    padding-top: 17px;
-    border-top: 1px solid var(--footer-border);
-    color: var(--lime);
-    font-size: 11px;
+.about-intro-profile-specialties {
+    display: grid;
+    margin-top: 30px;
+}
+
+.about-intro-profile-specialties div {
+    padding: 13px 0;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.about-intro-profile-specialties div:first-child {
+    border-top: 1px solid var(--line);
+}
+
+.about-intro-profile-location {
+    margin: 26px 0 0;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 600;
     line-height: 1.6;
 }
 
@@ -441,6 +465,14 @@
         grid-template-columns: 1fr;
     }
 
+    .about-intro-copy h1 em {
+        display: inline;
+    }
+
+    .about-intro-profile {
+        max-width: 540px;
+    }
+
     .about-founder {
         padding: 55px 0;
     }
@@ -485,7 +517,7 @@
         width: 100%;
     }
 
-    .about-intro-panel,
+    .about-intro-profile,
     .about-experience-panel {
         padding: 26px 23px;
     }
