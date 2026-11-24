@@ -1,0 +1,75 @@
+
+/* ==========================================================================
+   Wise Raven Studios
+   Collaborator and Content Cards
+   ========================================================================== */
+
+
+/* ===== Collaborators ======================================================= */
+
+.collaborator-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+
+/* ===== Two-Column Grid Modifier ============================================ */
+
+.collaborator-grid.collaborator-grid--two-column {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+
+/* ===== Collaborator Cards ================================================== */
+
+.collaborator-card {
+  padding: 24px;
+  border: 1px solid var(--studio-border);
+  border-radius: var(--studio-radius);
+  background: rgba(12, 34, 55, 0.70);
+}
+
+.collaborator-avatar {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--studio-border-strong);
+}
+
+.collaborator-card h3 {
+  margin: 0;
+}
+
+.collaborator-role {
+  margin: 5px 0 0;
+  color: var(--studio-accent);
+  font-size: 0.88rem;
+  font-weight: 750;
+}
+
+.collaborator-copy {
+  margin: 12px 0 0;
+  color: var(--studio-muted);
+}
+
+
+/* ===== Responsive: Tablet ================================================== */
+
+@media (max-width: 900px) {
+  .collaborator-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* ===== Responsive: Phone =================================================== */
+
+@media (max-width: 640px) {
+  .collaborator-grid,
+  .collaborator-grid.collaborator-grid--two-column {
+    grid-template-columns: 1fr;
+  }
+}

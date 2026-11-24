@@ -1,0 +1,377 @@
+/* ===== Header ============================================================== */
+.studio-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 28px;
+  min-height: 92px;
+  border-bottom: 1px solid var(--studio-border);
+}
+.studio-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--studio-ink);
+}
+.studio-brand-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.studio-brand-name {
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+/* Left-side primary navigation */
+.studio-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.studio-nav a {
+  position: relative;
+  padding: 10px 12px;
+  color: var(--studio-muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.studio-nav a::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 3px;
+  height: 1px;
+  background: var(--studio-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 160ms ease;
+}
+.studio-nav a:hover,
+.studio-nav a.is-active {
+  color: var(--studio-ink);
+}
+.studio-nav a:hover::after,
+.studio-nav a.is-active::after {
+  transform: scaleX(1);
+}
+/* Right-side external links */
+.studio-external-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.studio-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; 
+  color: var(--studio-muted);
+  transition:
+    border-color 160ms ease,
+    color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+.studio-icon-link:hover {
+  color: var(--studio-accent);
+  border-color: var(--studio-border-strong);
+  box-shadow: var(--studio-glow);
+  transform: translateY(-2px);
+}
+.studio-icon-link img,
+.studio-icon-link svg {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+/* McGregor Systems logo link */
+.studio-business-link {
+  width: auto;
+  min-width:55px;
+  border-radius: 999px;
+}
+.studio-business-link img {
+  width: 60px;
+  height: 50px;
+}
+/* ===== Hero ================================================================ */
+.studio-hero {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 620px;
+  padding: 100px 24px 92px;
+  text-align: center;
+  overflow: hidden;
+}
+.studio-hero::before {
+  content: "";
+  position: absolute;
+  inset: 16% auto auto 50%;
+  width: min(74vw, 760px);
+  height: min(74vw, 760px);
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 214, 107, 0.08) 0%,
+      rgba(255, 214, 107, 0.025) 34%,
+      transparent 68%
+    );
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.studio-hero-content {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 880px);
+}
+.studio-eyebrow {
+  margin: 0 0 22px;
+  color: var(--studio-accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+.studio-hero h1 {
+  margin: 0;
+  color: var(--studio-ink);
+  font-size: clamp(3rem, 8vw, 7.25rem);
+  font-weight: 900;
+  line-height: 0.94;
+  letter-spacing: -0.055em;
+  text-transform: uppercase;
+}
+.studio-tagline {
+  max-width: 780px;
+  margin: 28px auto 0;
+  color: var(--studio-muted);
+  font-size: clamp(1.15rem, 2vw, 1.65rem);
+  line-height: 1.5;
+}
+.studio-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 34px;
+}
+/* Lantern dot */
+.studio-light {
+  width: 10px;
+  height: 10px;
+  margin: 32px auto 0;
+  border-radius: 50%;
+  background: var(--studio-accent);
+  box-shadow:
+    0 0 12px rgba(255, 214, 107, 0.72),
+    0 0 34px rgba(255, 214, 107, 0.28);
+  animation: lantern-breathe 7s ease-in-out infinite;
+}
+@keyframes lantern-breathe {
+  0%,
+  100% {
+    opacity: 0.82;
+    transform: scale(0.96);
+    box-shadow:
+      0 0 10px rgba(255, 214, 107, 0.56),
+      0 0 28px rgba(255, 214, 107, 0.20);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+    box-shadow:
+      0 0 18px rgba(255, 214, 107, 0.72),
+      0 0 46px rgba(255, 214, 107, 0.30);
+  }
+}
+/* ===== Sections ============================================================== */
+.studio-section {
+  padding: 88px 0;
+  border-top: 1px solid var(--studio-border);
+}
+.studio-section--soft {
+  position: relative;
+}
+.studio-section--soft::before {
+  content: "";
+  position: absolute;
+  inset: 0 calc(50% - 50vw);
+  z-index: -1;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(12, 34, 55, 0.40),
+      rgba(8, 26, 43, 0.18)
+    );
+}
+.studio-section-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 34px;
+}
+.studio-section-title {
+  margin: 0;
+  color: var(--studio-ink);
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+.studio-section-intro {
+  max-width: 620px;
+  margin: 10px 0 0;
+  color: var(--studio-muted);
+  font-size: 1.05rem;
+}
+.studio-section-link {
+  flex: 0 0 auto;
+  color: var(--studio-accent);
+  font-weight: 800;
+}
+/* ===== About Section ========================================================= */
+.studio-about {
+  /* display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 54px; */
+  align-items: center;
+}
+.studio-about-copy p {
+  color: var(--studio-muted);
+}
+.studio-about-media {
+  overflow: hidden;
+  border-radius: var(--studio-radius-lg);
+  border: 1px solid var(--studio-border);
+  box-shadow: var(--studio-shadow);
+}
+.studio-about-media img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+/* ===== Footer ============================================================== */
+.studio-footer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 30px;
+  align-items: end;
+  padding: 54px 0 10px;
+  border-top: 1px solid var(--studio-border);
+}
+.studio-footer-brand {
+  margin: 0;
+  color: var(--studio-ink);
+  font-weight: 850;
+}
+.studio-footer-copy {
+  max-width: 520px;
+  margin: 8px 0 0;
+  color: var(--studio-muted-2);
+  font-size: 0.9rem;
+}
+.studio-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px 20px;
+}
+.studio-footer-links a {
+  color: var(--studio-muted);
+  font-size: 0.9rem;
+}
+.studio-footer-links a:hover {
+  color: var(--studio-accent);
+}
+/* Responsive: Tablet */
+@media (max-width: 900px) {
+.studio-header {
+    grid-template-columns: 1fr auto;
+    gap: 18px;
+    padding: 18px 0;
+  }
+.studio-nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+.studio-nav::-webkit-scrollbar {
+    display: none;
+  }
+.studio-nav a {
+    flex: 0 0 auto;
+  }
+.studio-hero {
+    min-height: 540px;
+    padding-top: 76px;
+  }
+.studio-about {
+    grid-template-columns: 1fr;
+  }
+}
+/* Responsive: Phone */
+/* ===== Responsive: Phone ==================================================== */
+@media (max-width: 640px) {
+.studio-header {
+    grid-template-columns: 1fr auto;
+    min-height: auto;
+  }
+.studio-brand-name {
+    display: none;
+  }
+.studio-brand-logo {
+    width: 44px;
+    height: 44px;
+  }
+.studio-external-links {
+    gap: 7px;
+  }
+.studio-icon-link {
+    width: 60px;
+    height: 60px;
+  }
+.studio-business-link {
+    padding-inline: 8px;
+  }
+.studio-hero {
+    min-height: 500px;
+    padding: 74px 8px 64px;
+  }
+.studio-hero h1 {
+    font-size: clamp(2.7rem, 15vw, 4.5rem);
+  }
+.studio-tagline {
+    font-size: 1.08rem;
+  }
+.studio-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+.studio-section {
+    padding: 64px 0;
+  }
+.studio-section-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+.studio-footer {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+.studio-footer-links {
+    justify-content: flex-start;
+  }
+}

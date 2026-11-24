@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +10,11 @@
 
   <meta
     name="description"
-    content="Learn about Arith-Matic, a customizable arithmetic practice application developed by Wise Raven Studios for Android using Kotlin and Jetpack Compose."
+    content="Explore Arith-Matic, an educational Android application built with Kotlin and Jetpack Compose to provide configurable arithmetic practice."
   />
 
   <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="stylesheet" href="../assets/css/platform_mockup.css" />
 </head>
 
 <body>
@@ -23,7 +25,11 @@
          ================================================================ -->
     <header class="studio-header">
 
-      <a class="studio-brand" href="index.html" aria-label="Wise Raven Studios home">
+      <a
+        class="studio-brand"
+        href="../index.html"
+        aria-label="Wise Raven Studios home"
+      >
         <img
           class="studio-brand-logo"
           src="../assets/images/StudioLogo.png"
@@ -47,14 +53,9 @@
         <a href="../collaborators.html">
           Collaborators
         </a>
-
-        <a href="../index.html#news">
-          News
-        </a>
       </nav>
 
       <div class="studio-external-links">
-
         <a
           class="studio-icon-link studio-business-link"
           href="../../index.html"
@@ -62,37 +63,12 @@
           title="McGregor Systems LLC"
         >
           <img
-            src="../../assets/LogoMcGregorSystemsSmall.png"
+            src="../../assets/images/branding/LogoMcGregorSystems.png"
             alt="McGregor Systems LLC"
           />
         </a>
-
-        <a
-          class="studio-icon-link"
-          href="#"
-          aria-label="Wise Raven Studios on GitHub"
-          title="GitHub"
-        >
-          <img
-            src="../assets/images/github-icon.png"
-            alt=""
-          />
-        </a>
-
-        <a
-          class="studio-icon-link"
-          href="#"
-          aria-label="Wise Raven Studios on Discord"
-          title="Discord"
-        >
-          <img
-            src="../assets/images/discord-icon.png"
-            alt=""
-          />
-        </a>
-
-        
       </div>
+
     </header>
 
     <main>
@@ -113,45 +89,41 @@
           </h1>
 
           <p class="studio-tagline">
-            Customizable arithmetic practice designed to help learners build
-            confidence, fluency, and a stronger understanding of mathematics.
+            Customizable arithmetic practice designed to help learners
+            develop confidence, fluency, and a stronger understanding
+            of mathematics.
           </p>
 
           <div class="studio-light" aria-hidden="true"></div>
 
           <div class="studio-hero-actions">
 
-            <!-- Replace # with the public repository URL when ready. -->
-            <a
-              class="studio-btn"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Source
+            <a class="studio-btn" href="#overview">
+              Explore the App
               <span aria-hidden="true">→</span>
             </a>
 
             <a
               class="studio-btn studio-btn--ghost"
-              href="#features"
+              href="index.html"
             >
-              Explore the App
+              All Projects
             </a>
 
           </div>
 
         </div>
+
       </section>
 
       <!-- ================================================================
            Project Overview
            ================================================================ -->
-      <section class="studio-section">
+      <section class="studio-section" id="overview">
 
-        <div class="studio-about">
+        <div class="studio-section-header">
 
-          <div class="studio-about-copy">
+          <div>
 
             <p class="studio-eyebrow">
               Project Overview
@@ -161,40 +133,241 @@
               Arithmetic practice without unnecessary distractions.
             </h2>
 
-            <p>
-              Arith-Matic is an educational practice application built to help
-              learners improve their arithmetic skills through focused,
-              repeatable practice.
+            <p class="studio-section-intro">
+              A configurable learning experience built around the needs
+              of individual learners rather than a fixed curriculum.
             </p>
 
-            <p>
-              Rather than forcing every learner through the same fixed set of
-              questions, Arith-Matic allows a practice round to be shaped
-              around the operations, number ranges, and difficulty settings
-              that are appropriate for the person using it.
-            </p>
-
-            <p>
-              The project is being developed as a native Android application
-              with a classroom-inspired visual style. Its interface is designed
-              to feel welcoming and familiar while keeping the learner's
-              attention on the problem currently in front of them.
-            </p>
-
-          </div>
-
-          <div class="studio-about-media">
-            <img
-              src="../assets/images/projects/arithmatic-preview.png"
-              alt="Arith-Matic application preview"
-            />
           </div>
 
         </div>
+
+        <div class="studio-about">
+
+          <div class="studio-about-copy">
+
+            <p>
+              Arith-Matic is a native Android application that helps
+              learners practice arithmetic through focused, repeatable
+              exercises. Users can configure practice sessions around
+              different mathematical operations, difficulty settings,
+              and question parameters.
+            </p>
+
+            <p>
+              The application uses a classroom-inspired visual design,
+              with chalkboards, familiar educational imagery, and
+              straightforward controls. Its presentation is intended
+              to make practice approachable without distracting from
+              the mathematics itself.
+            </p>
+
+            <p>
+              Arith-Matic is developed using Kotlin and Jetpack Compose,
+              with an emphasis on maintainable architecture, reusable
+              interface components, and clear separation between
+              presentation and application logic.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- ============================================================
+             Phone Screenshot Gallery
+             ============================================================ -->
+        <div
+          class="platform-gallery platform-gallery--phone"
+          role="region"
+          aria-label="Arith-Matic application screenshots"
+          tabindex="0"
+          data-platform-gallery
+        >
+
+          <div class="platform-gallery__stage">
+
+            <button
+              class="platform-gallery__arrow"
+              type="button"
+              data-gallery-prev
+              aria-label="Previous screenshot"
+            >
+              <span aria-hidden="true">‹</span>
+            </button>
+
+            <div class="platform-mockup platform-mockup--phone">
+
+              <div class="platform-mockup__frame">
+
+                <div class="platform-mockup__screen">
+
+                  <!-- 01 / Main Menu -->
+                  <img
+                    class="platform-mockup__image"
+                    src="../assets/images/projects/arithmatic-preview.png"
+                    alt="Arith-Matic main menu"
+                    data-gallery-slide
+                    data-caption="Main menu"
+                    decoding="async"
+                  />
+
+                  <!-- 02 / Basic Round Settings -->
+                  <img
+                    class="platform-mockup__image"
+                    src="../assets/images/projects/arithmatic-settings-basic.png"
+                    alt="Arith-Matic basic practice settings"
+                    data-gallery-slide
+                    data-caption="Basic round settings"
+                    loading="lazy"
+                    decoding="async"
+                    hidden
+                  />
+
+                  <!-- 03 / Advanced Round Settings -->
+                  <img
+                    class="platform-mockup__image"
+                    src="../assets/images/projects/arithmatic-settings-advanced.png"
+                    alt="Arith-Matic advanced practice settings"
+                    data-gallery-slide
+                    data-caption="Advanced round settings"
+                    loading="lazy"
+                    decoding="async"
+                    hidden
+                  />
+
+                  <!-- 04 / Practice -->
+                  <img
+                    class="platform-mockup__image"
+                    src="../assets/images/projects/arithmatic-practice.png"
+                    alt="Arith-Matic arithmetic practice screen"
+                    data-gallery-slide
+                    data-caption="Practice"
+                    loading="lazy"
+                    decoding="async"
+                    hidden
+                  />
+
+                  <!-- 05 / Round Complete -->
+                  <img
+                    class="platform-mockup__image"
+                    src="../assets/images/projects/arithmatic-round-complete.png"
+                    alt="Arith-Matic completed practice round"
+                    data-gallery-slide
+                    data-caption="Round complete"
+                    loading="lazy"
+                    decoding="async"
+                    hidden
+                  />
+
+                  <!-- 06 / System Settings -->
+                  <img
+                    class="platform-mockup__image"
+                    src="../assets/images/projects/arithmatic-system-settings.png"
+                    alt="Arith-Matic application settings"
+                    data-gallery-slide
+                    data-caption="System settings"
+                    loading="lazy"
+                    decoding="async"
+                    hidden
+                  />
+
+                  <!-- 07 / My Statistics -->
+                  <img
+                    class="platform-mockup__image"
+                    src="../assets/images/projects/arithmatic-my-stats.png"
+                    alt="Arith-Matic personal statistics"
+                    data-gallery-slide
+                    data-caption="My statistics"
+                    loading="lazy"
+                    decoding="async"
+                    hidden
+                  />
+
+                  <!-- 08 / Adult Privacy -->
+                  <img
+                    class="platform-mockup__image"
+                    src="../assets/images/projects/arithmatic-adults-privacy.png"
+                    alt="Arith-Matic adult privacy settings"
+                    data-gallery-slide
+                    data-caption="Adult privacy"
+                    loading="lazy"
+                    decoding="async"
+                    hidden
+                  />
+
+                  <!-- 09 / Adult Statistics -->
+                  <img
+                    class="platform-mockup__image"
+                    src="../assets/images/projects/arithmatic-adults_stats.png"
+                    alt="Arith-Matic adult statistics"
+                    data-gallery-slide
+                    data-caption="Adult statistics"
+                    loading="lazy"
+                    decoding="async"
+                    hidden
+                  />
+
+                  <!-- 10 / About -->
+                  <img
+                    class="platform-mockup__image"
+                    src="../assets/images/projects/arithmatic-about.png"
+                    alt="Arith-Matic application information"
+                    data-gallery-slide
+                    data-caption="About"
+                    loading="lazy"
+                    decoding="async"
+                    hidden
+                  />
+
+                </div>
+
+                <div
+                  class="platform-mockup__camera"
+                  aria-hidden="true"
+                ></div>
+
+              </div>
+
+            </div>
+
+            <button
+              class="platform-gallery__arrow"
+              type="button"
+              data-gallery-next
+              aria-label="Next screenshot"
+            >
+              <span aria-hidden="true">›</span>
+            </button>
+
+          </div>
+
+          <div class="platform-gallery__meta">
+
+            <span
+              class="platform-gallery__caption"
+              data-gallery-caption
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              Main menu
+            </span>
+
+            <span
+              class="platform-gallery__count"
+              data-gallery-count
+              aria-label="Screenshot number"
+            >
+              1 / 10
+            </span>
+
+          </div>
+
+        </div>
+
       </section>
 
       <!-- ================================================================
-           Key Features
+           Features
            ================================================================ -->
       <section
         class="studio-section studio-section--soft"
@@ -204,143 +377,172 @@
         <div class="studio-section-header">
 
           <div>
+
             <p class="studio-eyebrow">
-              Practice Tools
+              Application Features
             </p>
 
             <h2 class="studio-section-title">
-              Built for adaptable practice.
+              Practice shaped around the learner.
             </h2>
 
             <p class="studio-section-intro">
-              Arith-Matic is structured around configuration rather than a
-              single predetermined lesson path.
+              Arith-Matic provides tools for configuring exercises,
+              practicing mathematical operations, and reviewing
+              learning activity.
             </p>
+
           </div>
 
         </div>
+        
+      <div class="collaborator-grid collaborator-grid--two-column">
 
-        <div class="collaborator-grid">
-
+          <!-- Configurable Practice -->
           <article class="collaborator-card">
+
             <h3>
-              Multiple Operations
+              Configurable Practice
             </h3>
 
             <p class="collaborator-role">
-              Choose What to Practice
+              Individualized Sessions
             </p>
 
             <p class="collaborator-copy">
-              Practice can be configured around addition, subtraction,
-              multiplication, division, exponents, roots, remainders,
-              percentages, and mixed-operation rounds as those systems are
-              completed.
+              Practice settings allow learners to select mathematical
+              operations, adjust difficulty parameters, and customize
+              the kinds of questions they encounter.
             </p>
+
           </article>
 
+          <!-- Arithmetic Operations -->
           <article class="collaborator-card">
+
             <h3>
-              Adjustable Difficulty
+              Arithmetic Operations
             </h3>
 
             <p class="collaborator-role">
-              Appropriate Challenge
+              Extensible Question Generation
             </p>
 
             <p class="collaborator-copy">
-              Number size and other difficulty-related settings allow practice
-              to grow with the learner instead of remaining permanently too
-              easy or becoming discouragingly difficult.
+              The question-generation system is organized around
+              distinct mathematical operations, allowing operation
+              rules and difficulty controls to be handled independently.
             </p>
+
           </article>
 
+          <!-- Practice Results -->
           <article class="collaborator-card">
+
             <h3>
-              Number Modifiers
+              Practice Results
             </h3>
 
             <p class="collaborator-role">
-              Expand the Question Set
+              Performance Feedback
             </p>
 
             <p class="collaborator-copy">
-              Optional modifiers can introduce negative numbers, decimal
-              values, and broader operand ranges when a learner is ready for
-              them.
+              Practice rounds provide a defined activity with
+              opportunities to review outcomes, correctness,
+              and progress over time.
             </p>
+
           </article>
 
+          <!-- Application Settings -->
           <article class="collaborator-card">
+
             <h3>
-              Focused Practice Rounds
+              Application Settings
             </h3>
 
             <p class="collaborator-role">
-              Clear Beginning and End
+              A Configurable Experience
             </p>
 
             <p class="collaborator-copy">
-              Practice is divided into manageable rounds so learners can work
-              toward a defined goal and review their performance afterward.
-            </p>
-          </article>
-
-          <article class="collaborator-card">
-            <h3>
-              Results and Timing
-            </h3>
-
-            <p class="collaborator-role">
-              Useful Feedback
+              Dedicated settings interfaces support customization
+              beyond an individual practice round, including
+              controls intended for different learners and
+              supervising adults.
             </p>
 
-            <p class="collaborator-copy">
-              Results are intended to show correctness and completion timing
-              without allowing a visible timer to create unnecessary pressure
-              during each individual question.
-            </p>
-          </article>
-
-          <article class="collaborator-card">
-            <h3>
-              Parent-Friendly Settings
-            </h3>
-
-            <p class="collaborator-role">
-              Guided Configuration
-            </p>
-
-            <p class="collaborator-copy">
-              Configuration tools are being designed so a parent, guardian, or
-              educator can prepare an appropriate practice experience without
-              needing technical knowledge.
-            </p>
           </article>
 
         </div>
+
       </section>
 
       <!-- ================================================================
-           Technology
+           Technology and Architecture
            ================================================================ -->
-      <section class="studio-section">
+      <section class="studio-section" id="architecture">
 
         <div class="studio-section-header">
 
           <div>
+
             <p class="studio-eyebrow">
-              Technology
+              Engineering
             </p>
 
             <h2 class="studio-section-title">
-              Native Android development.
+              Technology and Architecture
             </h2>
 
             <p class="studio-section-intro">
-              Arith-Matic is being rebuilt with current Android development
-              tools and a maintainable application structure.
+              Built as a native Android application with clear
+              responsibilities between the interface, application
+              state, configuration, and question-generation systems.
             </p>
+
+          </div>
+
+        </div>
+
+        <div class="studio-about">
+
+          <div class="studio-about-copy">
+
+            <p>
+              Arith-Matic uses <strong>Kotlin</strong> and
+              <strong>Jetpack Compose</strong> for its Android
+              implementation. Its architecture is primarily
+              based on Model-View-ViewModel (MVVM), using
+              ViewModels to manage interface state and
+              coordinate interactions with application logic.
+            </p>
+
+            <p>
+              The application's practice configuration is
+              represented through dedicated data models rather
+              than being embedded directly into interface code.
+              These models describe the selected operations,
+              difficulty parameters, and modifiers for a
+              practice session.
+            </p>
+
+            <p>
+              Question generators interpret the configuration
+              and produce arithmetic problems according to
+              the rules of their respective operations. Keeping
+              question generation separate from the interface
+              makes the system easier to extend, test, and maintain.
+            </p>
+
+            <p>
+              Reusable Compose components provide a consistent
+              interface across the application's screens,
+              while navigation, state management, and
+              practice logic remain distinct responsibilities.
+            </p>
+
           </div>
 
         </div>
@@ -348,606 +550,128 @@
         <div class="collaborator-grid">
 
           <article class="collaborator-card">
+
             <h3>
               Kotlin
             </h3>
 
             <p class="collaborator-role">
-              Primary Programming Language
+              Application Development
             </p>
 
             <p class="collaborator-copy">
-              The application is written in Kotlin, allowing it to use modern
-              Android language features, null safety, coroutines, and strong
-              type support.
+              The primary language used to implement the
+              application's models, state management,
+              question generation, and Android functionality.
             </p>
+
           </article>
 
           <article class="collaborator-card">
+
             <h3>
               Jetpack Compose
             </h3>
 
             <p class="collaborator-role">
-              User Interface
+              Declarative User Interface
             </p>
 
             <p class="collaborator-copy">
-              The interface is built with Jetpack Compose using reusable
-              composable boards, controls, text elements, and classroom scene
-              components. While the typography is a font called Chalk-Tastic
-              by Darrell Flood, the Art was made in Studio.
+              Reusable composable interface elements support
+              the classroom presentation, configuration
+              screens, and practice experience.
             </p>
+
           </article>
 
           <article class="collaborator-card">
+
             <h3>
-              Android Architecture
+              MVVM
             </h3>
 
             <p class="collaborator-role">
-              Separation of Responsibilities
+              State and Responsibility Management
             </p>
 
             <p class="collaborator-copy">
-              Navigation, interface state, practice configuration, question
-              generation, and result tracking are kept in separate parts of
-              the application to reduce coupling and simplify testing.
-            </p>
-          </article>
-
-          <article class="collaborator-card">
-            <h3>
-              ViewModels and State Flows
-            </h3>
-
-            <p class="collaborator-role">
-              Predictable UI State
+              ViewModels help coordinate screen state and
+              user interactions while keeping presentation
+              concerns separate from application behavior.
             </p>
 
-            <p class="collaborator-copy">
-              Stateful screens use Android ViewModels and observable state so
-              user choices survive recomposition and the interface reflects
-              the application's current state. Architecture is mostly MVVM.
-            </p>
-          </article>
-
-          <article class="collaborator-card">
-            <h3>
-              Structured Configuration
-            </h3>
-
-            <p class="collaborator-role">
-              PracticeConfig
-            </p>
-
-            <p class="collaborator-copy">
-              A dedicated immutable configuration model records the selected
-              operations, modifiers, and difficulty settings used to generate
-              each practice round. It is also stored for a user's personal analytics later.
-            </p>
-          </article>
-
-          <article class="collaborator-card">
-            <h3>
-              Automated Testing
-            </h3>
-
-            <p class="collaborator-role">
-              Reliability
-            </p>
-
-            <p class="collaborator-copy">
-              Question generators, validation rules, configuration behavior,
-              and navigation logic are being structured so they can be tested
-              independently from the visual interface.
-            </p>
           </article>
 
         </div>
+
       </section>
 
       <!-- ================================================================
-           Architecture
+           Design Considerations
            ================================================================ -->
-      <section class="studio-section studio-section--soft">
+      <section
+        class="studio-section studio-section--soft"
+        id="design"
+      >
+
+        <div class="studio-section-header">
+
+          <div>
+
+            <p class="studio-eyebrow">
+              Design Considerations
+            </p>
+
+            <h2 class="studio-section-title">
+              Learning, accessibility, and privacy.
+            </h2>
+
+            <p class="studio-section-intro">
+              The technical design is informed by the experience
+              of the people who will actually use the application.
+            </p>
+
+          </div>
+
+        </div>
 
         <div class="studio-about">
 
           <div class="studio-about-copy">
 
-            <p class="studio-eyebrow">
-              Application Structure
-            </p>
-
-            <h2 class="studio-section-title">
-              Designed to remain understandable as it grows.
-            </h2>
-
             <p>
-              Arith-Matic separates the application's visual presentation from
-              its question-generation and practice logic.
+              <strong>Learning experience.</strong>
+              Arith-Matic emphasizes adaptable practice and
+              individual improvement rather than requiring
+              every learner to follow the same progression.
+              The classroom-inspired interface aims to
+              make arithmetic practice approachable without
+              overwhelming the user with unnecessary elements.
             </p>
 
             <p>
-              Interface components are responsible for presenting information
-              and collecting user choices. Configuration models describe the
-              requested practice session. Question generators then use that
-              configuration to create valid arithmetic questions.
+              <strong>Accessibility.</strong>
+              Interface design considers readable text,
+              practical touch targets, understandable feedback,
+              and the needs of users with different abilities.
+              Communicating important information through
+              more than color alone is an ongoing design priority.
             </p>
 
             <p>
-              This separation allows new operations and difficulty options to
-              be added without requiring the entire interface or application
-              flow to be rewritten.
+              <strong>Privacy.</strong>
+              Data minimization is a guiding principle for
+              the project, particularly because children may
+              use the application. Its design prioritizes
+              collecting and retaining only information
+              necessary to support the learning experience.
             </p>
 
-          </div>
-
-          <div class="studio-about-media">
-            <img
-              src="../assets/images/projects/arithmatic-settings.png"
-              alt="Arith-Matic practice settings interface"
-            />
-          </div>
-
-        </div>
-      </section>
-
-      <!-- ================================================================
-           Philosophy
-           ================================================================ -->
-      <section class="studio-section">
-
-        <div class="studio-section-header">
-
-          <div>
-            <p class="studio-eyebrow">
-              Design Philosophy
-            </p>
-
-            <h2 class="studio-section-title">
-              Practice should build confidence, not fear.
-            </h2>
-
-            <p class="studio-section-intro">
-              The app is being designed around the learner's experience rather
-              than around punishment, advertising, or artificial engagement.
-            </p>
           </div>
 
         </div>
 
-        <div class="collaborator-grid">
-
-          <article class="collaborator-card">
-            <h3>
-              Learning Before Competition
-            </h3>
-
-            <p class="collaborator-role">
-              Progress Without Pressure
-            </p>
-
-            <p class="collaborator-copy">
-              Arith-Matic is not intended to make every learner compete against
-              a global ranking. The primary goal is improvement relative to the
-              learner's own previous understanding.
-            </p>
-          </article>
-
-          <article class="collaborator-card">
-            <h3>
-              Mistakes Are Information
-            </h3>
-
-            <p class="collaborator-role">
-              Supportive Feedback
-            </p>
-
-            <p class="collaborator-copy">
-              Incorrect answers should identify where more practice is useful.
-              They should not make a learner feel punished for attempting a
-              difficult problem.
-            </p>
-          </article>
-
-          <article class="collaborator-card">
-            <h3>
-              Clarity Over Stimulation
-            </h3>
-
-            <p class="collaborator-role">
-              Focused Interface
-            </p>
-
-            <p class="collaborator-copy">
-              The classroom theme gives the application personality without
-              surrounding each question with unnecessary motion, clutter, or
-              distracting reward systems.
-            </p>
-          </article>
-
-          <article class="collaborator-card">
-            <h3>
-              Adaptability
-            </h3>
-
-            <p class="collaborator-role">
-              Different Learners Need Different Practice
-            </p>
-
-            <p class="collaborator-copy">
-              A nine-year-old practicing addition and an older learner
-              reviewing decimals should not be forced into the same practice
-              configuration.
-            </p>
-          </article>
-
-          <article class="collaborator-card">
-            <h3>
-              Purposeful Gamification
-            </h3>
-
-            <p class="collaborator-role">
-              Encouragement Without Manipulation
-            </p>
-
-            <p class="collaborator-copy">
-              Game-like presentation can make practice more inviting, but it
-              should support learning rather than encourage compulsive use or
-              distract from the mathematical skill being developed.
-            </p>
-          </article>
-
-          <article class="collaborator-card">
-            <h3>
-              Long-Term Maintainability
-            </h3>
-
-            <p class="collaborator-role">
-              Software That Can Keep Improving
-            </p>
-
-            <p class="collaborator-copy">
-              The codebase is being rebuilt around reusable components,
-              explicit models, documented behavior, and testable systems so the
-              application can grow without becoming fragile.
-            </p>
-          </article>
-
-        </div>
-      </section>
-
-      <!-- ================================================================
-           Privacy
-           ================================================================ -->
-      <section class="studio-section studio-section--soft">
-
-        <div class="studio-about">
-
-          <div class="studio-about-copy">
-
-            <p class="studio-eyebrow">
-              Privacy
-            </p>
-
-            <h2 class="studio-section-title">
-              A learning app should not need a learner's personal life.
-            </h2>
-
-            <p>
-              Arith-Matic is being designed around data minimization. The app
-              should collect only the information required to provide its
-              practice features.
-            </p>
-
-            <p>
-              The current design does not require a learner to create an
-              account or provide a name, email address, birthday, precise
-              location, contact list, or other unrelated personal information.
-            </p>
-
-            <p>
-              Practice settings and results are intended to remain on the
-              device unless a future optional feature clearly explains why
-              information would need to leave it.
-            </p>
-
-            <p>
-              Advertising and invasive behavioral tracking are not part of the
-              application's current design. Any future analytics or online
-              functionality would be documented before release and reviewed
-              against the same privacy-first principles.
-            </p>
-
-          </div>
-
-          <div class="collaborator-grid">
-
-            <article class="collaborator-card">
-              <h3>
-                No Required Account
-              </h3>
-
-              <p class="collaborator-role">
-                Current Design
-              </p>
-
-              <p class="collaborator-copy">
-                Learners are intended to be able to begin practicing without
-                registering for an online service.
-              </p>
-            </article>
-
-            <article class="collaborator-card">
-              <h3>
-                Local-First Data
-              </h3>
-
-              <p class="collaborator-role">
-                Device Storage
-              </p>
-
-              <p class="collaborator-copy">
-                Preferences and progress information are intended to remain
-                under the control of the device owner.
-              </p>
-            </article>
-
-            <article class="collaborator-card">
-              <h3>
-                No Advertising Profile
-              </h3>
-
-              <p class="collaborator-role">
-                No Behavioral Targeting
-              </p>
-
-              <p class="collaborator-copy">
-                The app is not being designed to build advertising profiles
-                from a child's learning behavior.
-              </p>
-            </article>
-
-          </div>
-
-        </div>
-      </section>
-
-      <!-- ================================================================
-           Accessibility
-           ================================================================ -->
-      <section class="studio-section">
-
-        <div class="studio-section-header">
-
-          <div>
-            <p class="studio-eyebrow">
-              Accessibility
-            </p>
-
-            <h2 class="studio-section-title">
-              Designed to remain usable and understandable.
-            </h2>
-
-            <p class="studio-section-intro">
-              Accessibility is treated as part of the application's interface
-              design rather than an optional addition at the end.
-            </p>
-          </div>
-
-        </div>
-
-        <div class="collaborator-grid">
-
-          <article class="collaborator-card">
-            <h3>
-              Readable Text
-            </h3>
-
-            <p class="collaborator-role">
-              Clear Typography
-            </p>
-
-            <p class="collaborator-copy">
-              Question text, answer choices, instructions, and settings are
-              designed to remain legible across supported Android screen sizes.
-            </p>
-          </article>
-
-          <article class="collaborator-card">
-            <h3>
-              Large Interaction Areas
-            </h3>
-
-            <p class="collaborator-role">
-              Touch-Friendly Controls
-            </p>
-
-            <p class="collaborator-copy">
-              Important controls are given clear spacing and practical touch
-              targets rather than relying on tiny icons or precision tapping.
-            </p>
-          </article>
-
-          <article class="collaborator-card">
-            <h3>
-              More Than Color
-            </h3>
-
-            <p class="collaborator-role">
-              Understandable Feedback
-            </p>
-
-            <p class="collaborator-copy">
-              Important states should not rely entirely on color. Text,
-              structure, symbols, or other feedback can reinforce what has
-              happened.
-            </p>
-          </article>
-
-        </div>
-      </section>
-
-      <!-- ================================================================
-           Source and Development
-           ================================================================ -->
-      <section class="studio-section studio-section--soft">
-
-        <div class="studio-about">
-
-          <div class="studio-about-copy">
-
-            <p class="studio-eyebrow">
-              Source and Development
-            </p>
-
-            <h2 class="studio-section-title">
-              An actively developed project.
-            </h2>
-
-            <p>
-              Arith-Matic is being developed as part of the Wise Raven Studios
-              project collection. Its source repository contains the Android
-              application, architecture, interface components, question
-              generation systems, tests, and project documentation.
-            </p>
-
-            <p>
-              The current version is a substantial rebuild of an earlier
-              implementation. The rebuild replaces outdated dependencies and
-              an abandoned multiplatform direction with a focused, modern
-              Android codebase.
-            </p>
-
-            <p>
-              Source availability, contribution rules, build instructions, and
-              licensing information will be published through the project's
-              repository.
-            </p>
-
-            <!-- Replace # with the real repository URL. -->
-            <a
-              class="studio-btn"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Open the GitHub Repository
-              <span aria-hidden="true">→</span>
-            </a>
-
-          </div>
-
-          <div class="studio-about-media">
-            <img
-              src="../assets/images/projects/arithmatic-practice.png"
-              alt="Arith-Matic practice question interface"
-            />
-          </div>
-
-        </div>
-      </section>
-
-      <!-- ================================================================
-           Status
-           ================================================================ -->
-      <section class="studio-section">
-
-        <div class="studio-section-header">
-
-          <div>
-            <p class="studio-eyebrow">
-              Development Status
-            </p>
-
-            <h2 class="studio-section-title">
-              Currently in active development.
-            </h2>
-
-            <p class="studio-section-intro">
-              The application is being rebuilt feature by feature, beginning
-              with its navigation, reusable interface components, practice
-              configuration, and question-generation foundation.
-            </p>
-          </div>
-
-        </div>
-
-        <ul class="studio-news-list">
-
-          <li class="studio-news-item">
-            <span class="studio-news-date">
-              Interface
-            </span>
-
-            <span class="studio-news-title">
-              Classroom scene, start board, navigation, and settings boards.
-            </span>
-
-            <span class="studio-news-link">
-              In Development
-            </span>
-          </li>
-
-          <li class="studio-news-item">
-            <span class="studio-news-date">
-              Configuration
-            </span>
-
-            <span class="studio-news-title">
-              Immutable practice configuration and validation rules.
-            </span>
-
-            <span class="studio-news-link">
-              In Development
-            </span>
-          </li>
-
-          <li class="studio-news-item">
-            <span class="studio-news-date">
-              Questions
-            </span>
-
-            <span class="studio-news-title">
-              Modular generators for supported arithmetic operations.
-            </span>
-
-            <span class="studio-news-link">
-              Planned
-            </span>
-          </li>
-
-          <li class="studio-news-item">
-            <span class="studio-news-date">
-              Results
-            </span>
-
-            <span class="studio-news-title">
-              Round summaries, accuracy information, and timing feedback.
-            </span>
-
-            <span class="studio-news-link">
-              Planned
-            </span>
-          </li>
-
-          <li class="studio-news-item">
-            <span class="studio-news-date">
-              Release
-            </span>
-
-            <span class="studio-news-title">
-              Android distribution and public release preparation.
-            </span>
-
-            <span class="studio-news-link">
-              Future Milestone
-            </span>
-          </li>
-
-        </ul>
       </section>
 
       <!-- ================================================================
@@ -967,8 +691,9 @@
           class="studio-section-intro"
           style="margin-inline: auto;"
         >
-          Arith-Matic is one part of a broader effort to create thoughtful
-          software that improves lives and experiences.
+          Explore other educational applications, games,
+          simulations, and software projects from
+          Wise Raven Studios.
         </p>
 
         <div class="studio-hero-actions">
@@ -996,6 +721,7 @@
     <footer class="studio-footer">
 
       <div>
+
         <p class="studio-footer-brand">
           Wise Raven Studios
         </p>
@@ -1007,9 +733,13 @@
         <p class="studio-footer-copy">
           Wise Raven Studios is operated by McGregor Systems LLC.
         </p>
+
       </div>
 
-      <nav class="studio-footer-links" aria-label="Footer navigation">
+      <nav
+        class="studio-footer-links"
+        aria-label="Footer navigation"
+      >
 
         <a href="../index.html">
           Home
@@ -1036,5 +766,100 @@
     </footer>
 
   </div>
+
+  <!-- ================================================================
+       Screenshot Gallery Navigation
+       ================================================================ -->
+  <script>
+    (() => {
+      const galleries = document.querySelectorAll(
+        "[data-platform-gallery]"
+      );
+
+      galleries.forEach((gallery) => {
+
+        const slides = Array.from(
+          gallery.querySelectorAll("[data-gallery-slide]")
+        );
+
+        const previousButton = gallery.querySelector(
+          "[data-gallery-prev]"
+        );
+
+        const nextButton = gallery.querySelector(
+          "[data-gallery-next]"
+        );
+
+        const caption = gallery.querySelector(
+          "[data-gallery-caption]"
+        );
+
+        const count = gallery.querySelector(
+          "[data-gallery-count]"
+        );
+
+        if (!slides.length) {
+          return;
+        }
+
+        let activeIndex = 0;
+
+        function showSlide(index) {
+          activeIndex = (index + slides.length) % slides.length;
+
+          slides.forEach((slide, slideIndex) => {
+            slide.hidden = slideIndex !== activeIndex;
+          });
+
+          const activeSlide = slides[activeIndex];
+
+          if (caption) {
+            caption.textContent =
+              activeSlide.dataset.caption ||
+              activeSlide.alt ||
+              "";
+          }
+
+          if (count) {
+            count.textContent =
+              `${activeIndex + 1} / ${slides.length}`;
+          }
+        }
+
+        if (previousButton) {
+          previousButton.addEventListener("click", () => {
+            showSlide(activeIndex - 1);
+          });
+        }
+
+        if (nextButton) {
+          nextButton.addEventListener("click", () => {
+            showSlide(activeIndex + 1);
+          });
+        }
+
+        gallery.addEventListener("keydown", (event) => {
+
+          if (event.target.closest("button")) {
+            return;
+          }
+
+          if (event.key === "ArrowLeft") {
+            event.preventDefault();
+            showSlide(activeIndex - 1);
+          }
+
+          if (event.key === "ArrowRight") {
+            event.preventDefault();
+            showSlide(activeIndex + 1);
+          }
+
+        });
+
+        showSlide(0);
+      });
+    })();
+  </script>
+
 </body>
 </html>
